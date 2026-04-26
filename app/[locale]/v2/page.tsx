@@ -1,5 +1,5 @@
 import Navbar from '@/components/Navbar'
-import Hero from '@/components/Hero'
+import HeroV2 from '@/components/v2/HeroV2'
 import About from '@/components/About'
 import ServicesV2 from '@/components/v2/ServicesV2'
 import BinaryArch from '@/components/v2/BinaryArch'
@@ -16,7 +16,7 @@ export default function HomeV2() {
     <>
       <Navbar />
       <main>
-        <Hero />
+        <HeroV2 />
         <About />
         <BinaryArch variant="up" />
         <ServicesV2 />
