@@ -115,6 +115,76 @@ function EnergyOrb({ size = 220 }: { size?: number }) {
   )
 }
 
+// Connector dimensions
+const LINE_W = 72  // px, w-[72px]
+const PULSE_W = 30 // px
+
+function LeftConnector({ delay }: { delay: number }) {
+  // Pulse travels from orb (right side) → card (left side)
+  return (
+    <motion.div
+      className="flex-shrink-0 relative overflow-hidden"
+      style={{ width: LINE_W, height: 1 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.4, delay }}
+    >
+      {/* Base dim line */}
+      <div className="absolute inset-0" style={{ background: 'rgba(255,202,102,0.18)' }} />
+      {/* Pulse: leading edge is LEFT (toward card), travels right→left */}
+      <motion.div
+        className="absolute top-0 h-full"
+        style={{
+          left: 0,
+          width: PULSE_W,
+          background: 'linear-gradient(to right, rgba(255,202,102,0.95), rgba(255,202,102,0.45), transparent)',
+        }}
+        animate={{ x: [LINE_W, -PULSE_W] }}
+        transition={{
+          duration: 1.4,
+          repeat: Infinity,
+          ease: 'easeInOut',
+          repeatDelay: 0.9,
+          delay: delay + 0.4,
+        }}
+      />
+    </motion.div>
+  )
+}
+
+function RightConnector({ delay }: { delay: number }) {
+  // Pulse travels from orb (left side) → card (right side)
+  return (
+    <motion.div
+      className="flex-shrink-0 relative overflow-hidden"
+      style={{ width: LINE_W, height: 1 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.4, delay }}
+    >
+      {/* Base dim line */}
+      <div className="absolute inset-0" style={{ background: 'rgba(255,202,102,0.18)' }} />
+      {/* Pulse: leading edge is RIGHT (toward card), travels left→right */}
+      <motion.div
+        className="absolute top-0 h-full"
+        style={{
+          left: 0,
+          width: PULSE_W,
+          background: 'linear-gradient(to left, rgba(255,202,102,0.95), rgba(255,202,102,0.45), transparent)',
+        }}
+        animate={{ x: [-PULSE_W, LINE_W] }}
+        transition={{
+          duration: 1.4,
+          repeat: Infinity,
+          ease: 'easeInOut',
+          repeatDelay: 0.9,
+          delay: delay + 0.4,
+        }}
+      />
+    </motion.div>
+  )
+}
+
 function MiniCard({
   icon: Icon,
   title,
@@ -131,7 +201,7 @@ function MiniCard({
   return (
     <MotionLink
       href={href as '/'}
-      className="block w-[178px] rounded-xl p-4 group"
+      className="block w-[248px] rounded-xl p-4 group"
       style={{
         background: 'rgba(255,255,255,0.04)',
         border: '1px solid rgba(255,255,255,0.09)',
@@ -154,38 +224,8 @@ function MiniCard({
           {title}
         </span>
       </div>
-      <p className="text-white/30 text-[11px] font-dm leading-snug">{desc}</p>
+      <p className="text-white/30 text-[11px] font-dm leading-snug line-clamp-1">{desc}</p>
     </MotionLink>
-  )
-}
-
-function LeftConnector({ delay }: { delay: number }) {
-  return (
-    <motion.div
-      className="w-10 h-[1px] flex-shrink-0"
-      style={{
-        background: 'linear-gradient(to right, rgba(255,202,102,0.06), rgba(255,202,102,0.42))',
-        transformOrigin: 'right',
-      }}
-      initial={{ scaleX: 0, opacity: 0 }}
-      animate={{ scaleX: 1, opacity: 1 }}
-      transition={{ duration: 0.65, delay, ease: 'easeOut' }}
-    />
-  )
-}
-
-function RightConnector({ delay }: { delay: number }) {
-  return (
-    <motion.div
-      className="w-10 h-[1px] flex-shrink-0"
-      style={{
-        background: 'linear-gradient(to left, rgba(255,202,102,0.06), rgba(255,202,102,0.42))',
-        transformOrigin: 'left',
-      }}
-      initial={{ scaleX: 0, opacity: 0 }}
-      animate={{ scaleX: 1, opacity: 1 }}
-      transition={{ duration: 0.65, delay, ease: 'easeOut' }}
-    />
   )
 }
 
@@ -200,8 +240,11 @@ export default function Hero() {
   }))
 
   return (
-    <section className="relative min-h-screen bg-ink overflow-hidden flex flex-col">
-      {/* Radial gold glow from bottom */}
+    <section
+      className="relative min-h-screen bg-ink overflow-hidden flex flex-col justify-center"
+      style={{ paddingTop: '76px' }}
+    >
+      {/* Radial gold glow */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
@@ -220,7 +263,7 @@ export default function Hero() {
 
       {/* TEXT BLOCK */}
       <motion.div
-        className="flex-shrink-0 flex flex-col items-center justify-center text-center px-5 pt-[120px] pb-6"
+        className="flex-shrink-0 flex flex-col items-center justify-center text-center px-5 pb-2"
         variants={stagger}
         initial="hidden"
         animate="visible"
@@ -261,16 +304,16 @@ export default function Hero() {
       </motion.div>
 
       {/* DESKTOP VISUAL: [left cards] — [orb] — [right cards] */}
-      <div className="hidden lg:flex flex-1 items-center justify-center pb-16 pt-2">
+      <div className="hidden lg:flex flex-shrink-0 items-center justify-center pb-8 pt-6">
         {/* Left column */}
-        <div className="flex flex-col gap-[22px]">
+        <div className="flex flex-col gap-[20px]">
           <div className="flex items-center">
             <MiniCard {...miniServices[0]} delay={0.95} />
             <LeftConnector delay={1.35} />
           </div>
           <div className="flex items-center">
             <MiniCard {...miniServices[2]} delay={1.05} />
-            <LeftConnector delay={1.45} />
+            <LeftConnector delay={1.55} />
           </div>
         </div>
 
@@ -301,20 +344,20 @@ export default function Hero() {
         </div>
 
         {/* Right column */}
-        <div className="flex flex-col gap-[22px]">
+        <div className="flex flex-col gap-[20px]">
           <div className="flex items-center">
             <RightConnector delay={1.35} />
             <MiniCard {...miniServices[1]} delay={0.95} />
           </div>
           <div className="flex items-center">
-            <RightConnector delay={1.45} />
+            <RightConnector delay={1.55} />
             <MiniCard {...miniServices[3]} delay={1.05} />
           </div>
         </div>
       </div>
 
       {/* MOBILE: orb only */}
-      <div className="lg:hidden flex-1 flex items-center justify-center pb-14 pt-6">
+      <div className="lg:hidden flex-shrink-0 flex items-center justify-center pb-14 pt-6">
         <div className="relative flex items-center justify-center">
           {[0, 1].map((i) => (
             <motion.div
