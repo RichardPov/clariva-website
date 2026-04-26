@@ -2,7 +2,6 @@ import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
 import Services from '@/components/Services'
-import Stats from '@/components/Stats'
 import HowWeWork from '@/components/HowWeWork'
 import CareProgram from '@/components/CareProgram'
 import Industries from '@/components/Industries'
@@ -19,7 +18,6 @@ export default function Home() {
         <Hero />
         <About />
         <Services />
-        <Stats />
         <HowWeWork />
         <CareProgram />
         <Industries />

@@ -3,7 +3,6 @@ import Hero from '@/components/Hero'
 import About from '@/components/About'
 import ServicesV2 from '@/components/v2/ServicesV2'
 import BinaryArch from '@/components/v2/BinaryArch'
-import Stats from '@/components/Stats'
 import HowWeWork from '@/components/HowWeWork'
 import CareProgram from '@/components/CareProgram'
 import Industries from '@/components/Industries'
@@ -22,7 +21,6 @@ export default function HomeV2() {
         <BinaryArch variant="up" />
         <ServicesV2 />
         <BinaryArch variant="down" />
-        <Stats />
         <HowWeWork />
         <CareProgram />
         <Industries />
