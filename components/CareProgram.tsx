@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { Handshake, RefreshCcw, Lightbulb } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
+import BinaryDecoration from '@/components/BinaryDecoration'
 
 const PILLAR_ICONS = [Handshake, RefreshCcw, Lightbulb]
 
@@ -13,6 +14,7 @@ export default function CareProgram() {
 
   return (
     <section className="bg-ink py-24 lg:py-32 overflow-hidden relative">
+      <BinaryDecoration className="top-6 left-0 hidden lg:block" side="left" />
       <div
         className="absolute inset-0 pointer-events-none"
         style={{

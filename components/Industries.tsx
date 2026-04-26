@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { Car, Landmark, Zap, FlaskConical, Factory, Tv, Gamepad2 } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
+import BinaryDecoration from '@/components/BinaryDecoration'
 
 const INDUSTRY_ICONS = [Car, Landmark, Zap, FlaskConical, Factory, Tv, Gamepad2]
 
@@ -51,8 +52,9 @@ export default function Industries() {
   const row2 = items.slice(4)
 
   return (
-    <section id="industries" className="bg-ink-2 border-t border-white/[0.04] py-24 lg:py-32">
-      <div className="max-w-7xl mx-auto px-5 lg:px-10">
+    <section id="industries" className="bg-ink-2 border-t border-white/[0.04] py-24 lg:py-32 relative overflow-hidden">
+      <BinaryDecoration className="top-6 right-0 hidden lg:block" side="right" />
+      <div className="relative max-w-7xl mx-auto px-5 lg:px-10">
         {/* Header */}
         <div className="text-center mb-14">
           <motion.div

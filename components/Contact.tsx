@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Send, ArrowUpRight } from 'lucide-react'
 import { useTranslations } from 'next-intl'
+import BinaryDecoration from '@/components/BinaryDecoration'
 
 export default function Contact() {
   const t = useTranslations('Contact')
@@ -28,6 +29,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="bg-ink py-24 lg:py-32 relative overflow-hidden">
+      <BinaryDecoration className="top-6 left-0 hidden lg:block" side="left" />
       <div
         className="absolute inset-0 pointer-events-none"
         style={{

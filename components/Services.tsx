@@ -101,7 +101,7 @@ export default function Services() {
 
   return (
     <section id="services" className="bg-ink py-24 lg:py-32 relative overflow-hidden">
-      <BinaryDecoration className="top-4 right-0 hidden lg:block" />
+      <BinaryDecoration className="top-4 left-0 hidden lg:block" side="left" />
       <div className="max-w-7xl mx-auto px-5 lg:px-10">
         {/* Header */}
         <div className="mb-14">

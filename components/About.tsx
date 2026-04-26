@@ -2,14 +2,16 @@
 
 import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
+import BinaryDecoration from '@/components/BinaryDecoration'
 
 export default function About() {
   const t = useTranslations('About')
   const pillars = t.raw('pillars') as Array<{ title: string; body: string }>
 
   return (
-    <section className="bg-ink py-24 lg:py-32">
-      <div className="max-w-7xl mx-auto px-5 lg:px-10">
+    <section className="bg-ink py-24 lg:py-32 relative overflow-hidden">
+      <BinaryDecoration className="top-6 right-0 hidden lg:block" side="right" />
+      <div className="relative max-w-7xl mx-auto px-5 lg:px-10">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-24 items-start">
           {/* Left: label */}
           <motion.div
