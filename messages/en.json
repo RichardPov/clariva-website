@@ -1,0 +1,310 @@
+{
+  "Navbar": {
+    "services": "Services",
+    "howWeWork": "How We Work",
+    "industries": "Industries",
+    "whyClariva": "Why Clariva",
+    "contact": "Contact",
+    "letsTalk": "Let's talk",
+    "serviceItems": {
+      "application-development": "Application Development",
+      "data-and-ai": "Data & AI (Databricks)",
+      "servicenow": "ServiceNow Solutions",
+      "team-extension": "Team Extension",
+      "full-delivery-teams": "Full Delivery Teams",
+      "consulting": "Consulting",
+      "tenders": "Tenders"
+    }
+  },
+  "Hero": {
+    "heading": "We build IT solutions that actually <gold>move your business</gold> forward.",
+    "subtext": "From complex systems to data platforms — we design, implement, and scale technology that works in the real world.",
+    "cta": "Let's talk",
+    "ctaSecondary": "See our services ↓",
+    "cards": {
+      "appDev": { "title": "Application Dev", "desc": "End-to-end software delivery by senior, self-managed teams." },
+      "dataAi": { "title": "Data & AI", "desc": "Databricks-powered platforms, pipelines, and analytics." },
+      "serviceNow": { "title": "ServiceNow", "desc": "Workflow automation and enterprise platform builds." },
+      "fullDelivery": { "title": "Full Delivery Teams", "desc": "Complete, managed delivery teams ready from day one." }
+    }
+  },
+  "About": {
+    "label": "About",
+    "headlinePre": "Clariva is a technology and consulting company focused on delivering",
+    "headlineGold": "real, working solutions.",
+    "body": "We combine senior IT expertise, fast execution, and AI-powered internal systems to help companies move faster and build better. No fluff — just technology that works and teams that deliver.",
+    "pillars": [
+      { "title": "Senior expertise", "body": "Every engagement is staffed with experienced professionals — no juniors, no bait-and-switch." },
+      { "title": "Fast execution", "body": "From scoping to delivery, we move at the speed your business demands." },
+      { "title": "AI-powered internally", "body": "We use AI to accelerate our own processes, so you get more throughput at lower cost." }
+    ]
+  },
+  "Services": {
+    "label": "What we do",
+    "heading": "Services & Solutions",
+    "subtext": "End-to-end technology delivery — from architecture to production. Choose what fits your challenge, or combine them.",
+    "items": {
+      "application-development": {
+        "title": "Application Development",
+        "description": "We specialise in complex software, delivered without the overhead. Clariva accelerates end-to-end development as a self-managed, senior software team. From initial analysis and design to development, testing, deployment, and support — we partner with clients across industries to solve real business challenges.",
+        "bullets": []
+      },
+      "data-and-ai": {
+        "title": "Data & AI (Databricks)",
+        "description": "We help you unlock the full value of your data.",
+        "bullets": ["Data platform architecture", "ETL / ELT pipelines", "Advanced analytics & BI", "AI-ready infrastructure"]
+      },
+      "servicenow": {
+        "title": "ServiceNow Solutions",
+        "description": "We turn ServiceNow into a powerful business tool.",
+        "bullets": ["Workflow automation", "Platform customization", "Enterprise integrations", "End-to-end implementation"]
+      },
+      "team-extension": {
+        "title": "Team Extension",
+        "description": "When you need to scale fast, we deploy experienced IT professionals who integrate into your existing team and start delivering immediately — with full quality and availability guarantees.",
+        "bullets": []
+      },
+      "full-delivery-teams": {
+        "title": "Full Delivery Teams",
+        "description": "We provide complete, ready-to-go teams — developers, testers, and product roles — aligned to deliver from day one.",
+        "bullets": []
+      },
+      "consulting": {
+        "title": "Consulting",
+        "description": "Consulting that makes sense. We help you solve complex IT challenges with practical, actionable solutions. No unnecessary theory — just results.",
+        "bullets": ["Process optimization", "Cost efficiency", "Technology strategy", "System architecture"]
+      },
+      "tenders": {
+        "title": "Tenders",
+        "description": "Specialist support for tenders. We help you secure and deliver complex projects.",
+        "bullets": ["Certified professionals aligned with requirements", "Fast sourcing of niche skills", "Support during RFP processes", "Full compliance with technical criteria"]
+      }
+    },
+    "notSure": {
+      "heading": "Not sure where to start?",
+      "body": "Tell us about your challenge. We'll design the right approach and recommend the service mix that fits your situation.",
+      "button": "Let's talk"
+    }
+  },
+  "HowWeWork": {
+    "label": "Our process",
+    "heading": "How We Work",
+    "subtext": "A proven process built around your outcomes. We move fast without cutting corners.",
+    "guaranteesLabel": "Our guarantees",
+    "guarantees": [
+      "Senior-level professionals only",
+      "Replacement within 72h if needed",
+      "Dedicated support throughout"
+    ],
+    "steps": [
+      { "num": "01", "title": "Contact Us", "desc": "Tell us what you need. We listen carefully before we ever propose a solution." },
+      { "num": "02", "title": "Analysis", "desc": "We map your challenge, define the scope, and design the right strategic approach." },
+      { "num": "03", "title": "Expert Search", "desc": "We identify and source the right technical expertise for your exact project needs." },
+      { "num": "04", "title": "Interviews", "desc": "You meet the candidates. We verify technical and cultural fit on your behalf." },
+      { "num": "05", "title": "Onboarding & Support", "desc": "Fast team integration, dedicated ongoing care, and long-term follow-through." }
+    ]
+  },
+  "Industries": {
+    "label": "Where we operate",
+    "heading": "Industries We Drive Growth In",
+    "notePrefix": "Don't see your industry? We've worked across many verticals —",
+    "noteLink": "let's talk.",
+    "items": ["Automotive", "Banking & Financial Services", "Energy & Utilities", "Life Sciences", "Manufacturing", "Media", "Gaming"]
+  },
+  "CareProgram": {
+    "label": "Our commitment",
+    "heading": "The Care Program",
+    "tagline": "The foundation of excellence",
+    "body1": "At Clariva, we believe exceptional results start with people. Every consultant is supported through our Care Program — focused on continuous growth, guidance, and long-term development.",
+    "body2": "Our team stays in regular contact: listening, mentoring, and helping experts grow. This isn't just delivery — it's an ongoing commitment.",
+    "cta": "Learn how it works →",
+    "pillars": [
+      { "title": "Built on Strong Partnerships", "body": "We treat our people as partners, not resources. Open communication and a personal approach have built a stable network of experienced professionals." },
+      { "title": "Long-term Relationships", "body": "Many of our clients have worked with us for years. Our experts frequently integrate into core teams, becoming a natural part of the business." },
+      { "title": "More Than Delivery", "body": "We don't aim for short-term wins. We show our partners they can count on us — long after the first delivery." }
+    ]
+  },
+  "WhyClariva": {
+    "label": "Our difference",
+    "heading": "Why Clariva",
+    "intro": "Because execution is what matters.",
+    "painPoints": [
+      "You need solutions, not just advice",
+      "You can't afford delays",
+      "You need experienced professionals who deliver",
+      "You want a partner who adapts, not slows you down"
+    ],
+    "quoteLine1": "We don't just support your projects.",
+    "quoteLine2": "We help you move them forward.",
+    "pillars": [
+      { "title": "Transparent", "body": "Everything we do is visible to you. All the time." },
+      { "title": "Secure Ownership", "body": "Your IP, your control. Always." },
+      { "title": "Remote-ready", "body": "Built for distributed, async collaboration." },
+      { "title": "Agile by default", "body": "Scrum, Kanban, or whatever actually works for you." },
+      { "title": "Long-term partners", "body": "We don't ship and ditch. We keep your product stable and scalable." }
+    ]
+  },
+  "FAQ": {
+    "label": "FAQ",
+    "heading": "Common Questions",
+    "subtext": "Everything you might want to know before reaching out",
+    "items": [
+      {
+        "q": "What types of companies do you work with?",
+        "a": "We work with mid-sized to enterprise companies across Europe and beyond — typically companies that need to accelerate software delivery, modernize their data infrastructure, or scale IT capabilities without the overhead of traditional hiring. We're at home in complex, regulated industries: banking, automotive, energy, life sciences, and more."
+      },
+      {
+        "q": "How quickly can you staff a project?",
+        "a": "For most projects, we can present qualified candidates within 5–10 business days. For urgent engagements, we've mobilized teams in under a week. Our network of pre-vetted senior professionals means we don't start from scratch each time — we match from a known pool of experts."
+      },
+      {
+        "q": "What makes Clariva different from a typical staffing agency?",
+        "a": "We're not a staffing agency. Clariva is a technology and consulting company — we deliver solutions, not headcount. We take ownership of outcomes: scoping challenges, designing approaches, and standing behind results. Our Care Program ensures every engagement is supported by a dedicated account manager and senior oversight from start to finish."
+      },
+      {
+        "q": "Do you work with fixed-price or time & material contracts?",
+        "a": "Both. We're flexible on engagement models. Fixed-price works well for clearly scoped projects with defined deliverables. Time & material fits ongoing development, evolving requirements, or longer-term team extension. We'll recommend the model that best protects your interests given the shape of your project."
+      },
+      {
+        "q": "Can we start with a small pilot before committing to a larger engagement?",
+        "a": "Absolutely — and we often recommend it. A focused pilot lets both sides validate fit before a larger commitment. We'll structure a meaningful scope that delivers real value, and use it as a foundation to accelerate whatever comes next."
+      },
+      {
+        "q": "How do you ensure quality when scaling teams quickly?",
+        "a": "Every professional in our network goes through a rigorous vetting process — technical assessment, reference checks, and a fit interview. When we scale, we only expand with pre-qualified people. Our Care Program also keeps us close to the team throughout: regular check-ins, proactive issue resolution, and a 72-hour replacement guarantee if things don't work out."
+      }
+    ]
+  },
+  "Contact": {
+    "label": "Get in touch",
+    "headingLine1": "Let's Solve Your",
+    "headingLine2": "Next Challenge",
+    "subtext": "Tell us what you need — we'll design the solution and deliver the right expertise.",
+    "body": "At the heart of everything we do is a drive to solve real-world challenges through technology and people. We work on meaningful projects, build strong partnerships, and create environments where expertise can grow.",
+    "emailLabel": "Email",
+    "linkedinLabel": "LinkedIn",
+    "joinTeam": {
+      "heading": "Are you a senior IT professional?",
+      "body": "We're always looking for exceptional people to join our network.",
+      "cta": "Join our team"
+    },
+    "form": {
+      "nameLabel": "Name",
+      "namePlaceholder": "Your name",
+      "companyLabel": "Company",
+      "companyPlaceholder": "Your company",
+      "emailLabel": "Email",
+      "emailPlaceholder": "you@company.com",
+      "serviceLabel": "What are you looking for?",
+      "servicePlaceholder": "Select a service...",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Describe your challenge or project...",
+      "submitButton": "Contact us",
+      "services": [
+        "Application Development",
+        "Data & AI (Databricks)",
+        "ServiceNow Solutions",
+        "Team Extension",
+        "Full Delivery Teams",
+        "Consulting",
+        "Tenders",
+        "Other"
+      ]
+    },
+    "successTitle": "Message sent!",
+    "successBody": "We'll get back to you within one business day."
+  },
+  "Footer": {
+    "tagline1": "Technology that works.",
+    "tagline2": "Teams that deliver.",
+    "copyright": "© 2025 Clariva. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms",
+    "sectServices": "Services",
+    "sectCompany": "Company",
+    "sectContact": "Contact",
+    "serviceLinks": ["Application Development", "Data & AI (Databricks)", "ServiceNow Solutions", "Team Extension", "Full Delivery Teams", "Consulting", "Tenders"],
+    "companyLinks": ["About Clariva", "How We Work", "Care Program", "Industries", "Why Clariva"],
+    "contactLinks": ["hello@clariva.eu", "LinkedIn", "Privacy Policy", "Terms"]
+  },
+  "ServicePage": {
+    "serviceLabel": "Service",
+    "whyClarivaLabel": "Why Clariva for this",
+    "contactPersonLabel": "Your contact person",
+    "readyHeading": "Ready to get started?",
+    "readyBody": "Tell us about your challenge — we'll respond within one business day.",
+    "readyCta": "Let's talk →"
+  },
+  "ServicePages": {
+    "application-development": {
+      "title": "Application Development",
+      "tagline": "Complex software, delivered without the overhead.",
+      "description": "We specialise in complex software, delivered without the overhead. Clariva accelerates end-to-end development as a self-managed, senior software team. From initial analysis and design to development, testing, deployment, and support — we partner with clients across industries to solve real business challenges. Our engineers own the problem, not just the ticket.",
+      "usps": [
+        { "title": "Senior-only engineers", "description": "Every project is staffed with experienced engineers who have delivered in production environments. No juniors learning on your time." },
+        { "title": "End-to-end ownership", "description": "We take full accountability from requirements through release. You get working software, not a handoff checklist." },
+        { "title": "Transparent delivery", "description": "Weekly demos, clear milestones, and direct communication. You always know what is being built and why." }
+      ]
+    },
+    "data-and-ai": {
+      "title": "Data & AI (Databricks)",
+      "tagline": "Unlock the full value of your data.",
+      "description": "We help organisations build the data infrastructure that turns raw information into business advantage. From designing modern data platforms on Databricks to deploying production-ready AI models, our data engineers and scientists bridge the gap between what your data contains and what your business needs to know.",
+      "usps": [
+        { "title": "Databricks-certified expertise", "description": "Our team holds Databricks certifications and has delivered large-scale lakehouse architectures across regulated industries." },
+        { "title": "From pipeline to insight", "description": "We build the full stack — ingestion, transformation, analytics, and BI — so your organisation can act on data, not just store it." },
+        { "title": "AI that ships", "description": "We focus on AI solutions that reach production, not proof-of-concepts that live in Jupyter notebooks. Models are tested, monitored, and maintained." }
+      ]
+    },
+    "servicenow": {
+      "title": "ServiceNow Solutions",
+      "tagline": "Turn ServiceNow into a powerful business tool.",
+      "description": "ServiceNow is one of the most powerful platforms in the enterprise — but only when configured with precision. Clariva brings certified ServiceNow specialists who understand both the platform and the business processes it needs to support. We implement, customise, and integrate ServiceNow so it works for your workflows, not against them.",
+      "usps": [
+        { "title": "Certified specialists", "description": "Our consultants hold active ServiceNow certifications (CSA, CAD, ITSM) and have delivered across ITSM, HRSD, CSM, and custom applications." },
+        { "title": "Process-first thinking", "description": "We map your workflows before touching the platform. The result is configuration that reflects how your business actually operates." },
+        { "title": "Smooth enterprise integrations", "description": "ServiceNow rarely lives alone. We integrate it with your ERP, identity providers, monitoring tools, and custom systems without duct tape." }
+      ]
+    },
+    "team-extension": {
+      "title": "Team Extension",
+      "tagline": "Scale fast with professionals who hit the ground running.",
+      "description": "When you need capacity without the overhead of hiring, Clariva deploys experienced IT professionals who integrate directly into your existing team. They operate on your tools, your processes, and your cadence — backed by Clariva quality guarantees, availability commitments, and ongoing oversight so you never manage a contractor relationship alone.",
+      "usps": [
+        { "title": "Pre-vetted, senior talent", "description": "Every professional is assessed before placement. We match on both technical depth and team compatibility so integration is fast and frictionless." },
+        { "title": "Full availability guarantees", "description": "We guarantee the hours and commitments agreed at the start. If something changes, we resolve it — you do not manage it." },
+        { "title": "Ongoing Clariva oversight", "description": "Our Care Program means every placed expert stays connected to us. Retention, motivation, and performance are our responsibility." }
+      ]
+    },
+    "full-delivery-teams": {
+      "title": "Full Delivery Teams",
+      "tagline": "A complete team, ready to deliver from day one.",
+      "description": "Some challenges need more than a few extra hands — they need a fully assembled, self-managed delivery unit. Clariva builds and deploys complete teams: developers, testers, and product-adjacent roles working together under a unified delivery model. You set the direction; we own the execution.",
+      "usps": [
+        { "title": "Assembled in days, not months", "description": "We maintain a network of experienced professionals who can be mobilised quickly. Typical team assembly takes one to two weeks, not quarters." },
+        { "title": "Self-managed delivery", "description": "Our teams come with internal coordination built in. You get progress, not status meetings — results, not process overhead." },
+        { "title": "Quality and delivery guarantees", "description": "Output quality, velocity, and availability are backed by Clariva commitments, not just goodwill from individual contractors." }
+      ]
+    },
+    "consulting": {
+      "title": "Consulting",
+      "tagline": "Practical IT strategy — no unnecessary theory.",
+      "description": "We help organisations solve complex IT challenges with clear, implementable solutions. Clariva consultants combine strategic thinking with hands-on technical depth — so recommendations come with feasibility baked in. Whether you need to modernise an architecture, reduce operational costs, or navigate a critical technology decision, we give you a path forward, not a slide deck.",
+      "usps": [
+        { "title": "Strategy that is executable", "description": "Our recommendations are designed to be built, not filed away. Every output includes concrete next steps that your team can act on immediately." },
+        { "title": "Technology and process together", "description": "We look at both the systems and the workflows around them. Real efficiency gains come from aligning the two, not optimising in isolation." },
+        { "title": "Honest about trade-offs", "description": "We tell you what each path costs — in time, money, and risk. You make informed decisions, not ones shaped by what a vendor wants to sell." }
+      ]
+    },
+    "tenders": {
+      "title": "Tenders",
+      "tagline": "Specialist support for complex tenders and RFPs.",
+      "description": "Winning and delivering complex technology tenders requires the right certified profiles, fast sourcing capability, and full alignment with technical requirements. Clariva has supported clients through demanding RFP processes — providing the documentation, the expertise, and the delivery infrastructure to compete and deliver at the level tenders demand.",
+      "usps": [
+        { "title": "Certified profiles on demand", "description": "We source and provide certified professionals matched precisely to tender requirements — covering niche skills that are hard to find on short timelines." },
+        { "title": "RFP process support", "description": "We work alongside your team during the bid phase — structuring responses, assembling CVs, and ensuring technical criteria are met compliantly." },
+        { "title": "Full compliance with technical criteria", "description": "Every profile and proposed solution is reviewed against tender specifications before submission, reducing the risk of disqualification on technical grounds." }
+      ]
+    }
+  }
+}
