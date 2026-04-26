@@ -12,8 +12,15 @@ export default function CareProgram() {
   const pillars = t.raw('pillars') as Array<{ title: string; body: string }>
 
   return (
-    <section className="bg-ink py-24 lg:py-32 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-5 lg:px-10">
+    <section className="bg-ink py-24 lg:py-32 overflow-hidden relative">
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background:
+            'radial-gradient(ellipse 70% 80% at 80% 50%, rgba(255,202,102,0.045) 0%, transparent 65%)',
+        }}
+      />
+      <div className="relative max-w-7xl mx-auto px-5 lg:px-10">
         <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
           {/* Left: copy */}
           <div className="lg:w-[42%] flex-shrink-0">
