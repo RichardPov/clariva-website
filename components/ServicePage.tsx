@@ -7,6 +7,7 @@ import { Link } from '@/i18n/navigation'
 import type { Service } from '@/lib/services-data'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import BinaryDecoration from '@/components/BinaryDecoration'
 
 const SERVICE_ICONS: Record<string, React.ElementType> = {
   'application-development': Monitor,
@@ -35,7 +36,9 @@ export default function ServicePage({ service }: { service: Service }) {
       <Navbar />
 
       {/* Hero */}
-      <section className="pt-[120px] pb-20 px-5 lg:px-10 max-w-5xl mx-auto">
+      <div className="relative overflow-hidden">
+        <BinaryDecoration className="top-[90px] right-0 hidden lg:block" side="right" />
+      <section className="pt-[120px] pb-20 px-5 lg:px-10 max-w-5xl mx-auto relative z-10">
         <div className="flex flex-col lg:flex-row lg:items-start gap-10 lg:gap-16">
 
           {/* Text */}
@@ -105,6 +108,7 @@ export default function ServicePage({ service }: { service: Service }) {
           </motion.div>
         </div>
       </section>
+      </div>
 
       {/* USP cards */}
       <section className="pb-24 px-5 lg:px-10 max-w-5xl mx-auto">
