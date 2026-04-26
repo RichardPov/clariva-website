@@ -24,203 +24,207 @@ const fadeUp = {
 }
 
 // ─── Circuit Chip ─────────────────────────────────────────────────────────────
-const SZ  = 240   // viewBox size
-const CX  = 120   // chip centre X
-const CY2 = 120   // chip centre Y (CY2 to avoid collision with connector CY)
-const CH2  = 22   // chamfer amount on outer polygon
+const SZ  = 240
+const CX  = 120
+const CY2 = 120
+const CH2 = 20
 
-// Outer octagon-like polygon
 const POLY = `${CH2},0 ${SZ-CH2},0 ${SZ},${CH2} ${SZ},${SZ-CH2} ${SZ-CH2},${SZ} ${CH2},${SZ} 0,${SZ-CH2} 0,${CH2}`
 
-// Inner concentric rounded-rect frames [inset, rx, strokeWidth, opacity]
-const FRAMES: [number, number, number, number][] = [
-  [13,  28, 1,   0.24],
-  [26,  22, 1,   0.36],
-  [39,  17, 1.5, 0.54],
-  [53,  12, 1.5, 0.74],
-  [66,  7,  2,   0.95],
-]
+// Package frame inset + die inset
+const PKG = 18
+const DIE = 50
 
-// Corner L-bracket coords [path string]
-const BL = 15  // bracket offset from edge
-const BK = 14  // bracket leg length
+// Pin pad Y positions (absolute)
+const PIN_YS = [68, 96, 144, 172] as const
+// Where traces exit the die boundary
+const CONN_YS = [73, 96, 144, 167] as const
+// Bend X for outer (jogged) traces
+const BX = 30
+
+// Trace paths: die edge → chip edge
+const L_TRACES = [
+  `M ${DIE},${CONN_YS[0]} H ${BX} V ${PIN_YS[0]} H 0`,
+  `M ${DIE},${CONN_YS[1]} H 0`,
+  `M ${DIE},${CONN_YS[2]} H 0`,
+  `M ${DIE},${CONN_YS[3]} H ${BX} V ${PIN_YS[3]} H 0`,
+] as const
+
+const R_TRACES = [
+  `M ${SZ-DIE},${CONN_YS[0]} H ${SZ-BX} V ${PIN_YS[0]} H ${SZ}`,
+  `M ${SZ-DIE},${CONN_YS[1]} H ${SZ}`,
+  `M ${SZ-DIE},${CONN_YS[2]} H ${SZ}`,
+  `M ${SZ-DIE},${CONN_YS[3]} H ${SZ-BX} V ${PIN_YS[3]} H ${SZ}`,
+] as const
+
+// Trace lengths for dash animation
+// Outer: (DIE-BX) + |CONN-PIN| + BX = 20 + 5 + 30 = 55
+// Inner: DIE = 50
+const T_LENS = [55, 50, 50, 55] as const
+const T_DASH = 13
+
+// Corner L-brackets at package corners
+const BK_OFF = PKG, BK_LEN = 12
 const BRACKETS = [
-  `M ${BL+BK},${BL} H ${BL} V ${BL+BK}`,
-  `M ${SZ-BL-BK},${BL} H ${SZ-BL} V ${BL+BK}`,
-  `M ${BL},${SZ-BL-BK} V ${SZ-BL} H ${BL+BK}`,
-  `M ${SZ-BL},${SZ-BL-BK} V ${SZ-BL} H ${SZ-BL-BK}`,
-]
+  `M ${BK_OFF+BK_LEN},${BK_OFF} H ${BK_OFF} V ${BK_OFF+BK_LEN}`,
+  `M ${SZ-BK_OFF-BK_LEN},${BK_OFF} H ${SZ-BK_OFF} V ${BK_OFF+BK_LEN}`,
+  `M ${BK_OFF},${SZ-BK_OFF-BK_LEN} V ${SZ-BK_OFF} H ${BK_OFF+BK_LEN}`,
+  `M ${SZ-BK_OFF},${SZ-BK_OFF-BK_LEN} V ${SZ-BK_OFF} H ${SZ-BK_OFF-BK_LEN}`,
+] as const
 
-// Pin stub Y-positions (fraction of SZ) — aligned to top/bottom card rows
-const PINS = [0.30, 0.43, 0.57, 0.70]
+// Die grid lines (pre-generated)
+function makeGrid() {
+  const G0 = DIE + 6, G1 = SZ - DIE - 6, GS = 16
+  const lines: { x1: number; y1: number; x2: number; y2: number }[] = []
+  for (let v = G0 + GS; v < G1; v += GS) {
+    lines.push({ x1: v, y1: G0, x2: v, y2: G1 })
+    lines.push({ x1: G0, y1: v, x2: G1, y2: v })
+  }
+  return lines
+}
+const GRID_LINES = makeGrid()
 
 function CircuitChip({ size = 240 }: { size?: number }) {
   return (
     <div className="relative" style={{ width: size, height: size }}>
-      {/* CSS outer glow blob */}
+      {/* CSS outer glow */}
       <div className="absolute pointer-events-none" style={{
-        inset: -55,
-        background: 'radial-gradient(circle, rgba(255,202,102,0.16) 0%, rgba(255,202,102,0.04) 46%, transparent 70%)',
-        filter: 'blur(24px)',
-      }} />
+        inset: -50,
+        background: 'radial-gradient(circle, rgba(255,202,102,0.15) 0%, rgba(255,202,102,0.04) 45%, transparent 70%)',
+        filter: 'blur(20px)',
+      }}/>
 
       <svg width={size} height={size} viewBox={`0 0 ${SZ} ${SZ}`} overflow="visible">
         <defs>
-          {/* Clip to chip outer shape for scan line */}
           <clipPath id="chipClip">
-            <polygon points={POLY} />
+            <polygon points={POLY}/>
           </clipPath>
-
-          {/* Scan-line gradient (vertical, object bounding box) */}
+          <clipPath id="dieClip">
+            <rect x={DIE} y={DIE} width={SZ-DIE*2} height={SZ-DIE*2} rx="3"/>
+          </clipPath>
           <linearGradient id="scanGrad" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%"   stopColor="rgba(255,202,102,0)" />
-            <stop offset="45%"  stopColor="rgba(255,202,102,0.15)" />
-            <stop offset="50%"  stopColor="rgba(255,202,102,0.32)" />
-            <stop offset="55%"  stopColor="rgba(255,202,102,0.15)" />
-            <stop offset="100%" stopColor="rgba(255,202,102,0)" />
+            <stop offset="0%"   stopColor="rgba(255,202,102,0)"/>
+            <stop offset="40%"  stopColor="rgba(255,202,102,0.20)"/>
+            <stop offset="50%"  stopColor="rgba(255,202,102,0.42)"/>
+            <stop offset="60%"  stopColor="rgba(255,202,102,0.20)"/>
+            <stop offset="100%" stopColor="rgba(255,202,102,0)"/>
           </linearGradient>
-
-          {/* Centre core glow */}
-          <radialGradient id="coreGrad" cx="50%" cy="50%" r="50%">
-            <stop offset="0%"   stopColor="rgba(255,202,102,0.35)" />
-            <stop offset="100%" stopColor="rgba(255,202,102,0)" />
-          </radialGradient>
         </defs>
 
-        {/* Dark inner fill */}
-        <polygon points={POLY} fill="rgba(6,6,7,0.72)" />
+        {/* Chip body */}
+        <polygon points={POLY} fill="rgba(6,6,7,0.84)"/>
+        <polygon points={POLY} fill="none" stroke="rgba(255,202,102,0.32)" strokeWidth="1.5"/>
 
-        {/* Outer chamfered border */}
-        <polygon points={POLY} fill="none" stroke="rgba(255,202,102,0.20)" strokeWidth="1" />
-
-        {/* Static inner frames (frames 0–2) */}
-        {FRAMES.slice(0, 3).map(([r, rx, sw, op], i) => (
-          <rect key={i}
-            x={r} y={r} width={SZ-r*2} height={SZ-r*2}
-            rx={rx} fill="none"
-            stroke={`rgba(255,202,102,${op})`} strokeWidth={sw}
-          />
-        ))}
+        {/* Package inner frame */}
+        <rect x={PKG} y={PKG} width={SZ-PKG*2} height={SZ-PKG*2}
+          rx="4" fill="none" stroke="rgba(255,202,102,0.16)" strokeWidth="1"/>
 
         {/* Corner L-brackets */}
         {BRACKETS.map((d, i) => (
-          <path key={i} d={d}
-            stroke="rgba(255,202,102,0.72)" strokeWidth="1.5"
-            fill="none" strokeLinecap="square"
-          />
+          <path key={i} d={d} fill="none"
+            stroke="rgba(255,202,102,0.75)" strokeWidth="1.5" strokeLinecap="square"/>
         ))}
 
-        {/* Internal dashed axis traces */}
-        <line x1={FRAMES[1][0]} y1={CY2} x2={FRAMES[3][0]} y2={CY2}
-          stroke="rgba(255,202,102,0.18)" strokeWidth="1" strokeDasharray="3 5" />
-        <line x1={SZ-FRAMES[1][0]} y1={CY2} x2={SZ-FRAMES[3][0]} y2={CY2}
-          stroke="rgba(255,202,102,0.18)" strokeWidth="1" strokeDasharray="3 5" />
-        <line x1={CX} y1={FRAMES[1][0]} x2={CX} y2={FRAMES[3][0]}
-          stroke="rgba(255,202,102,0.18)" strokeWidth="1" strokeDasharray="3 5" />
-        <line x1={CX} y1={SZ-FRAMES[1][0]} x2={CX} y2={SZ-FRAMES[3][0]}
-          stroke="rgba(255,202,102,0.18)" strokeWidth="1" strokeDasharray="3 5" />
-
-        {/* Axis junction dots */}
-        {[
-          [FRAMES[1][0], CY2], [SZ-FRAMES[1][0], CY2],
-          [CX, FRAMES[1][0]], [CX, SZ-FRAMES[1][0]],
-        ].map(([x, y], i) => (
-          <circle key={i} cx={x} cy={y} r="2.5" fill="rgba(255,202,102,0.38)" />
+        {/* Static PCB trace paths */}
+        {[...L_TRACES, ...R_TRACES].map((d, i) => (
+          <path key={`tr${i}`} d={d} fill="none"
+            stroke="rgba(255,202,102,0.20)" strokeWidth="1"
+            strokeLinecap="square" strokeLinejoin="miter"/>
         ))}
 
-        {/* Quadrant micro-circuit patterns (each corner between frame 1 & frame 3) */}
-        {/* TL */}
-        <path d="M 44,46 H 60 V 60" stroke="rgba(255,202,102,0.16)" strokeWidth="1" fill="none" strokeLinecap="square"/>
-        <circle cx="60" cy="60" r="2" fill="rgba(255,202,102,0.26)"/>
-        <path d="M 44,65 H 54" stroke="rgba(255,202,102,0.11)" strokeWidth="1" fill="none"/>
-        <circle cx="54" cy="65" r="1.5" fill="rgba(255,202,102,0.20)"/>
-        {/* TR */}
-        <path d={`M ${SZ-44},46 H ${SZ-60} V 60`} stroke="rgba(255,202,102,0.16)" strokeWidth="1" fill="none" strokeLinecap="square"/>
-        <circle cx={SZ-60} cy="60" r="2" fill="rgba(255,202,102,0.26)"/>
-        <path d={`M ${SZ-44},65 H ${SZ-54}`} stroke="rgba(255,202,102,0.11)" strokeWidth="1" fill="none"/>
-        <circle cx={SZ-54} cy="65" r="1.5" fill="rgba(255,202,102,0.20)"/>
-        {/* BL */}
-        <path d={`M 44,${SZ-46} H 60 V ${SZ-60}`} stroke="rgba(255,202,102,0.16)" strokeWidth="1" fill="none" strokeLinecap="square"/>
-        <circle cx="60" cy={SZ-60} r="2" fill="rgba(255,202,102,0.26)"/>
-        <path d={`M 44,${SZ-65} H 54`} stroke="rgba(255,202,102,0.11)" strokeWidth="1" fill="none"/>
-        {/* BR */}
-        <path d={`M ${SZ-44},${SZ-46} H ${SZ-60} V ${SZ-60}`} stroke="rgba(255,202,102,0.16)" strokeWidth="1" fill="none" strokeLinecap="square"/>
-        <circle cx={SZ-60} cy={SZ-60} r="2" fill="rgba(255,202,102,0.26)"/>
+        {/* Via dots at trace junctions */}
+        {([
+          [DIE, CONN_YS[0]], [BX, PIN_YS[0]],
+          [DIE, CONN_YS[1]],
+          [DIE, CONN_YS[2]],
+          [DIE, CONN_YS[3]], [BX, PIN_YS[3]],
+          [SZ-DIE, CONN_YS[0]], [SZ-BX, PIN_YS[0]],
+          [SZ-DIE, CONN_YS[1]],
+          [SZ-DIE, CONN_YS[2]],
+          [SZ-DIE, CONN_YS[3]], [SZ-BX, PIN_YS[3]],
+        ] as [number, number][]).map(([cx, cy], i) => (
+          <circle key={`via${i}`} cx={cx} cy={cy} r="2.5" fill="rgba(255,202,102,0.52)"/>
+        ))}
 
-        {/* Dot matrix detail in quadrants */}
-        {[78, 88, 98].flatMap(x =>
-          [50, 58, 66].map(y => <circle key={`${x}${y}`} cx={x} cy={y} r="1" fill="rgba(255,202,102,0.11)"/>)
-        )}
-        {[SZ-78, SZ-88, SZ-98].flatMap(x =>
-          [50, 58, 66].map(y => <circle key={`r${x}${y}`} cx={x} cy={y} r="1" fill="rgba(255,202,102,0.11)"/>)
-        )}
-
-        {/* Centre target ring + crosshair */}
-        <circle cx={CX} cy={CY2} r="26" fill="url(#coreGrad)"/>
-        <circle cx={CX} cy={CY2} r="26" fill="none"
-          stroke="rgba(255,202,102,0.22)" strokeWidth="1" strokeDasharray="4 7"/>
-        <line x1={CX-22} y1={CY2} x2={CX-8} y2={CY2} stroke="rgba(255,202,102,0.50)" strokeWidth="1"/>
-        <line x1={CX+8}  y1={CY2} x2={CX+22} y2={CY2} stroke="rgba(255,202,102,0.50)" strokeWidth="1"/>
-        <line x1={CX} y1={CY2-22} x2={CX} y2={CY2-8}  stroke="rgba(255,202,102,0.50)" strokeWidth="1"/>
-        <line x1={CX} y1={CY2+8}  x2={CX} y2={CY2+22} stroke="rgba(255,202,102,0.50)" strokeWidth="1"/>
-
-        {/* PCB pin stubs — left & right */}
-        {PINS.map((yf, i) => (
+        {/* Pin stubs (overflow outside viewBox) */}
+        {PIN_YS.map((y, i) => (
           <g key={`pin${i}`}>
-            <line x1="0"  y1={yf*SZ} x2="12"    y2={yf*SZ} stroke={`rgba(255,202,102,${0.28+i*0.05})`} strokeWidth="1.5"/>
-            <circle cx="-6" cy={yf*SZ} r="3.5" fill={`rgba(255,202,102,${0.5+i*0.05})`}/>
-            <line x1={SZ} y1={yf*SZ} x2={SZ-12} y2={yf*SZ} stroke={`rgba(255,202,102,${0.28+i*0.05})`} strokeWidth="1.5"/>
-            <circle cx={SZ+6} cy={yf*SZ} r="3.5" fill={`rgba(255,202,102,${0.5+i*0.05})`}/>
+            <line x1="0" y1={y} x2="8" y2={y} stroke="rgba(255,202,102,0.38)" strokeWidth="2"/>
+            <circle cx="-5" cy={y} r="4" fill="rgba(255,202,102,0.62)"/>
+            <line x1={SZ} y1={y} x2={SZ-8} y2={y} stroke="rgba(255,202,102,0.38)" strokeWidth="2"/>
+            <circle cx={SZ+5} cy={y} r="4" fill="rgba(255,202,102,0.62)"/>
           </g>
         ))}
 
-        {/* ─── Animated layers ────────────────────────────── */}
+        {/* Die interior grid */}
+        <g clipPath="url(#dieClip)">
+          {GRID_LINES.map((l, i) => (
+            <line key={i} x1={l.x1} y1={l.y1} x2={l.x2} y2={l.y2}
+              stroke="rgba(255,202,102,0.09)" strokeWidth="0.5"/>
+          ))}
+        </g>
 
-        {/* Frame 3 (second-innermost) — opacity pulse, delayed */}
-        <motion.rect
-          x={FRAMES[3][0]} y={FRAMES[3][0]}
-          width={SZ-FRAMES[3][0]*2} height={SZ-FRAMES[3][0]*2}
-          rx={FRAMES[3][1]} fill="none"
-          stroke={`rgba(255,202,102,${FRAMES[3][3]})`} strokeWidth={FRAMES[3][2]}
-          animate={{ opacity: [0.45, 1, 0.45] }}
-          transition={{ duration: 2.8, repeat: Infinity, ease: 'easeInOut', delay: 0.55 }}
-        />
-
-        {/* Frame 4 innermost — stronger pulse */}
-        <motion.rect
-          x={FRAMES[4][0]} y={FRAMES[4][0]}
-          width={SZ-FRAMES[4][0]*2} height={SZ-FRAMES[4][0]*2}
-          rx={FRAMES[4][1]} fill="none"
-          stroke="rgba(255,202,102,0.95)" strokeWidth="2"
+        {/* Die boundary — animated pulse */}
+        <motion.rect x={DIE} y={DIE} width={SZ-DIE*2} height={SZ-DIE*2}
+          rx="3" fill="none"
+          stroke="rgba(255,202,102,0.62)" strokeWidth="1.5"
           animate={{ opacity: [0.5, 1, 0.5] }}
           transition={{ duration: 2.8, repeat: Infinity, ease: 'easeInOut' }}
         />
 
-        {/* Innermost soft glow ring (blurred stroke behind frame 4) */}
-        <motion.rect
-          x={FRAMES[4][0]-3} y={FRAMES[4][0]-3}
-          width={SZ-FRAMES[4][0]*2+6} height={SZ-FRAMES[4][0]*2+6}
-          rx={FRAMES[4][1]+3} fill="none"
-          stroke="rgba(255,202,102,0.4)" strokeWidth="10"
-          style={{ filter: 'blur(7px)' }}
-          animate={{ opacity: [0.2, 0.85, 0.2] }}
-          transition={{ duration: 2.8, repeat: Infinity, ease: 'easeInOut' }}
-        />
+        {/* Core box */}
+        <rect x={88} y={88} width={64} height={64}
+          rx="2" fill="rgba(255,202,102,0.035)" stroke="rgba(255,202,102,0.40)" strokeWidth="1"/>
 
-        {/* Scan line (clipped to chip shape) */}
+        {/* Core: 4 functional sub-blocks */}
+        {([
+          [93, 93], [127, 93], [93, 127], [127, 127],
+        ] as [number, number][]).map(([x, y], i) => (
+          <rect key={`blk${i}`} x={x} y={y} width={20} height={20} rx="1"
+            fill="rgba(255,202,102,0.05)" stroke="rgba(255,202,102,0.24)" strokeWidth="0.75"/>
+        ))}
+
+        {/* Core interconnect bus */}
+        <line x1={113} y1={CY2} x2={127} y2={CY2} stroke="rgba(255,202,102,0.35)" strokeWidth="1"/>
+        <line x1={CX} y1={113} x2={CX} y2={127} stroke="rgba(255,202,102,0.35)" strokeWidth="1"/>
+
+        {/* Core centre ring */}
+        <circle cx={CX} cy={CY2} r="6" fill="none"
+          stroke="rgba(255,202,102,0.32)" strokeWidth="1" strokeDasharray="3 5"/>
+
+        {/* Animated trace pulses (die → pins) */}
+        {L_TRACES.map((d, i) => (
+          <motion.path key={`lp${i}`} d={d} fill="none"
+            stroke="rgba(255,202,102,0.92)" strokeWidth="1.5"
+            strokeLinecap="round" strokeLinejoin="round"
+            strokeDasharray={`${T_DASH} 400`}
+            animate={{ strokeDashoffset: [0, -(T_LENS[i] + T_DASH)] }}
+            transition={{ duration: 1.3, repeat: Infinity, ease: 'easeInOut', repeatDelay: 1.4, delay: i * 0.38 }}
+          />
+        ))}
+        {R_TRACES.map((d, i) => (
+          <motion.path key={`rp${i}`} d={d} fill="none"
+            stroke="rgba(255,202,102,0.92)" strokeWidth="1.5"
+            strokeLinecap="round" strokeLinejoin="round"
+            strokeDasharray={`${T_DASH} 400`}
+            animate={{ strokeDashoffset: [0, -(T_LENS[i] + T_DASH)] }}
+            transition={{ duration: 1.3, repeat: Infinity, ease: 'easeInOut', repeatDelay: 1.4, delay: i * 0.38 + 0.65 }}
+          />
+        ))}
+
+        {/* Scan line */}
         <g clipPath="url(#chipClip)">
-          <motion.rect
-            x="0" y="0" width={SZ} height={26}
+          <motion.rect x="0" y="0" width={SZ} height={22}
             fill="url(#scanGrad)"
-            animate={{ y: [-26, SZ + 26] }}
-            transition={{ duration: 2.4, repeat: Infinity, ease: 'linear', repeatDelay: 1.8 }}
+            animate={{ y: [-22, SZ + 22] }}
+            transition={{ duration: 2.0, repeat: Infinity, ease: 'linear', repeatDelay: 2.2 }}
           />
         </g>
 
-        {/* Centre core dot — pulse in place */}
+        {/* Core centre dot */}
         <motion.circle cx={CX} cy={CY2} r="4" fill="rgba(255,224,140,0.95)"
-          animate={{ r: [4, 8, 4], opacity: [0.95, 0.45, 0.95] }}
-          transition={{ duration: 2.8, repeat: Infinity, ease: 'easeInOut' }}
+          animate={{ r: [4, 7.5, 4], opacity: [1, 0.4, 1] }}
+          transition={{ duration: 2.8, repeat: Infinity, ease: 'easeInOut', delay: 0.3 }}
         />
       </svg>
     </div>
