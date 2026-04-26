@@ -43,7 +43,7 @@ export default function BinaryDecoration({
           fontSize: '12px',
           lineHeight: '2.1',
           letterSpacing: '0.18em',
-          color: 'rgba(255, 202, 102, 0.09)',
+          color: 'rgba(255, 202, 102, 0.18)',
         }}
       >
         {ROWS.join('\n')}
