@@ -77,7 +77,7 @@ export default function Navbar() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
     >
-      <div className="max-w-7xl mx-auto px-5 lg:px-10 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-5 lg:px-10 py-3 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
           <svg width="28" height="26" viewBox="0 0 43 39" fill="none">
