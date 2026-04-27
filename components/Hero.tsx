@@ -253,13 +253,13 @@ export default function Hero() {
       />
       {/* Grid — bright on edges, fades in centre */}
       <div
-        className="absolute inset-0 pointer-events-none opacity-[0.15]"
+        className="absolute inset-0 pointer-events-none opacity-[0.09]"
         style={{
           backgroundImage:
             'linear-gradient(rgba(255,255,255,0.6) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.6) 1px, transparent 1px)',
           backgroundSize: '80px 80px',
-          maskImage: 'radial-gradient(ellipse 55% 58% at 50% 42%, transparent 0%, rgba(0,0,0,0.35) 42%, black 72%)',
-          WebkitMaskImage: 'radial-gradient(ellipse 55% 58% at 50% 42%, transparent 0%, rgba(0,0,0,0.35) 42%, black 72%)',
+          maskImage: 'radial-gradient(ellipse 72% 70% at 50% 42%, transparent 0%, rgba(0,0,0,0.25) 55%, black 82%)',
+          WebkitMaskImage: 'radial-gradient(ellipse 72% 70% at 50% 42%, transparent 0%, rgba(0,0,0,0.25) 55%, black 82%)',
         }}
       />
 
