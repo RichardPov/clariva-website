@@ -89,7 +89,7 @@ export default function Industries() {
         </div>
 
         {/* Row 2: 3 items */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 lg:gap-4">
+        <div className="grid grid-cols-2 md:flex md:justify-center gap-3 lg:gap-4">
           {row2.map((label, i) => (
             <IndustryPill
               key={label}
