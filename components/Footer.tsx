@@ -15,16 +15,16 @@ export default function Footer() {
   return (
     <footer className="bg-[#07070A] border-t border-white/[0.04]">
       <div className="max-w-7xl mx-auto px-5 lg:px-10 pt-16 pb-10">
-        {/* Top: logo + nav columns */}
+        {/* Top: logo left, nav columns right */}
         <motion.div
-          className="grid grid-cols-2 md:grid-cols-3 gap-10 mb-14"
+          className="flex flex-col md:flex-row md:items-start md:justify-between gap-10 mb-14"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          {/* Logo col */}
-          <div className="col-span-2 md:col-span-1">
+          {/* Logo + slogan + LinkedIn */}
+          <div className="flex-shrink-0">
             <Link href="/" className="flex items-center gap-3 mb-4">
               <svg width="28" height="26" viewBox="0 0 43 39" fill="none">
                 <path d={MARK_PATH} fill="url(#footerGold)" />
@@ -42,7 +42,6 @@ export default function Footer() {
               <br />
               {t('tagline2')}
             </p>
-
             <a
               href="https://www.linkedin.com/company/clariva-s-r-o/"
               target="_blank"
@@ -53,45 +52,45 @@ export default function Footer() {
             </a>
           </div>
 
-          {/* Services column */}
-          <div>
-            <h4 className="font-syne font-semibold text-white text-[13px] mb-4">{t('sectServices')}</h4>
-            <ul className="space-y-2.5">
-              {serviceLinks.map((link) => (
-                <li key={link}>
-                  <a href="#" className="font-dm text-white/35 text-[13px] hover:text-white/70 transition-colors duration-150">
-                    {link}
+          {/* Services + Contact grouped on the right */}
+          <div className="flex gap-16">
+            <div>
+              <h4 className="font-syne font-semibold text-white text-[13px] mb-4">{t('sectServices')}</h4>
+              <ul className="space-y-2.5">
+                {serviceLinks.map((link) => (
+                  <li key={link}>
+                    <a href="#" className="font-dm text-white/35 text-[13px] hover:text-white/70 transition-colors duration-150">
+                      {link}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-syne font-semibold text-white text-[13px] mb-4">{t('sectContact')}</h4>
+              <ul className="space-y-2.5">
+                <li>
+                  <a href="mailto:info@clariva.sk" className="font-dm text-white/35 text-[13px] hover:text-white/70 transition-colors duration-150">
+                    info@clariva.sk
                   </a>
                 </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Contact column */}
-          <div>
-            <h4 className="font-syne font-semibold text-white text-[13px] mb-4">{t('sectContact')}</h4>
-            <ul className="space-y-2.5">
-              <li>
-                <a href="mailto:info@clariva.sk" className="font-dm text-white/35 text-[13px] hover:text-white/70 transition-colors duration-150">
-                  info@clariva.sk
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/company/clariva-s-r-o/" target="_blank" rel="noopener noreferrer" className="font-dm text-white/35 text-[13px] hover:text-white/70 transition-colors duration-150">
-                  LinkedIn
-                </a>
-              </li>
-              <li>
-                <Link href="/data-processing" className="font-dm text-white/35 text-[13px] hover:text-white/70 transition-colors duration-150">
-                  Privacy Policy
-                </Link>
-              </li>
-            </ul>
+                <li>
+                  <a href="https://www.linkedin.com/company/clariva-s-r-o/" target="_blank" rel="noopener noreferrer" className="font-dm text-white/35 text-[13px] hover:text-white/70 transition-colors duration-150">
+                    LinkedIn
+                  </a>
+                </li>
+                <li>
+                  <Link href="/data-processing" className="font-dm text-white/35 text-[13px] hover:text-white/70 transition-colors duration-150">
+                    Privacy Policy
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </motion.div>
 
         {/* Bottom bar */}
-        <div className="border-t border-white/[0.04] pt-6">
+        <div className="border-t border-white/[0.04] pt-6 text-center">
           <p className="font-dm text-white/25 text-[12px]">
             {t('copyright')}
           </p>
