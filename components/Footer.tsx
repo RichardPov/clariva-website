@@ -87,9 +87,9 @@ export default function Footer() {
             {t('copyright')}
           </p>
           <div className="flex items-center gap-5">
-            <a href="#" className="font-dm text-white/25 text-[12px] hover:text-white/50 transition-colors">
+            <Link href="/data-processing" className="font-dm text-white/25 text-[12px] hover:text-white/50 transition-colors">
               {t('privacy')}
-            </a>
+            </Link>
             <a href="#" className="font-dm text-white/25 text-[12px] hover:text-white/50 transition-colors">
               {t('terms')}
             </a>
