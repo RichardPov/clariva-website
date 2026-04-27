@@ -74,19 +74,17 @@ export default function HowWeWork() {
           {/* Right: timeline */}
           <div className="flex-1 relative">
             <motion.div
-              className="absolute left-[19px] top-2 w-[1px] origin-top"
+              className="absolute left-[19px] top-2 bottom-0 w-[1px] origin-top"
               style={{ background: 'linear-gradient(to bottom, rgba(255,202,102,0.5), rgba(255,202,102,0.08))' }}
               initial={{ scaleY: 0 }}
               whileInView={{ scaleY: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 1.4, ease: 'easeInOut', delay: 0.2 }}
-            >
-              <div style={{ height: `${steps.length * 100 - 20}px` }} />
-            </motion.div>
+            />
 
             <div
-              className="absolute left-[19px] top-2 w-[1px]"
-              style={{ background: 'rgba(255,255,255,0.06)', height: `${steps.length * 100 - 20}px` }}
+              className="absolute left-[19px] top-2 bottom-0 w-[1px]"
+              style={{ background: 'rgba(255,255,255,0.06)' }}
             />
 
             {steps.map((step, i) => (

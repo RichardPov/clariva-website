@@ -71,6 +71,8 @@ export default function Navbar() {
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
         scrolled
           ? 'bg-ink/95 backdrop-blur-xl border-b border-white/[0.06]'
+          : mobileOpen
+          ? 'bg-ink'
           : 'bg-transparent'
       }`}
       initial={{ y: -80, opacity: 0 }}
@@ -221,7 +223,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
-            className="lg:hidden overflow-hidden bg-ink/98 border-t border-white/[0.06]"
+            className="lg:hidden overflow-hidden bg-ink border-t border-white/[0.06]"
           >
             <div className="px-5 py-6 flex flex-col gap-1">
               {/* Services expandable */}

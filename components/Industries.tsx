@@ -38,7 +38,7 @@ function IndustryPill({
       <div className="w-8 h-8 rounded-lg bg-gold/[0.08] flex items-center justify-center flex-shrink-0">
         <Icon size={16} className="text-gold/70 group-hover:text-gold transition-colors duration-200" />
       </div>
-      <span className="font-dm text-white/60 text-[14px] font-medium group-hover:text-white/90 transition-colors duration-200 whitespace-nowrap">
+      <span className="font-dm text-white/60 text-[14px] font-medium group-hover:text-white/90 transition-colors duration-200">
         {label}
       </span>
     </motion.div>
@@ -88,8 +88,8 @@ export default function Industries() {
           ))}
         </div>
 
-        {/* Row 2: 3 items, centered */}
-        <div className="flex justify-center gap-3 lg:gap-4">
+        {/* Row 2: 3 items */}
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 lg:gap-4">
           {row2.map((label, i) => (
             <IndustryPill
               key={label}
