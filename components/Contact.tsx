@@ -90,7 +90,7 @@ export default function Contact() {
             <div className="space-y-4 mb-10">
               {[
                 { label: t('emailLabel'), value: 'info@clariva.sk', href: 'mailto:info@clariva.sk' },
-                { label: t('linkedinLabel'), value: 'clariva-s-r-o', href: 'https://www.linkedin.com/company/clariva-s-r-o/' },
+                { label: t('linkedinLabel'), value: 'Clariva', href: 'https://www.linkedin.com/company/clariva-s-r-o/' },
               ].map((item) => (
                 <div key={item.label} className="flex items-center gap-3">
                   <span className="font-dm text-white/30 text-[13px] w-16">{item.label}</span>

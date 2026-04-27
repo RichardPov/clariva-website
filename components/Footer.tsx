@@ -11,21 +11,13 @@ const MARK_PATH =
 export default function Footer() {
   const t = useTranslations('Footer')
   const serviceLinks = t.raw('serviceLinks') as string[]
-  const companyLinks = t.raw('companyLinks') as string[]
-  const contactLinks = t.raw('contactLinks') as string[]
-
-  const sections = [
-    { title: t('sectServices'), links: serviceLinks },
-    { title: t('sectCompany'), links: companyLinks },
-    { title: t('sectContact'), links: contactLinks },
-  ]
 
   return (
     <footer className="bg-[#07070A] border-t border-white/[0.04]">
       <div className="max-w-7xl mx-auto px-5 lg:px-10 pt-16 pb-10">
         {/* Top: logo + nav columns */}
         <motion.div
-          className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-14"
+          className="grid grid-cols-2 md:grid-cols-3 gap-10 mb-14"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -61,39 +53,48 @@ export default function Footer() {
             </a>
           </div>
 
-          {/* Nav columns */}
-          {sections.map(({ title, links }) => (
-            <div key={title}>
-              <h4 className="font-syne font-semibold text-white text-[13px] mb-4">{title}</h4>
-              <ul className="space-y-2.5">
-                {links.map((link) => (
-                  <li key={link}>
-                    <a
-                      href="#"
-                      className="font-dm text-white/35 text-[13px] hover:text-white/70 transition-colors duration-150"
-                    >
-                      {link}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          {/* Services column */}
+          <div>
+            <h4 className="font-syne font-semibold text-white text-[13px] mb-4">{t('sectServices')}</h4>
+            <ul className="space-y-2.5">
+              {serviceLinks.map((link) => (
+                <li key={link}>
+                  <a href="#" className="font-dm text-white/35 text-[13px] hover:text-white/70 transition-colors duration-150">
+                    {link}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact column */}
+          <div>
+            <h4 className="font-syne font-semibold text-white text-[13px] mb-4">{t('sectContact')}</h4>
+            <ul className="space-y-2.5">
+              <li>
+                <a href="mailto:info@clariva.sk" className="font-dm text-white/35 text-[13px] hover:text-white/70 transition-colors duration-150">
+                  info@clariva.sk
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/company/clariva-s-r-o/" target="_blank" rel="noopener noreferrer" className="font-dm text-white/35 text-[13px] hover:text-white/70 transition-colors duration-150">
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <Link href="/data-processing" className="font-dm text-white/35 text-[13px] hover:text-white/70 transition-colors duration-150">
+                  Privacy Policy
+                </Link>
+              </li>
+            </ul>
+          </div>
         </motion.div>
 
         {/* Bottom bar */}
-        <div className="border-t border-white/[0.04] pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+        <div className="border-t border-white/[0.04] pt-6">
           <p className="font-dm text-white/25 text-[12px]">
             {t('copyright')}
           </p>
-          <div className="flex items-center gap-5">
-            <Link href="/data-processing" className="font-dm text-white/25 text-[12px] hover:text-white/50 transition-colors">
-              {t('privacy')}
-            </Link>
-            <a href="#" className="font-dm text-white/25 text-[12px] hover:text-white/50 transition-colors">
-              {t('terms')}
-            </a>
-          </div>
         </div>
       </div>
     </footer>
