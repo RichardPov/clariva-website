@@ -52,7 +52,7 @@ export default function Footer() {
             </p>
 
             <a
-              href="https://linkedin.com/company/clariva"
+              href="https://www.linkedin.com/company/clariva-s-r-o/"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-5 inline-flex items-center justify-center w-9 h-9 rounded-xl border border-white/10 text-white/40 hover:text-white hover:border-white/25 transition-all duration-200"
