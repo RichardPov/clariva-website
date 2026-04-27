@@ -199,33 +199,36 @@ function MiniCard({
   delay: number
 }) {
   return (
-    <MotionLink
-      href={href as '/'}
-      className="block w-[248px] rounded-xl p-4 group"
-      style={{
-        background: 'rgba(255,255,255,0.04)',
-        border: '1px solid rgba(255,255,255,0.09)',
-      }}
+    <motion.div
       initial={{ opacity: 0, scale: 0.9, y: 10 }}
       animate={{ opacity: 1, scale: 1, y: 0 }}
       transition={{ duration: 0.6, delay, ease: [0.25, 0.46, 0.45, 0.94] }}
-      whileHover={{
-        background: 'rgba(255,202,102,0.07)',
-        borderColor: 'rgba(255,202,102,0.3)',
-        scale: 1.03,
-        transition: { duration: 0.18 },
-      }}
     >
-      <div className="flex items-center gap-2 mb-2">
-        <div className="w-6 h-6 rounded-md bg-gold/10 flex items-center justify-center flex-shrink-0">
-          <Icon size={12} className="text-gold/75 group-hover:text-gold transition-colors duration-200" />
+      <MotionLink
+        href={href as '/'}
+        className="block w-[248px] rounded-xl p-4 group"
+        style={{
+          background: 'rgba(255,255,255,0.04)',
+          border: '1px solid rgba(255,255,255,0.09)',
+        }}
+        transition={{ duration: 0.18 }}
+        whileHover={{
+          background: 'rgba(255,202,102,0.07)',
+          borderColor: 'rgba(255,202,102,0.3)',
+          scale: 1.03,
+        }}
+      >
+        <div className="flex items-center gap-2 mb-2">
+          <div className="w-6 h-6 rounded-md bg-gold/10 flex items-center justify-center flex-shrink-0">
+            <Icon size={12} className="text-gold/75 group-hover:text-gold transition-colors duration-200" />
+          </div>
+          <span className="font-syne font-semibold text-white/75 text-[12px] group-hover:text-white transition-colors duration-200 leading-tight">
+            {title}
+          </span>
         </div>
-        <span className="font-syne font-semibold text-white/75 text-[12px] group-hover:text-white transition-colors duration-200 leading-tight">
-          {title}
-        </span>
-      </div>
-      <p className="text-white/30 text-[11px] font-dm leading-snug line-clamp-1">{desc}</p>
-    </MotionLink>
+        <p className="text-white/30 text-[11px] font-dm leading-snug line-clamp-1">{desc}</p>
+      </MotionLink>
+    </motion.div>
   )
 }
 
