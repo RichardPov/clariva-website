@@ -98,9 +98,10 @@ export default function CvDialog({
       })
       if (!res.ok) throw new Error('submit failed')
       setStatus('success')
-    } catch {
+    } catch (err) {
       setStatus('idle')
-      setError(t('errorGeneric'))
+      const msg = err instanceof Error ? err.message : ''
+      setError(msg ? `${t('errorGeneric')} (${msg})` : t('errorGeneric'))
     }
   }
 
