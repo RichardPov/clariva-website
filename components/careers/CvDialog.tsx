@@ -5,9 +5,8 @@ import { createPortal } from 'react-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Mail, X, UploadCloud, FileText, Loader2, CheckCircle2 } from 'lucide-react'
 import { useTranslations } from 'next-intl'
-import { upload } from '@vercel/blob/client'
 
-const MAX_BYTES = 5 * 1024 * 1024
+const MAX_BYTES = 4 * 1024 * 1024
 const ACCEPTED = [
   'application/pdf',
   'application/msword',
@@ -77,26 +76,19 @@ export default function CvDialog({
 
     setStatus('submitting')
     try {
-      const blob = await upload(file.name, file, {
-        access: 'public',
-        handleUploadUrl: '/api/cv/upload',
-        contentType: file.type,
-      })
+      const fd = new FormData()
+      fd.append('email', email)
+      fd.append('phone', phone)
+      fd.append('message', message)
+      fd.append('positionId', positionId)
+      fd.append('positionTitle', positionTitle)
+      fd.append('cv', file)
 
-      const res = await fetch('/api/cv/submit', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          email,
-          phone,
-          message,
-          cvUrl: blob.url,
-          cvFilename: file.name,
-          positionId,
-          positionTitle,
-        }),
-      })
-      if (!res.ok) throw new Error('submit failed')
+      const res = await fetch('/api/cv/submit', { method: 'POST', body: fd })
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}))
+        throw new Error(data.error || 'submit failed')
+      }
       setStatus('success')
     } catch (err) {
       setStatus('idle')
