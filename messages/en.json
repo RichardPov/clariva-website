@@ -14,7 +14,8 @@
       "full-delivery-teams": "Full Delivery Teams",
       "consulting": "Consulting",
       "tenders": "Tenders"
-    }
+    },
+    "openPositions": "Open Positions"
   },
   "Hero": {
     "heading": "We build IT solutions that actually <gold>move your business</gold> forward.",
@@ -506,5 +507,68 @@
         "label": "European markets"
       }
     ]
+  },
+  "Positions": {
+    "label": "Careers",
+    "heading": "Find your next role",
+    "subtext": "Work with senior teams on projects that actually ship. Explore a selection of our current openings.",
+    "ctaNote": "Don't see the right fit? We're always glad to hear from great people.",
+    "viewAll": "View all positions"
+  },
+  "Careers": {
+    "label": "Open Positions",
+    "heading": "Find your next opportunity",
+    "subtext": "Explore our open roles and join a team that delivers technology that works.",
+    "viewDetail": "View detail",
+    "backToList": "Back to all positions",
+    "datePosted": "Date added",
+    "empty": "No open positions right now — check back soon.",
+    "noMatches": "No positions match your filters.",
+    "responsibilities": "Responsibilities",
+    "requirements": "Requirements",
+    "languageRequirements": "Language Requirements",
+    "benefits": "Benefits",
+    "filters": {
+      "title": "Filters",
+      "reset": "Reset filters",
+      "none": "No filters available yet.",
+      "typeOfJobOffer": "Type of job offer",
+      "country": "Country",
+      "languageSkills": "Language skills",
+      "typeOfCooperation": "Type of cooperation",
+      "placeOfWork": "Place of work"
+    },
+    "meta": {
+      "workLocation": "Work Location",
+      "city": "City",
+      "reward": "Reward",
+      "allocationDuration": "Allocation Duration",
+      "seniority": "Seniority",
+      "collaborationType": "Collaboration Type",
+      "startDate": "Start Date"
+    },
+    "cv": {
+      "trigger": "Send us your CV",
+      "title": "Send us your CV",
+      "email": "Email",
+      "emailPlaceholder": "Enter your email address",
+      "phone": "Phone number",
+      "phonePlaceholder": "Enter your phone contact",
+      "message": "Message",
+      "messagePlaceholder": "Your message",
+      "uploadPrompt": "Drop your file here, or click to choose",
+      "uploadHint": "Max file size 5 MB. PDF, DOC or DOCX.",
+      "consent": "I agree to the processing and storage of my personal data.",
+      "submit": "Send your CV",
+      "successTitle": "Thank you!",
+      "successBody": "We've received your application and will be in touch.",
+      "done": "Done",
+      "errorType": "Unsupported file type. Use PDF, DOC or DOCX.",
+      "errorSize": "File is too large. Maximum is 5 MB.",
+      "errorEmail": "Please enter your email.",
+      "errorNoFile": "Please attach your CV.",
+      "errorConsent": "Please agree to the data processing.",
+      "errorGeneric": "Something went wrong. Please try again."
+    }
   }
 }

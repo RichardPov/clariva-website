@@ -14,7 +14,8 @@
       "full-delivery-teams": "Kompletní dodávkové týmy",
       "consulting": "Poradenství",
       "tenders": "Veřejné zakázky"
-    }
+    },
+    "openPositions": "Otevřené pozice"
   },
   "Hero": {
     "heading": "Budujeme IT řešení, která skutečně <gold>posouvají vaše podnikání</gold> vpřed.",
@@ -506,5 +507,68 @@
         "label": "Evropské trhy"
       }
     ]
+  },
+  "Positions": {
+    "label": "Kariéra",
+    "heading": "Najděte svou další roli",
+    "subtext": "Pracujte se seniorním týmem na projektech, které se opravdu dodávají. Prohlédněte si výběr našich aktuálních pozic.",
+    "ctaNote": "Nenašli jste to pravé? Vždy rádi poznáme šikovné lidi.",
+    "viewAll": "Zobrazit všechny pozice"
+  },
+  "Careers": {
+    "label": "Otevřené pozice",
+    "heading": "Najděte svou další příležitost",
+    "subtext": "Prohlédněte si naše otevřené pozice a přidejte se k týmu, který dodává technologie, jež fungují.",
+    "viewDetail": "Zobrazit detail",
+    "backToList": "Zpět na všechny pozice",
+    "datePosted": "Datum přidání",
+    "empty": "Momentálně nemáme otevřené pozice — zkuste to brzy znovu.",
+    "noMatches": "Žádné pozice neodpovídají filtrům.",
+    "responsibilities": "Náplň práce",
+    "requirements": "Požadavky",
+    "languageRequirements": "Jazykové požadavky",
+    "benefits": "Benefity",
+    "filters": {
+      "title": "Filtry",
+      "reset": "Zrušit filtry",
+      "none": "Zatím nejsou dostupné žádné filtry.",
+      "typeOfJobOffer": "Typ pracovní nabídky",
+      "country": "Země",
+      "languageSkills": "Jazykové znalosti",
+      "typeOfCooperation": "Typ spolupráce",
+      "placeOfWork": "Místo výkonu práce"
+    },
+    "meta": {
+      "workLocation": "Místo práce",
+      "city": "Město",
+      "reward": "Odměna",
+      "allocationDuration": "Délka alokace",
+      "seniority": "Seniorita",
+      "collaborationType": "Typ spolupráce",
+      "startDate": "Nástup"
+    },
+    "cv": {
+      "trigger": "Pošlete nám CV",
+      "title": "Pošlete nám své CV",
+      "email": "Email",
+      "emailPlaceholder": "Zadejte svůj email",
+      "phone": "Telefonní číslo",
+      "phonePlaceholder": "Zadejte svůj telefonní kontakt",
+      "message": "Zpráva",
+      "messagePlaceholder": "Vaše zpráva",
+      "uploadPrompt": "Sem nahrajte soubor nebo klikněte pro výběr",
+      "uploadHint": "Maximální velikost 5 MB. PDF, DOC nebo DOCX.",
+      "consent": "Souhlasím se zpracováním a uchováním mých osobních údajů.",
+      "submit": "Odeslat CV",
+      "successTitle": "Děkujeme!",
+      "successBody": "Přijali jsme vaši žádost a brzy se ozveme.",
+      "done": "Hotovo",
+      "errorType": "Nepodporovaný formát. Použijte PDF, DOC nebo DOCX.",
+      "errorSize": "Soubor je příliš velký. Maximum je 5 MB.",
+      "errorEmail": "Zadejte prosím svůj email.",
+      "errorNoFile": "Přiložte prosím své CV.",
+      "errorConsent": "Potvrďte prosím souhlas se zpracováním údajů.",
+      "errorGeneric": "Něco se pokazilo. Zkuste to znovu."
+    }
   }
 }

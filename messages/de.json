@@ -14,7 +14,8 @@
       "full-delivery-teams": "Vollständige Lieferteams",
       "consulting": "Beratung",
       "tenders": "Ausschreibungen"
-    }
+    },
+    "openPositions": "Offene Stellen"
   },
   "Hero": {
     "heading": "Wir entwickeln IT-Lösungen, die Ihr Unternehmen <gold>wirklich voranbringen</gold>.",
@@ -506,5 +507,68 @@
         "label": "Europäische Märkte"
       }
     ]
+  },
+  "Positions": {
+    "label": "Karriere",
+    "heading": "Finden Sie Ihre nächste Rolle",
+    "subtext": "Arbeiten Sie mit Senior-Teams an Projekten, die wirklich live gehen. Entdecken Sie eine Auswahl unserer aktuellen Stellen.",
+    "ctaNote": "Nicht das Richtige dabei? Wir freuen uns immer über großartige Menschen.",
+    "viewAll": "Alle Stellen ansehen"
+  },
+  "Careers": {
+    "label": "Offene Stellen",
+    "heading": "Finden Sie Ihre nächste Gelegenheit",
+    "subtext": "Entdecken Sie unsere offenen Stellen und werden Sie Teil eines Teams, das Technologie liefert, die funktioniert.",
+    "viewDetail": "Details ansehen",
+    "backToList": "Zurück zu allen Stellen",
+    "datePosted": "Hinzugefügt am",
+    "empty": "Derzeit keine offenen Stellen — schauen Sie bald wieder vorbei.",
+    "noMatches": "Keine Stellen entsprechen Ihren Filtern.",
+    "responsibilities": "Aufgaben",
+    "requirements": "Anforderungen",
+    "languageRequirements": "Sprachanforderungen",
+    "benefits": "Benefits",
+    "filters": {
+      "title": "Filter",
+      "reset": "Filter zurücksetzen",
+      "none": "Noch keine Filter verfügbar.",
+      "typeOfJobOffer": "Art des Stellenangebots",
+      "country": "Land",
+      "languageSkills": "Sprachkenntnisse",
+      "typeOfCooperation": "Art der Zusammenarbeit",
+      "placeOfWork": "Arbeitsort"
+    },
+    "meta": {
+      "workLocation": "Arbeitsort",
+      "city": "Stadt",
+      "reward": "Vergütung",
+      "allocationDuration": "Einsatzdauer",
+      "seniority": "Seniorität",
+      "collaborationType": "Art der Zusammenarbeit",
+      "startDate": "Startdatum"
+    },
+    "cv": {
+      "trigger": "Senden Sie uns Ihren Lebenslauf",
+      "title": "Senden Sie uns Ihren Lebenslauf",
+      "email": "E-Mail",
+      "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
+      "phone": "Telefonnummer",
+      "phonePlaceholder": "Geben Sie Ihren Telefonkontakt ein",
+      "message": "Nachricht",
+      "messagePlaceholder": "Ihre Nachricht",
+      "uploadPrompt": "Datei hier ablegen oder zum Auswählen klicken",
+      "uploadHint": "Maximale Dateigröße 5 MB. PDF, DOC oder DOCX.",
+      "consent": "Ich stimme der Verarbeitung und Speicherung meiner personenbezogenen Daten zu.",
+      "submit": "Lebenslauf senden",
+      "successTitle": "Vielen Dank!",
+      "successBody": "Wir haben Ihre Bewerbung erhalten und melden uns.",
+      "done": "Fertig",
+      "errorType": "Nicht unterstütztes Format. PDF, DOC oder DOCX verwenden.",
+      "errorSize": "Datei ist zu groß. Maximum sind 5 MB.",
+      "errorEmail": "Bitte geben Sie Ihre E-Mail ein.",
+      "errorNoFile": "Bitte fügen Sie Ihren Lebenslauf bei.",
+      "errorConsent": "Bitte stimmen Sie der Datenverarbeitung zu.",
+      "errorGeneric": "Etwas ist schiefgelaufen. Bitte erneut versuchen."
+    }
   }
 }

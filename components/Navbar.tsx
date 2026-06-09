@@ -43,6 +43,7 @@ export default function Navbar() {
   const otherNavLinks = [
     { label: t('howWeWork'), href: '/#how-we-work' as const },
     { label: t('industries'), href: '/#industries' as const },
+    { label: t('openPositions'), href: '/open-positions' as const },
     { label: t('whyClariva'), href: '/#why-clariva' as const },
     { label: t('contact'), href: '/#contact' as const },
   ]
