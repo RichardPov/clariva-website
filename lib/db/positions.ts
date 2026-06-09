@@ -1,5 +1,6 @@
 import { desc, eq } from 'drizzle-orm'
 import { db } from './index'
+import { ensureSchema } from './ensure-schema'
 import {
   positions,
   submissions,
@@ -10,11 +11,13 @@ import { slugify } from '@/lib/slug'
 
 /** All positions (admin view), newest first. */
 export async function listAllPositions() {
+  await ensureSchema()
   return db.select().from(positions).orderBy(desc(positions.createdAt))
 }
 
 /** Published positions only (public), newest first. */
 export async function listPublishedPositions() {
+  await ensureSchema()
   return db
     .select()
     .from(positions)
@@ -24,6 +27,7 @@ export async function listPublishedPositions() {
 
 /** Latest N published positions (landing). */
 export async function listLatestPublished(limit = 3) {
+  await ensureSchema()
   return db
     .select()
     .from(positions)
@@ -33,6 +37,7 @@ export async function listLatestPublished(limit = 3) {
 }
 
 export async function getPositionBySlug(slug: string) {
+  await ensureSchema()
   const rows = await db
     .select()
     .from(positions)
@@ -42,6 +47,7 @@ export async function getPositionBySlug(slug: string) {
 }
 
 export async function getPositionById(id: string) {
+  await ensureSchema()
   const rows = await db
     .select()
     .from(positions)
@@ -78,6 +84,7 @@ export async function updatePosition(id: string, data: Partial<NewPosition>) {
 }
 
 export async function deletePosition(id: string) {
+  await ensureSchema()
   await db.delete(positions).where(eq(positions.id, id))
 }
 
@@ -97,10 +104,12 @@ async function uniqueSlug(title: string, ignoreId?: string): Promise<string> {
 
 // ── Submissions ─────────────────────────────────────────────
 export async function listSubmissions() {
+  await ensureSchema()
   return db.select().from(submissions).orderBy(desc(submissions.createdAt))
 }
 
 export async function createSubmission(data: NewSubmission) {
+  await ensureSchema()
   const rows = await db.insert(submissions).values(data).returning()
   return rows[0]
 }

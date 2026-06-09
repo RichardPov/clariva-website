@@ -4,6 +4,7 @@ import {
   text,
   timestamp,
   jsonb,
+  boolean,
 } from 'drizzle-orm/pg-core'
 
 /** A body block that the admin can author either as free text or as bullet points. */
@@ -21,6 +22,8 @@ export const positions = pgTable('positions', {
   status: text('status', { enum: ['published', 'draft'] })
     .notNull()
     .default('draft'),
+  // Position is still shown but marked as filled / no longer accepting applicants.
+  filled: boolean('filled').notNull().default(false),
 
   title: text('title').notNull(),
   summary: text('summary').notNull().default(''),

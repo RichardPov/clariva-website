@@ -28,6 +28,7 @@ export default function PositionsDashboard() {
   const [rows, setRows] = useState<Position[] | null>(null)
   const [toDelete, setToDelete] = useState<Position | null>(null)
   const [deleting, setDeleting] = useState(false)
+  const [seeding, setSeeding] = useState(false)
 
   async function load() {
     const res = await fetch('/api/admin/positions')
@@ -38,6 +39,19 @@ export default function PositionsDashboard() {
   useEffect(() => {
     load()
   }, [])
+
+  async function seedSamples() {
+    setSeeding(true)
+    const res = await fetch('/api/admin/seed', { method: 'POST' })
+    setSeeding(false)
+    if (res.ok) {
+      toast.success('Sample positions added')
+      load()
+    } else {
+      const data = await res.json().catch(() => ({}))
+      toast.error(data.error ?? 'Failed to seed')
+    }
+  }
 
   async function confirmDelete() {
     if (!toDelete) return
@@ -94,11 +108,19 @@ export default function PositionsDashboard() {
             )}
             {rows?.length === 0 && (
               <TableRow>
-                <TableCell
-                  colSpan={6}
-                  className="h-24 text-center text-muted-foreground"
-                >
-                  No positions yet. Create your first one.
+                <TableCell colSpan={6} className="h-32 text-center">
+                  <p className="text-muted-foreground mb-4">
+                    No positions yet.
+                  </p>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={seedSamples}
+                    disabled={seeding}
+                  >
+                    {seeding && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+                    Load 3 sample positions
+                  </Button>
                 </TableCell>
               </TableRow>
             )}
@@ -125,11 +147,14 @@ export default function PositionsDashboard() {
                   {p.placeOfWork || '—'}
                 </TableCell>
                 <TableCell>
-                  <Badge
-                    variant={p.status === 'published' ? 'default' : 'secondary'}
-                  >
-                    {p.status}
-                  </Badge>
+                  <div className="flex items-center gap-1.5">
+                    <Badge
+                      variant={p.status === 'published' ? 'default' : 'secondary'}
+                    >
+                      {p.status}
+                    </Badge>
+                    {p.filled && <Badge variant="outline">filled</Badge>}
+                  </div>
                 </TableCell>
                 <TableCell className="text-muted-foreground">
                   {new Date(p.createdAt).toLocaleDateString()}

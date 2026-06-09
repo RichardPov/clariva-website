@@ -31,6 +31,7 @@ export function normalizePositionPayload(body: Record<string, unknown>): NewPosi
     // slug is assigned in the data layer
     slug: '',
     status,
+    filled: body.filled === true,
     title: str(body.title) || 'Untitled position',
     summary: str(body.summary),
     typeOfJobOffer: str(body.typeOfJobOffer),

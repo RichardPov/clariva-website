@@ -569,6 +569,8 @@
       "errorNoFile": "Bitte fügen Sie Ihren Lebenslauf bei.",
       "errorConsent": "Bitte stimmen Sie der Datenverarbeitung zu.",
       "errorGeneric": "Etwas ist schiefgelaufen. Bitte erneut versuchen."
-    }
+    },
+    "filledBadge": "Besetzt",
+    "positionFilled": "Stelle besetzt"
   }
 }

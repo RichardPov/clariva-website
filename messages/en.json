@@ -569,6 +569,8 @@
       "errorNoFile": "Please attach your CV.",
       "errorConsent": "Please agree to the data processing.",
       "errorGeneric": "Something went wrong. Please try again."
-    }
+    },
+    "filledBadge": "Filled",
+    "positionFilled": "Position filled"
   }
 }

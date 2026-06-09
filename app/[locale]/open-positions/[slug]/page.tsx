@@ -123,10 +123,16 @@ export default async function PositionDetailPage({
                 ))}
               </div>
 
-              <CvDialog
-                positionId={position.id}
-                positionTitle={position.title}
-              />
+              {position.filled ? (
+                <div className="rounded-full bg-white/10 text-white/50 text-[13px] font-dm font-semibold text-center py-3.5 px-6">
+                  {t('positionFilled')}
+                </div>
+              ) : (
+                <CvDialog
+                  positionId={position.id}
+                  positionTitle={position.title}
+                />
+              )}
             </div>
           </aside>
         </div>

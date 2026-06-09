@@ -569,6 +569,8 @@
       "errorNoFile": "Priložte prosím svoje CV.",
       "errorConsent": "Potvrďte prosím súhlas so spracovaním údajov.",
       "errorGeneric": "Niečo sa pokazilo. Skúste to znova."
-    }
+    },
+    "filledBadge": "Obsadené",
+    "positionFilled": "Pozícia je obsadená"
   }
 }

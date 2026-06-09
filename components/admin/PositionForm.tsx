@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Badge } from '@/components/ui/badge'
+import { Checkbox } from '@/components/ui/checkbox'
 import {
   Select,
   SelectContent,
@@ -31,6 +32,7 @@ type FormState = {
   title: string
   summary: string
   status: 'draft' | 'published'
+  filled: boolean
   typeOfJobOffer: string
   country: string
   placeOfWork: string
@@ -52,6 +54,7 @@ function initialState(p?: Position): FormState {
     title: p?.title ?? '',
     summary: p?.summary ?? '',
     status: (p?.status as 'draft' | 'published') ?? 'draft',
+    filled: p?.filled ?? false,
     typeOfJobOffer: p?.typeOfJobOffer ?? '',
     country: p?.country ?? '',
     placeOfWork: p?.placeOfWork ?? '',
@@ -176,6 +179,22 @@ export default function PositionForm({ position }: { position?: Position }) {
           onChange={(v) => set('status', v as 'draft' | 'published')}
         />
       </section>
+
+      {/* Filled toggle */}
+      <label className="flex items-start gap-3 rounded-lg border border-border p-4 cursor-pointer">
+        <Checkbox
+          checked={form.filled}
+          onCheckedChange={(c) => set('filled', c === true)}
+          className="mt-0.5"
+        />
+        <span>
+          <span className="block text-sm font-medium">Position filled</span>
+          <span className="block text-xs text-muted-foreground">
+            Keep it visible on the site but marked as filled — the card is shown
+            disabled and stops accepting applications.
+          </span>
+        </span>
+      </label>
 
       {/* Sidebar meta */}
       <section className="grid grid-cols-1 sm:grid-cols-2 gap-4">
