@@ -92,7 +92,11 @@ export default function SubmissionsPage() {
                 </TableCell>
                 <TableCell className="text-right">
                   <Button variant="outline" size="sm" asChild>
-                    <a href={s.cvUrl} target="_blank" rel="noopener noreferrer">
+                    <a
+                      href={`/api/admin/cv?url=${encodeURIComponent(s.cvUrl)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <Download className="mr-2 h-4 w-4" />
                       Download
                     </a>

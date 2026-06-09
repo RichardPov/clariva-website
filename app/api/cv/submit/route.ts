@@ -43,7 +43,9 @@ export async function POST(req: Request) {
   let cvUrl = ''
   try {
     const blob = await put(`cv/${file.name}`, file, {
-      access: 'public',
+      // Private store — CVs are personal data and must not be publicly readable.
+      // Downloads happen through the authenticated admin proxy (/api/admin/cv).
+      access: 'private',
       addRandomSuffix: true,
       contentType: file.type,
     })
