@@ -5,6 +5,7 @@ import { usePathname, useRouter } from 'next/navigation'
 import { Briefcase, Inbox, LogOut } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
+import ThemeToggle from '@/components/admin/ThemeToggle'
 
 const NAV = [
   { href: '/admin/dashboard', label: 'Positions', icon: Briefcase, exact: true },
@@ -50,10 +51,13 @@ export default function AdminTopbar() {
             })}
           </nav>
         </div>
-        <Button variant="ghost" size="sm" onClick={logout}>
-          <LogOut className="mr-2 h-4 w-4" />
-          Log out
-        </Button>
+        <div className="flex items-center gap-1">
+          <ThemeToggle />
+          <Button variant="ghost" size="sm" onClick={logout}>
+            <LogOut className="mr-2 h-4 w-4" />
+            Log out
+          </Button>
+        </div>
       </div>
     </header>
   )
