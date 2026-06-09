@@ -82,10 +82,10 @@ export default async function PositionDetailPage({
       </div>
 
       {/* Body + sidebar */}
-      <section className="pb-28 px-5 lg:px-10 max-w-5xl mx-auto">
-        <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
+      <section className="pb-28 px-5 lg:px-10 max-w-6xl mx-auto">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-28">
           {/* Body */}
-          <div className="flex-1 space-y-10 order-2 lg:order-1">
+          <div className="flex-1 lg:pr-6 space-y-10 order-2 lg:order-1">
             {bodySections.map(({ label, section }) => (
               <div key={label}>
                 <h2 className="font-syne font-bold text-white text-[22px] mb-5">
