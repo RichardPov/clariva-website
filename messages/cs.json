@@ -572,5 +572,11 @@
     },
     "filledBadge": "Obsazeno",
     "positionFilled": "Pozice je obsazená"
+  },
+  "NotFound": {
+    "heading": "Tato stránka zabloudila.",
+    "body": "Stránka, kterou hledáte, neexistuje, byla přesunuta, nebo nikdy neexistovala.",
+    "home": "Zpět na domovskou stránku",
+    "positions": "Zobrazit otevřené pozice"
   }
 }

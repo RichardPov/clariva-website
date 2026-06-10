@@ -53,18 +53,6 @@ export default function PositionsDashboard() {
     }
   }
 
-  async function seedLorem() {
-    setSeeding(true)
-    const res = await fetch('/api/admin/seed-lorem', { method: 'POST' })
-    setSeeding(false)
-    if (res.ok) {
-      toast.success('2 sample positions added')
-      load()
-    } else {
-      toast.error('Failed to add samples')
-    }
-  }
-
   async function confirmDelete() {
     if (!toDelete) return
     setDeleting(true)
@@ -90,18 +78,12 @@ export default function PositionsDashboard() {
             Create, edit and publish job postings.
           </p>
         </div>
-        <div className="flex items-center gap-2">
-          <Button variant="outline" onClick={seedLorem} disabled={seeding}>
-            {seeding && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
-            Add 2 samples
-          </Button>
-          <Button asChild>
-            <Link href="/admin/dashboard/positions/new">
-              <Plus className="mr-2 h-4 w-4" />
-              New position
-            </Link>
-          </Button>
-        </div>
+        <Button asChild>
+          <Link href="/admin/dashboard/positions/new">
+            <Plus className="mr-2 h-4 w-4" />
+            New position
+          </Link>
+        </Button>
       </div>
 
       <div className="rounded-lg border border-border">

@@ -572,5 +572,11 @@
     },
     "filledBadge": "Filled",
     "positionFilled": "Position filled"
+  },
+  "NotFound": {
+    "heading": "This page took a wrong turn.",
+    "body": "The page you're looking for doesn't exist, was moved, or never existed.",
+    "home": "Back to homepage",
+    "positions": "See open positions"
   }
 }

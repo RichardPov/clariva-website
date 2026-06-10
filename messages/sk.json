@@ -572,5 +572,11 @@
     },
     "filledBadge": "Obsadené",
     "positionFilled": "Pozícia je obsadená"
+  },
+  "NotFound": {
+    "heading": "Táto stránka zišla zo správnej cesty.",
+    "body": "Stránka, ktorú hľadáte, neexistuje, bola presunutá, alebo nikdy neexistovala.",
+    "home": "Späť na domovskú stránku",
+    "positions": "Pozrieť otvorené pozície"
   }
 }

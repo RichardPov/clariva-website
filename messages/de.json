@@ -572,5 +572,11 @@
     },
     "filledBadge": "Besetzt",
     "positionFilled": "Stelle besetzt"
+  },
+  "NotFound": {
+    "heading": "Diese Seite hat sich verirrt.",
+    "body": "Die gesuchte Seite existiert nicht, wurde verschoben oder gab es nie.",
+    "home": "Zurück zur Startseite",
+    "positions": "Offene Stellen ansehen"
   }
 }
