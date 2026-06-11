@@ -12,14 +12,14 @@
       "servicenow": "ServiceNow riešenia",
       "team-extension": "Rozšírenie tímu",
       "full-delivery-teams": "Kompletné dodávkové tímy",
-      "consulting": "Konzultácie",
+      "consulting": "Technologické poradenstvo",
       "tenders": "Verejné zákazky"
     },
     "openPositions": "Otvorené pozície"
   },
   "Hero": {
     "heading": "Vytvárame IT riešenia, ktoré skutočne <gold>posúvajú vaše podnikanie</gold> vpred.",
-    "subtext": "Od komplexných systémov po dátové platformy — navrhujeme, implementujeme a škálujeme technológie, ktoré fungujú v reálnom svete.",
+    "subtext": "Softvér na mieru, AI riešenia a inžinierske tímy šité na mieru ambicióznym firmám.",
     "cta": "Porozprávajme sa",
     "ctaSecondary": "Zobraziť naše služby ↓",
     "cards": {
@@ -45,7 +45,7 @@
     "label": "O nás",
     "headlinePre": "Clariva je technologická a konzultačná spoločnosť zameraná na dodávanie",
     "headlineGold": "skutočných, funkčných riešení.",
-    "body": "Kombinujeme senior IT expertízu, rýchlu realizáciu a interné AI systémy, aby sme pomohli firmám pohybovať sa rýchlejšie a budovať lepšie. Žiadne prázdne reči — len technológia, ktorá funguje, a tímy, ktoré dodávajú.",
+    "body": "Navrhujeme, budujeme a škálujeme digitálne riešenia prostredníctvom senior inžinierstva, AI schopností a rýchlej realizácie.",
     "pillars": [
       {
         "title": "Senior expertíza",
@@ -102,7 +102,7 @@
         "bullets": []
       },
       "consulting": {
-        "title": "Konzultácie",
+        "title": "Technologické poradenstvo",
         "description": "Konzultácie, ktoré dávajú zmysel. Pomáhame vám riešiť zložité IT výzvy s praktickými, realizovateľnými riešeniami. Žiadna zbytočná teória — len výsledky.",
         "bullets": [
           "Optimalizácia procesov",
@@ -204,37 +204,33 @@
     ]
   },
   "WhyClariva": {
-    "label": "Náš rozdiel",
-    "heading": "Prečo Clariva",
-    "intro": "Pretože na realizácii záleží.",
-    "painPoints": [
-      "Potrebujete riešenia, nielen rady",
-      "Nemôžete si dovoliť oneskorenia",
-      "Potrebujete skúsených profesionálov, ktorí dodajú",
-      "Chcete partnera, ktorý sa prispôsobí, nie spomalí"
-    ],
-    "quoteLine1": "Nielen podporujeme vaše projekty.",
-    "quoteLine2": "Pomáhame vám ich posunúť vpred.",
+    "label": "Prečo Clariva",
+    "heading": "Prečo si firmy vyberajú Clariva",
+    "body": "Veríme, že technologické partnerstvá majú stáť na dôvere, expertíze a dlhodobej spoľahlivosti — nie na transakčnom dodávaní ľudí.\n\nClariva pracuje so senior konzultantmi a delivery profesionálmi, ktorí prinášajú roky reálnych projektových skúseností naprieč inžinierstvom, podnikovými systémami a iniciatívami digitálnej transformácie. Naše tímy sa najprv sústredia na pochopenie problému, kladú správne otázky a dodávajú riešenia s presnosťou namiesto metódy pokus-omyl.\n\nPre našich klientov fungujeme ako dlhodobý technologický partner schopný podporovať dodávku, škálovať inžiniersku kapacitu a dlhodobo udržiavať biznisovo kritické riešenia. Mnohé organizácie sa spoliehajú na konzultantov Clariva ako na súčasť svojich kľúčových tímov a zverujú nám priebežnú dodávku a operačnú kontinuitu.\n\nBudujeme modely spolupráce navrhnuté tak, aby boli dlhodobo udržateľné — kombinujeme flexibilitu, transparentnosť a partnerstvo namiesto krátkodobého komerčného uvažovania.\n\nKeďže úspešná dodávka závisí od ľudí rovnako ako od technológií, aktívne sledujeme kvalitu spolupráce cez náš interný Program starostlivosti. Clariva tiež pravidelne pôsobí v podnikových prostrediach chránených prísnymi NDA dohodami, kde si klienti vždy zachovávajú plné vlastníctvo a kontrolu nad svojimi systémami, produktmi a duševným vlastníctvom.",
     "pillars": [
       {
-        "title": "Transparentní",
-        "body": "Všetko, čo robíme, je pre vás viditeľné. Vždy."
+        "title": "Dodávka vedená seniormi",
+        "body": "Skúsení konzultanti zameraní na efektívne, profesionálne riešenie problémov s dlhodobým myslením."
       },
       {
-        "title": "Plná zodpovednosť",
-        "body": "Výsledok je na nás od začiatku do konca — dodávka, kvalita aj následná starostlivosť."
+        "title": "Dlhodobé partnerstvá",
+        "body": "Budujeme stabilné spolupráce postavené na kontinuite, škálovateľnosti a udržateľných modeloch dodávky."
       },
       {
-        "title": "Remote-ready",
-        "body": "Navrhnuté pre distribuovanú, asynchrónnu spoluprácu."
+        "title": "Dôvera kľúčových tímov",
+        "body": "Naši konzultanti sa často stávajú súčasťou kritických inžinierskych a operačných prostredí, na ktoré sa klienti denne spoliehajú."
       },
       {
-        "title": "Agilní ako štandard",
-        "body": "Scrum, Kanban, alebo čo skutočne funguje pre vás."
+        "title": "Flexibilní a škálovateľní",
+        "body": "Škálujte dodávaciu kapacitu hore či dole podľa meniacich sa priorít projektu a požiadaviek biznisu."
       },
       {
-        "title": "Dlhodobí partneri",
-        "body": "Nezmizíme po dodávke. Udržiavame váš produkt stabilný a škálovateľný."
+        "title": "Program starostlivosti a dohľad",
+        "body": "Aktívne podporujeme komunikáciu, kvalitu dodávky a spokojnosť konzultantov počas celej spolupráce."
+      },
+      {
+        "title": "Dôvera na podnikovej úrovni",
+        "body": "Skúsenosti s prácou v NDA prostrediach s plnou ochranou vlastníctva klienta."
       }
     ]
   },
@@ -350,118 +346,262 @@
   },
   "ServicePages": {
     "application-development": {
-      "title": "Vývoj aplikácií",
-      "tagline": "Komplexný softvér dodaný bez zbytočnej réžie.",
-      "description": "Špecializujeme sa na komplexný softvér dodaný bez zbytočnej réžie. Clariva urýchľuje end-to-end vývoj ako samostatný senior softvérový tím. Od počiatočnej analýzy a dizajnu po vývoj, testovanie, nasadenie a podporu — spolupracujeme s klientmi naprieč odvetviami na riešení reálnych obchodných výziev. Naši inžinieri vlastnia problém, nielen tiket.",
+      "tagline": "Škálovateľné technologické riešenia dodané s presnosťou.",
+      "description": "Senior inžinierska expertíza. Rýchla realizácia. Dlhodobé partnerstvá.\n\nClariva pomáha firmám navrhovať, budovať a škálovať moderné digitálne riešenia prostredníctvom softvérového inžinierstva, AI schopností a nearshore dodávky.\n\nKombinujeme technickú expertízu, pochopenie biznisu a efektívnu realizáciu, aby sme dodali technológie s reálnym dopadom — od softvéru na mieru a cloudovej infraštruktúry až po systémy poháňané AI a dedikované inžinierske tímy.\n\nOd architektúry a vývoja po nasadenie a dlhodobú podporu sa sústredíme na škálovateľné riešenia postavené pre rast.",
+      "cardsLabel": "Čo dodávame",
       "usps": [
         {
-          "title": "Iba senior inžinieri",
-          "description": "Každý projekt je obsadený skúsenými inžiniermi, ktorí dodávali v produkčných prostrediach. Žiadni juniori, ktorí sa učia na váš účet."
+          "title": "Softvérové inžinierstvo",
+          "description": "Vyvíjame škálovateľné digitálne produkty, interné platformy a podnikové aplikácie šité na reálne potreby biznisu."
         },
         {
-          "title": "Kompletná zodpovednosť",
-          "description": "Preberáme plnú zodpovednosť od požiadaviek po vydanie. Získate funkčný softvér, nie zoznam odovzdaní."
+          "title": "AI a inteligentná automatizácia",
+          "description": "Pomáhame firmám zlepšovať prevádzku a zrýchľovať rast cez systémy a automatizáciu poháňané AI."
         },
         {
-          "title": "Transparentné dodávanie",
-          "description": "Týždenné demá, jasné míľniky a priama komunikácia. Vždy viete, čo sa buduje a prečo."
+          "title": "UX a produktové myslenie",
+          "description": "Navrhujeme intuitívne digitálne zážitky zamerané na použiteľnosť, výkon a dlhodobú hodnotu pre používateľa."
+        },
+        {
+          "title": "Zabezpečenie kvality a testovanie",
+          "description": "Zaisťujeme spoľahlivosť, výkon a stabilitu cez priebežné testovanie a dodávku zameranú na kvalitu."
         }
-      ]
+      ],
+      "technologies": {
+        "label": "Technológie, s ktorými pracujeme",
+        "groups": [
+          {
+            "title": "Backend a cloud",
+            "items": ".NET, Java, Python, Node.js, Azure, AWS, Kubernetes, Docker"
+          },
+          {
+            "title": "Frontend a webové platformy",
+            "items": "React, Angular, TypeScript, Next.js, Full-stack vývoj"
+          },
+          {
+            "title": "AI a dáta",
+            "items": "LLM integrácie, AI automatizácia, Machine Learning, Data Engineering"
+          },
+          {
+            "title": "Mobil a digitálne platformy",
+            "items": "iOS, Android, multiplatformové aplikácie, podnikové systémy"
+          }
+        ]
+      },
+      "closing": {
+        "heading": "Pre firmy, ktoré potrebujú viac než len kapacitu navyše.",
+        "body": "Spolupracujeme s firmami, ktoré hľadajú spoľahlivú inžiniersku expertízu, škálovateľnú dodávku a dlhodobú technologickú spoluprácu."
+      },
+      "title": "Vývoj aplikácií"
     },
     "data-and-ai": {
-      "title": "Data & AI (Databricks)",
-      "tagline": "Odomknite plnú hodnotu vašich dát.",
-      "description": "Pomáhame organizáciám budovať dátovú infraštruktúru, ktorá premieňa surové dáta na obchodnú výhodu. Od návrhu moderných dátových platforiem na Databricks po nasadenie AI modelov pripravených do produkcie — naši dátoví inžinieri a vedci preklenujú priepasť medzi tým, čo vaše dáta obsahujú, a tým, čo vaša firma potrebuje vedieť.",
+      "tagline": "Moderné dátové platformy a AI postavené pre reálny dopad na biznis.",
+      "description": "Clariva pomáha firmám budovať moderné dátové platformy a riešenia poháňané AI, ktoré zlepšujú rozhodovanie, zjednodušujú prevádzku a zrýchľujú inováciu.\n\nOd cloudovej dátovej infraštruktúry a analytických pipeline až po inteligentnú automatizáciu a machine learning dodávame škálovateľné systémy navrhnuté pre reálny dopad — nie izolované proof-of-concepty.\n\nPomocou moderných technológií ako Databricks pomáhame organizáciám zjednotiť fragmentované dátové prostredia, vytvoriť architektúry pripravené na AI a premeniť surové dáta na využiteľné poznatky.",
+      "cardsLabel": "Čo dodávame",
       "usps": [
         {
-          "title": "Databricks certifikovaná expertíza",
-          "description": "Náš tím drží Databricks certifikácie a realizoval rozsiahle lakehouse architektúry naprieč regulovanými odvetviami."
+          "title": "Moderné dátové platformy",
+          "description": "Navrhujeme škálovateľné cloud-native dátové prostredia, ktoré centralizujú, spracúvajú a pripravujú dáta pre analytiku, AI a operačný reporting."
         },
         {
-          "title": "Od pipeline k vhľadu",
-          "description": "Budujeme kompletný stack — ingestion, transformácia, analytika a BI — aby vaša organizácia mohla na dáta reagovať, nielen ich ukladať."
+          "title": "End-to-end dodávka",
+          "description": "Od príjmu a transformácie dát po analytiku a automatizáciu staviame spoľahlivé riešenia zamerané na merateľné biznisové výsledky."
         },
         {
-          "title": "AI, ktorá funguje v produkcii",
-          "description": "Zameriavame sa na AI riešenia, ktoré dosiahnu produkciu, nie proof-of-concepty žijúce v Jupyter notebookoch. Modely sú testované, monitorované a udržiavané."
+          "title": "AI pripravená do produkcie",
+          "description": "Dodávame AI riešenia navrhnuté pre reálnu prevádzku — škálovateľné, udržateľné a integrované do existujúcich biznisových procesov."
         }
-      ]
+      ],
+      "highlights": {
+        "label": "S čím pomáhame",
+        "items": [
+          {
+            "title": "Zjednotené dátové ekosystémy",
+            "body": "Prepojíme fragmentované systémy do jednej škálovateľnej platformy."
+          },
+          {
+            "title": "AI a automatizácia",
+            "body": "Zvyšujeme efektivitu cez inteligentné workflows a automatizáciu riadenú dátami."
+          },
+          {
+            "title": "Business intelligence a analytika",
+            "body": "Premieňame surové dáta na jasné operačné a strategické poznatky."
+          },
+          {
+            "title": "Škálovateľná cloudová architektúra",
+            "body": "Staviame modernú infraštruktúru navrhnutú pre dlhodobý rast a výkon."
+          }
+        ]
+      },
+      "title": "Data & AI (Databricks)"
     },
     "servicenow": {
-      "title": "ServiceNow riešenia",
-      "tagline": "Premeňte ServiceNow na mocný obchodný nástroj.",
-      "description": "ServiceNow je jednou z najsilnejších platforiem v podnikovom prostredí — ale len vtedy, keď je nakonfigurovaná s presnosťou. Clariva prináša certifikovaných ServiceNow špecialistov, ktorí rozumejú tak platforme, ako aj obchodným procesom, ktoré musí podporovať. Implementujeme, prispôsobujeme a integrujeme ServiceNow tak, aby fungoval pre vaše procesy, nie proti nim.",
+      "tagline": "Premieňame ServiceNow na platformu, ktorá poháňa reálnu prevádzku biznisu.",
+      "description": "Clariva pomáha organizáciám implementovať, optimalizovať a škálovať ServiceNow riešenia, ktoré zjednodušujú workflows, zlepšujú operačnú efektivitu a podporujú dlhodobý rast biznisu.\n\nKombinujeme expertízu platformy s praktickým pochopením biznisu, aby sme navrhli riešenia, ktoré sedia tomu, ako firmy reálne fungujú — od IT service managementu a interných workflows po automatizáciu, integrácie a optimalizáciu podnikových procesov.\n\nČi už rozširujeme existujúce prostredia alebo staviame nové schopnosti od základu, sústredíme sa na škálovateľné ServiceNow riešenia navrhnuté pre spoľahlivosť, použiteľnosť a merateľný dopad.",
       "usps": [
         {
-          "title": "Certifikovaní špecialisti",
-          "description": "Naši konzultanti drží aktívne ServiceNow certifikácie (CSA, CAD, ITSM) a realizovali projekty cez ITSM, HRSD, CSM a vlastné aplikácie."
+          "title": "Certifikovaná ServiceNow expertíza",
+          "description": "Naši špecialisti prinášajú praktické skúsenosti naprieč implementáciami ServiceNow, prispôsobením platformy a optimalizáciou podnikových workflows."
         },
         {
-          "title": "Procesy na prvom mieste",
-          "description": "Mapujeme vaše workflows skôr, ako sa dotkneme platformy. Výsledkom je konfigurácia, ktorá odráža skutočný spôsob fungovania vašej firmy."
+          "title": "Dodávka riadená procesmi",
+          "description": "Najprv sa sústredíme na pochopenie operačných workflows — staviame ServiceNow riešenia, ktoré sú v súlade s reálnymi biznisovými procesmi, nie generickými šablónami."
         },
         {
-          "title": "Hladké podnikové integrácie",
-          "description": "ServiceNow len zriedka žije sám. Integrujeme ho s vaším ERP, poskytovateľmi identít, monitorovacími nástrojmi a vlastnými systémami bez záplat."
+          "title": "Podnikové integrácie",
+          "description": "Prepájame ServiceNow s existujúcimi systémami, nástrojmi a platformami, aby sme vytvorili plynulé operačné prostredia naprieč organizáciou."
         }
-      ]
+      ],
+      "highlights": {
+        "label": "S čím pomáhame",
+        "items": [
+          {
+            "title": "Automatizácia workflows",
+            "body": "Znižujeme manuálne procesy a zvyšujeme operačnú efektivitu naprieč tímami."
+          },
+          {
+            "title": "IT service management",
+            "body": "Modernizujeme IT prevádzku cez škálovateľné a štruktúrované servisné workflows."
+          },
+          {
+            "title": "Prispôsobenie platformy",
+            "body": "Prispôsobujeme schopnosti ServiceNow konkrétnym organizačným a biznisovým potrebám."
+          },
+          {
+            "title": "Optimalizácia podnikových procesov",
+            "body": "Zjednocujeme systémy, workflows a komunikáciu do efektívneho digitálneho ekosystému."
+          }
+        ]
+      },
+      "title": "ServiceNow riešenia"
     },
     "team-extension": {
-      "title": "Rozšírenie tímu",
-      "tagline": "Škálujte rýchlo s profesionálmi, ktorí sú okamžite produktívni.",
-      "description": "Keď potrebujete kapacitu bez réžie náboru, Clariva nasadzuje skúsených IT profesionálov, ktorí sa priamo integrujú do vášho existujúceho tímu. Pracujú na vašich nástrojoch, vašich procesoch a vo vašom rytme — podporení zárukami kvality Clariva, záväzkami dostupnosti a priebežným dohľadom, aby ste nikdy nemuseli sami spravovať vzťah s dodávateľom.",
+      "tagline": "Flexibilná inžinierska kapacita — škálujte dodávacie tímy bez spomalenia biznisu.",
+      "description": "Keď sa projekty zrýchlia alebo je interná kapacita obmedzená, Clariva poskytuje skúsených technologických profesionálov, ktorí sa priamo integrujú do vašich tímov a dodávacích prostredí.\n\nNaši konzultanti pracujú vo vašich nástrojoch, workflows a operačnej štruktúre, pričom si zachovávate plnú kontrolu nad prioritami, dodávkou a každodenným riadením.\n\nSústredíme sa na flexibilitu, transparentnosť a dlhodobú spoľahlivosť — umožňujeme organizáciám škálovať tímy hore či dole podľa meniacich sa potrieb biznisu, nárokov projektu a termínov dodávky.\n\nKaždú spoluprácu podporujeme priebežným dohľadom, overeným reportingom a aktívnou komunikáciou, aby sme zaistili konzistentnú kvalitu a zodpovednosť počas celej spolupráce.",
       "usps": [
         {
-          "title": "Vopred preverený senior talent",
-          "description": "Každý profesionál je posúdený pred umiestnením. Párujeme na základe technickej hĺbky aj kompatibility s tímom, aby bola integrácia rýchla a bez trení."
+          "title": "Senior inžinierska expertíza",
+          "description": "Poskytujeme skúsených konzultantov, ktorí sa rýchlo integrujú do existujúcich tímov, projektov a dodávacích procesov."
         },
         {
-          "title": "Plné záruky dostupnosti",
-          "description": "Garantujeme hodiny a záväzky dohodnuté na začiatku. Ak sa niečo zmení, vyriešime to my — vy to neriešite."
+          "title": "Flexibilný model škálovania",
+          "description": "Škálujte tímy hore či dole podľa priorít projektu, tlaku na dodávku a vyvíjajúcich sa potrieb biznisu — bez dlhodobej záťaže."
         },
         {
-          "title": "Priebežný dohľad Clariva",
-          "description": "Náš Program starostlivosti znamená, že každý umiestnený expert zostáva v kontakte s nami. Retencia, motivácia a výkon sú naša zodpovednosť."
+          "title": "Riadená kvalita a dohľad",
+          "description": "Každá spolupráca zahŕňa operačný dohľad, transparentný reporting a priebežnú kontrolu kvality pre spoľahlivú dodávku."
         }
-      ]
+      ],
+      "highlights": {
+        "label": "Ako pracujeme",
+        "items": [
+          {
+            "title": "Transparentný dohľad nad dodávkou",
+            "body": "Každá vykázaná hodina a výstup dodávky sú overené cez aktívny projektový dohľad a komunikáciu."
+          },
+          {
+            "title": "Plná operačná kontrola",
+            "body": "Vaša organizácia si zachováva úplnú kontrolu nad prioritami, workflows a riadením konzultantov."
+          },
+          {
+            "title": "Dynamické škálovanie kapacity",
+            "body": "Rozšírte alebo znížte dodávaciu kapacitu podľa aktuálnych požiadaviek biznisu a projektu."
+          }
+        ]
+      },
+      "title": "Rozšírenie tímu"
     },
     "full-delivery-teams": {
-      "title": "Kompletné dodávkové tímy",
-      "tagline": "Kompletný tím pripravený dodávať od prvého dňa.",
-      "description": "Niektoré výzvy potrebujú viac ako len pár ďalších rúk — potrebujú plne zostavené, samostatne riadené dodávkové jednotky. Clariva buduje a nasadzuje kompletné tímy: vývojárov, testerov a produktové roly pracujúce spolu v rámci jednotného dodávkového modelu. Vy určujete smer; my vlastníme realizáciu.",
+      "tagline": "Koordinované inžinierske tímy pripravené dodávať od prvého dňa.",
+      "description": "Niektoré projekty potrebujú viac než jednotlivých špecialistov — vyžadujú skúsené, dobre koordinované tímy schopné dodávať okamžite.\n\nClariva zostavuje a nasadzuje kompletné dodávkové jednotky šité na aktuálnu fázu vášho produktu, projektu alebo transformačnej iniciatívy. Od architektúry a vývoja po zabezpečenie kvality, SAP dodávku, testovacie operácie a podporu platformy sa naše tímy rýchlo integrujú a fungujú cez jednotný model dodávky.\n\nČi už potrebujete dedikovanú QA funkciu, kompletný SAP tím alebo end-to-end inžiniersku jednotku pokrývajúcu architektov, vývojárov, testerov a koordináciu dodávky, poskytujeme škálovateľné tímy navrhnuté pre spoľahlivú realizáciu a dlhodobú spoluprácu.",
       "usps": [
         {
-          "title": "Zostavené v dňoch, nie mesiacoch",
-          "description": "Udržiavame sieť skúsených profesionálov, ktorí môžu byť rýchlo mobilizovaní. Typické zostavenie tímu trvá jeden až dva týždne, nie štvrťroky."
+          "title": "Tímy postavené okolo vašich potrieb dodávky",
+          "description": "Zostavujeme dodávkové tímy podľa konkrétnej fázy, komplexity a operačných požiadaviek vášho projektu."
         },
         {
-          "title": "Samostatne riadená dodávka",
-          "description": "Naše tímy prichádzajú so zabudovanou internou koordináciou. Získate pokrok, nie statusové stretnutia — výsledky, nie procesnú réžiu."
+          "title": "Koordinované a pripravené dodávať",
+          "description": "Naše tímy fungujú cez zladené workflows, zdieľanú zodpovednosť a spoluprácu zameranú na dodávku od prvého dňa."
         },
         {
-          "title": "Záruky kvality a dodávok",
-          "description": "Kvalita výstupu, rýchlosť a dostupnosť sú podporené záväzkami Clariva, nie len dobrou vôľou individuálnych dodávateľov."
+          "title": "Flexibilné škálovanie a zloženie tímu",
+          "description": "Od špecializovaných QA tímov po kompletné cross-funkčné inžinierske tímy škálujeme dodávaciu kapacitu podľa vyvíjajúcich sa nárokov biznisu a projektu."
         }
-      ]
+      ],
+      "highlights": {
+        "label": "Typické zostavy tímov",
+        "items": [
+          {
+            "title": "QA a testovacie tímy",
+            "body": "Test manažéri, manuálni testeri a automatizační inžinieri zameraní na kvalitu a stabilitu releasov."
+          },
+          {
+            "title": "SAP dodávkové tímy",
+            "body": "Skúsení SAP konzultanti, ABAP vývojári a funkční špecialisti pre podnikové prostredia."
+          },
+          {
+            "title": "Cross-funkčné inžinierske tímy",
+            "body": "Architekti, vývojári, QA špecialisti a delivery lídri pracujúci ako jednotný produktový tím."
+          },
+          {
+            "title": "Podpora platformy a prevádzky",
+            "body": "Dedikovaní špecialisti podporujúci priebežnú prevádzku, údržbu a dlhodobý rast platformy."
+          }
+        ]
+      },
+      "title": "Kompletné dodávkové tímy"
     },
     "consulting": {
-      "title": "Konzultácie",
-      "tagline": "Praktická IT stratégia — bez zbytočnej teórie.",
-      "description": "Pomáhame organizáciám riešiť zložité IT výzvy s jasnými, realizovateľnými riešeniami. Konzultanti Clariva kombinujú strategické myslenie s praktickou technickou hĺbkou — takže odporúčania prichádzajú so zabudovanou realizovateľnosťou. Či potrebujete modernizovať architektúru, znížiť prevádzkové náklady alebo sa orientovať v kritickom technologickom rozhodnutí, dáme vám cestu vpred, nie prezentáciu.",
+      "tagline": "Praktické technologické poradenstvo zamerané na reálnu realizáciu.",
+      "description": "Clariva pomáha organizáciám orientovať sa v zložitých technologických rozhodnutiach s praktickým poradenstvom, technickou expertízou a myslením zameraným na dodávku.\n\nOd architektonických posudkov a auditov dodávky po operačné výzvy, rozhodnutia o škálovaní a záchranu projektov podporujeme firmy riešeniami navrhnutými tak, aby fungovali v reálnych prostrediach — nielen v prezentáciách.\n\nNáš poradenský prístup spája strategickú perspektívu s praktickým inžinierskym pochopením, čím pomáha organizáciám znižovať riziko, zlepšovať efektivitu dodávky a robiť informované technologické rozhodnutia s istotou.",
       "usps": [
         {
-          "title": "Stratégia, ktorá je realizovateľná",
-          "description": "Naše odporúčania sú navrhnuté na realizáciu, nie na uloženie. Každý výstup obsahuje konkrétne kroky, ktoré váš tím môže okamžite podniknúť."
+          "title": "Stratégia zameraná na realizáciu",
+          "description": "Dodávame odporúčania navrhnuté na implementáciu — s jasnými prioritami, technickou realizovateľnosťou a merateľnými výsledkami."
         },
         {
-          "title": "Technológia a procesy spolu",
-          "description": "Pozeráme sa tak na systémy, ako aj na workflows okolo nich. Skutočné prínosy efektivity pochádzajú zo zladenia oboch, nie z optimalizácie v izolácii."
+          "title": "Zladenie technológií a prevádzky",
+          "description": "Hodnotíme systémy aj operačné workflows, aby technologické rozhodnutia podporovali reálne biznisové procesy."
         },
         {
-          "title": "Úprimní o trade-offoch",
-          "description": "Hovoríme vám, čo každá cesta stojí — v čase, peniazoch a riziku. Robíte informované rozhodnutia, nie tie, ktoré sú formované tým, čo chce predať dodávateľ."
+          "title": "Nezávislé a praktické poradenstvo",
+          "description": "Náš poradenský prístup je zameraný na dlhodobú biznisovú hodnotu, transparentné kompromisy a riešenia, ktoré sedia vašej operačnej realite."
         }
-      ]
+      ],
+      "highlights": {
+        "label": "Typické projekty",
+        "items": [
+          {
+            "title": "Audity architektúry a dodávky",
+            "body": "Nezávislé posúdenie architektúry, nastavenia dodávky a technického rizika."
+          },
+          {
+            "title": "Podpora pri záchrane projektov",
+            "body": "Stabilizácia a vrátenie problémových projektov späť na správnu cestu."
+          },
+          {
+            "title": "Modernizácia technológií",
+            "body": "Modernizácia starších systémov, technológií a postupov dodávky."
+          },
+          {
+            "title": "Posudky cloudu a infraštruktúry",
+            "body": "Posúdenie nastavenia cloudu, nákladov, škálovateľnosti a spoľahlivosti."
+          },
+          {
+            "title": "Posúdenie pripravenosti na AI",
+            "body": "Vyhodnotenie dát a procesov pre praktické zavedenie AI."
+          },
+          {
+            "title": "Optimalizácia procesov dodávky",
+            "body": "Zlepšenie toku dodávky, kvality a efektivity tímu."
+          },
+          {
+            "title": "Hodnotenie dodávateľov a platforiem",
+            "body": "Nezávislé posúdenie dodávateľov, nástrojov a platforiem."
+          }
+        ]
+      },
+      "title": "Technologické poradenstvo"
     },
     "tenders": {
       "title": "Verejné zákazky",
@@ -578,5 +718,51 @@
     "body": "Stránka, ktorú hľadáte, neexistuje, bola presunutá, alebo nikdy neexistovala.",
     "home": "Späť na domovskú stránku",
     "positions": "Pozrieť otvorené pozície"
+  },
+  "RealImpact": {
+    "label": "Reálny dopad na biznis",
+    "heading": "Reálny dopad na biznis",
+    "intro": "Pomáhame firmám napredovať rýchlejšie, škálovať múdrejšie a budovať technológie, ktoré vydržia — toto sú výsledky, ktoré naši klienti vidia.",
+    "outcomes": [
+      {
+        "title": "Rýchlejšie dodávacie cykly",
+        "body": "Pomáhame firmám zrýchliť dodávku produktov a platforiem."
+      },
+      {
+        "title": "Škálovateľná inžinierska kapacita",
+        "body": "Flexibilné tímy pripravené podporiť meniace sa priority biznisu."
+      },
+      {
+        "title": "Nižšia operačná komplexita",
+        "body": "Zjednodušujeme workflows, systémy a koordináciu dodávky."
+      },
+      {
+        "title": "Dlhodobá stabilita dodávky",
+        "body": "Spoľahlivé tímy a udržateľné riešenia postavené na kontinuite."
+      },
+      {
+        "title": "Zavádzanie AI a automatizácie",
+        "body": "Meníme operačné procesy na škálovateľné inteligentné workflows."
+      }
+    ],
+    "caseLabel": "Vybrané projekty",
+    "cases": [
+      {
+        "title": "AI platforma na extrakciu dát",
+        "body": "Pomáhame finančným organizáciám spracovať veľké objemy štruktúrovaných aj neštruktúrovaných dát cez automatizáciu poháňanú AI."
+      },
+      {
+        "title": "Podniková transformácia ServiceNow",
+        "body": "Podpora rozsiahlej operačnej digitalizácie cez škálovateľnú architektúru a governance platformy ServiceNow."
+      },
+      {
+        "title": "Kompletný QA dodávací tím pre podnikovú platformu",
+        "body": "Poskytnutie koordinovaných testovacích tímov vrátane test manažérov, automatizačných inžinierov a podpory releasov."
+      },
+      {
+        "title": "Dlhodobá inžinierska podpora kľúčových systémov",
+        "body": "Údržba a škálovanie biznisovo kritických prostredí cez zabudované inžinierske tímy."
+      }
+    ]
   }
 }

@@ -7,6 +7,7 @@ import HowWeWork from '@/components/HowWeWork'
 import CareProgram from '@/components/CareProgram'
 import Industries from '@/components/Industries'
 import WhyClariva from '@/components/WhyClariva'
+import RealImpact from '@/components/RealImpact'
 import FAQ from '@/components/FAQ'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
@@ -24,6 +25,7 @@ export default function Home() {
         <CareProgram />
         <Industries />
         <WhyClariva />
+        <RealImpact />
         <FAQ />
         <Contact />
       </main>

@@ -12,14 +12,14 @@
       "servicenow": "ServiceNow-Lösungen",
       "team-extension": "Teamerweiterung",
       "full-delivery-teams": "Vollständige Lieferteams",
-      "consulting": "Beratung",
+      "consulting": "Technologieberatung",
       "tenders": "Ausschreibungen"
     },
     "openPositions": "Offene Stellen"
   },
   "Hero": {
     "heading": "Wir entwickeln IT-Lösungen, die Ihr Unternehmen <gold>wirklich voranbringen</gold>.",
-    "subtext": "Von komplexen Systemen bis zu Datenplattformen — wir entwerfen, implementieren und skalieren Technologie, die in der realen Welt funktioniert.",
+    "subtext": "Maßgeschneiderte Software, KI-Lösungen und Engineering-Teams für ambitionierte Unternehmen.",
     "cta": "Gespräch anfragen",
     "ctaSecondary": "Unsere Leistungen ansehen ↓",
     "cards": {
@@ -45,7 +45,7 @@
     "label": "Über uns",
     "headlinePre": "Clariva ist ein Technologie- und Beratungsunternehmen mit Fokus auf",
     "headlineGold": "echte, funktionierende Lösungen.",
-    "body": "Wir kombinieren Senior-IT-Expertise, schnelle Umsetzung und KI-gestützte interne Systeme, um Unternehmen dabei zu helfen, schneller zu agieren und besser zu entwickeln. Kein Blabla — nur Technologie, die funktioniert, und Teams, die liefern.",
+    "body": "Wir entwerfen, bauen und skalieren digitale Lösungen durch Senior-Engineering, KI-Fähigkeiten und schnelle Umsetzung.",
     "pillars": [
       {
         "title": "Senior-Expertise",
@@ -102,7 +102,7 @@
         "bullets": []
       },
       "consulting": {
-        "title": "Beratung",
+        "title": "Technologieberatung",
         "description": "Beratung, die Sinn macht. Wir helfen Ihnen, komplexe IT-Herausforderungen mit praktischen, umsetzbaren Lösungen zu meistern. Keine unnötige Theorie — nur Ergebnisse.",
         "bullets": [
           "Prozessoptimierung",
@@ -204,37 +204,33 @@
     ]
   },
   "WhyClariva": {
-    "label": "Unser Unterschied",
-    "heading": "Warum Clariva",
-    "intro": "Weil Umsetzung entscheidend ist.",
-    "painPoints": [
-      "Sie brauchen Lösungen, nicht nur Ratschläge",
-      "Sie können sich keine Verzögerungen leisten",
-      "Sie brauchen erfahrene Fachkräfte, die liefern",
-      "Sie wollen einen Partner, der sich anpasst, nicht bremst"
-    ],
-    "quoteLine1": "Wir unterstützen nicht nur Ihre Projekte.",
-    "quoteLine2": "Wir helfen Ihnen, sie voranzubringen.",
+    "label": "Warum Clariva",
+    "heading": "Warum Unternehmen sich für Clariva entscheiden",
+    "body": "Wir glauben, dass Technologiepartnerschaften auf Vertrauen, Expertise und langfristiger Zuverlässigkeit beruhen sollten — nicht auf transaktionalem Staffing.\n\nClariva arbeitet mit Senior-Beratern und Delivery-Profis, die jahrelange echte Projekterfahrung in Engineering, Unternehmenssystemen und digitalen Transformationsinitiativen mitbringen. Unsere Teams konzentrieren sich darauf, zuerst das Problem zu verstehen, die richtigen Fragen zu stellen und Lösungen mit Präzision statt durch Versuch und Irrtum zu liefern.\n\nFür unsere Kunden agieren wir als langfristiger Technologiepartner, der Delivery unterstützt, Engineering-Kapazität skaliert und geschäftskritische Lösungen über die Zeit pflegt. Viele Organisationen verlassen sich auf Clariva-Berater als Teil ihrer Kernteams und vertrauen uns die laufende Delivery und operative Kontinuität an.\n\nWir bauen Kooperationsmodelle, die langfristig nachhaltig bleiben — wir kombinieren Flexibilität, Transparenz und partnerschaftliche Zusammenarbeit statt kurzfristigem kommerziellem Denken.\n\nDa erfolgreiche Delivery genauso von Menschen wie von Technologie abhängt, überwachen wir die Qualität der Zusammenarbeit aktiv über unser internes Care-Programm. Clariva arbeitet zudem regelmäßig in Unternehmensumgebungen mit strengen NDA-Vereinbarungen, in denen Kunden stets das volle Eigentum und die Kontrolle über ihre Systeme, Produkte und ihr geistiges Eigentum behalten.",
     "pillars": [
       {
-        "title": "Transparent",
-        "body": "Alles, was wir tun, ist für Sie sichtbar. Jederzeit."
+        "title": "Senior-geführte Delivery",
+        "body": "Erfahrene Berater, die Probleme effizient, professionell und mit langfristigem Denken lösen."
       },
       {
-        "title": "Volle Verantwortung",
-        "body": "Wir tragen die Verantwortung für das Ergebnis — Lieferung, Qualität und Nachbetreuung."
+        "title": "Langfristige Partnerschaften",
+        "body": "Wir bauen stabile Kooperationen rund um Kontinuität, Skalierbarkeit und nachhaltige Delivery-Modelle."
       },
       {
-        "title": "Remote-fähig",
-        "body": "Entwickelt für verteilte, asynchrone Zusammenarbeit."
+        "title": "Vertraut von Kernteams",
+        "body": "Unsere Berater werden oft Teil kritischer Engineering- und Betriebsumgebungen, auf die Kunden täglich angewiesen sind."
       },
       {
-        "title": "Agil als Standard",
-        "body": "Scrum, Kanban oder was auch immer wirklich für Sie funktioniert."
+        "title": "Flexibel & skalierbar",
+        "body": "Skalieren Sie die Delivery-Kapazität je nach wechselnden Projektprioritäten und Geschäftsanforderungen hoch oder runter."
       },
       {
-        "title": "Langfristige Partner",
-        "body": "Wir verschwinden nicht nach der Lieferung. Wir halten Ihr Produkt stabil und skalierbar."
+        "title": "Care-Programm & Aufsicht",
+        "body": "Wir unterstützen aktiv Kommunikation, Delivery-Qualität und Beraterzufriedenheit über jedes Engagement hinweg."
+      },
+      {
+        "title": "Vertrauen auf Enterprise-Niveau",
+        "body": "Erfahrung in NDA-gestützten Unternehmensumgebungen mit vollem Eigentumsschutz für Kunden."
       }
     ]
   },
@@ -350,118 +346,262 @@
   },
   "ServicePages": {
     "application-development": {
-      "title": "Anwendungsentwicklung",
-      "tagline": "Komplexe Software, geliefert ohne unnötigen Overhead.",
-      "description": "Wir sind spezialisiert auf komplexe Software, geliefert ohne unnötigen Overhead. Clariva beschleunigt die End-to-End-Entwicklung als selbstverwaltetes Senior-Softwareteam. Von der ersten Analyse und dem Design über Entwicklung, Testing, Deployment bis hin zum Support — wir arbeiten mit Kunden branchenübergreifend zusammen, um reale Geschäftsherausforderungen zu lösen. Unsere Ingenieure übernehmen das Problem, nicht nur das Ticket.",
+      "tagline": "Skalierbare Technologielösungen, mit Präzision geliefert.",
+      "description": "Senior-Engineering-Expertise. Schnelle Umsetzung. Langfristige Partnerschaften.\n\nClariva hilft Unternehmen, moderne digitale Lösungen durch Software-Engineering, KI-Fähigkeiten und Nearshore-Delivery zu entwerfen, zu bauen und zu skalieren.\n\nWir verbinden technische Expertise, Geschäftsverständnis und effiziente Umsetzung, um Technologie mit echtem Mehrwert zu liefern — von maßgeschneiderter Software und Cloud-Infrastruktur bis zu KI-gesteuerten Systemen und dedizierten Engineering-Teams.\n\nVon Architektur und Entwicklung über Deployment bis zum langfristigen Support konzentrieren wir uns auf skalierbare Lösungen, die für Wachstum gebaut sind.",
+      "cardsLabel": "Was wir liefern",
       "usps": [
         {
-          "title": "Ausschließlich Senior-Ingenieure",
-          "description": "Jedes Projekt wird mit erfahrenen Ingenieuren besetzt, die in Produktionsumgebungen geliefert haben. Keine Junioren, die auf Ihre Kosten lernen."
+          "title": "Software-Engineering",
+          "description": "Wir entwickeln skalierbare digitale Produkte, interne Plattformen und Unternehmensanwendungen, zugeschnitten auf echte Geschäftsbedürfnisse."
         },
         {
-          "title": "End-to-End-Verantwortung",
-          "description": "Wir übernehmen die volle Verantwortung von den Anforderungen bis zur Freigabe. Sie erhalten funktionierende Software, keine Übergabe-Checkliste."
+          "title": "KI & intelligente Automatisierung",
+          "description": "Wir helfen Unternehmen, den Betrieb zu verbessern und Wachstum zu beschleunigen — durch KI-gestützte Systeme und Automatisierung."
         },
         {
-          "title": "Transparente Lieferung",
-          "description": "Wöchentliche Demos, klare Meilensteine und direkte Kommunikation. Sie wissen immer, was gebaut wird und warum."
+          "title": "UX & Produktdenken",
+          "description": "Wir gestalten intuitive digitale Erlebnisse mit Fokus auf Usability, Performance und langfristigen Nutzerwert."
+        },
+        {
+          "title": "Qualitätssicherung & Testing",
+          "description": "Wir sichern Zuverlässigkeit, Performance und Stabilität durch kontinuierliches Testen und qualitätsorientierte Delivery."
         }
-      ]
+      ],
+      "technologies": {
+        "label": "Technologien, mit denen wir arbeiten",
+        "groups": [
+          {
+            "title": "Backend & Cloud",
+            "items": ".NET, Java, Python, Node.js, Azure, AWS, Kubernetes, Docker"
+          },
+          {
+            "title": "Frontend & Web-Plattformen",
+            "items": "React, Angular, TypeScript, Next.js, Full-Stack-Entwicklung"
+          },
+          {
+            "title": "KI & Daten",
+            "items": "LLM-Integrationen, KI-Automatisierung, Machine Learning, Data Engineering"
+          },
+          {
+            "title": "Mobile & digitale Plattformen",
+            "items": "iOS, Android, plattformübergreifende Apps, Unternehmenssysteme"
+          }
+        ]
+      },
+      "closing": {
+        "heading": "Für Unternehmen, die mehr als nur zusätzliche Kapazität brauchen.",
+        "body": "Wir arbeiten mit Unternehmen, die zuverlässige Engineering-Expertise, skalierbare Delivery und langfristige Technologie-Zusammenarbeit suchen."
+      },
+      "title": "Anwendungsentwicklung"
     },
     "data-and-ai": {
-      "title": "Daten & KI (Databricks)",
-      "tagline": "Erschließen Sie den vollen Wert Ihrer Daten.",
-      "description": "Wir helfen Organisationen, die Dateninfrastruktur aufzubauen, die Rohinformationen in Geschäftsvorteile verwandelt. Von der Gestaltung moderner Datenplattformen auf Databricks bis zur Bereitstellung produktionsreifer KI-Modelle — unsere Dateningenieure und -wissenschaftler überbrücken die Lücke zwischen dem, was Ihre Daten enthalten, und dem, was Ihr Unternehmen wissen muss.",
+      "tagline": "Moderne Datenplattformen und KI, gebaut für echten geschäftlichen Mehrwert.",
+      "description": "Clariva hilft Unternehmen, moderne Datenplattformen und KI-gesteuerte Lösungen zu bauen, die Entscheidungen verbessern, den Betrieb vereinfachen und Innovation beschleunigen.\n\nVon cloudbasierter Dateninfrastruktur und Analytics-Pipelines bis zu intelligenter Automatisierung und Machine Learning liefern wir skalierbare Systeme für echten Mehrwert — keine isolierten Proof-of-Concepts.\n\nMit modernen Technologien wie Databricks helfen wir Organisationen, fragmentierte Datenumgebungen zu vereinheitlichen, KI-fähige Architekturen zu schaffen und Rohdaten in umsetzbare Erkenntnisse zu verwandeln.",
+      "cardsLabel": "Was wir liefern",
       "usps": [
         {
-          "title": "Databricks-zertifizierte Expertise",
-          "description": "Unser Team hält Databricks-Zertifizierungen und hat groß angelegte Lakehouse-Architekturen in regulierten Branchen geliefert."
+          "title": "Moderne Datenplattformen",
+          "description": "Wir gestalten skalierbare cloud-native Datenumgebungen, die Daten für Analytics, KI und operatives Reporting zentralisieren, verarbeiten und vorbereiten."
         },
         {
-          "title": "Von der Pipeline zur Erkenntnis",
-          "description": "Wir bauen den vollständigen Stack — Ingestion, Transformation, Analytik und BI — damit Ihre Organisation auf Daten reagieren kann, nicht nur sie speichern."
+          "title": "End-to-End-Delivery",
+          "description": "Von Datenaufnahme und -transformation bis Analytics und Automatisierung bauen wir zuverlässige Lösungen mit Fokus auf messbare Geschäftsergebnisse."
         },
         {
-          "title": "KI, die in die Produktion geht",
-          "description": "Wir konzentrieren uns auf KI-Lösungen, die die Produktion erreichen, nicht auf Proof-of-Concepts in Jupyter Notebooks. Modelle werden getestet, überwacht und gewartet."
+          "title": "KI bereit für die Produktion",
+          "description": "Wir liefern KI-Lösungen für den realen Betrieb — skalierbar, wartbar und in bestehende Geschäftsprozesse integriert."
         }
-      ]
+      ],
+      "highlights": {
+        "label": "Womit wir helfen",
+        "items": [
+          {
+            "title": "Vereinheitlichte Datenökosysteme",
+            "body": "Verbinden fragmentierter Systeme zu einer einzigen skalierbaren Plattform."
+          },
+          {
+            "title": "KI & Automatisierung",
+            "body": "Effizienzsteigerung durch intelligente Workflows und datengetriebene Automatisierung."
+          },
+          {
+            "title": "Business Intelligence & Analytics",
+            "body": "Rohdaten in klare operative und strategische Erkenntnisse verwandeln."
+          },
+          {
+            "title": "Skalierbare Cloud-Architektur",
+            "body": "Moderne Infrastruktur für langfristiges Wachstum und Performance."
+          }
+        ]
+      },
+      "title": "Daten & KI (Databricks)"
     },
     "servicenow": {
-      "title": "ServiceNow-Lösungen",
-      "tagline": "Verwandeln Sie ServiceNow in ein leistungsstarkes Geschäftswerkzeug.",
-      "description": "ServiceNow ist eine der leistungsstärksten Plattformen im Unternehmensumfeld — aber nur, wenn sie präzise konfiguriert ist. Clariva bringt zertifizierte ServiceNow-Spezialisten mit, die sowohl die Plattform als auch die Geschäftsprozesse verstehen, die sie unterstützen muss. Wir implementieren, passen an und integrieren ServiceNow so, dass es für Ihre Workflows funktioniert, nicht gegen sie.",
+      "tagline": "ServiceNow in eine Plattform verwandeln, die echten Geschäftsbetrieb antreibt.",
+      "description": "Clariva hilft Organisationen, ServiceNow-Lösungen zu implementieren, zu optimieren und zu skalieren, die Workflows vereinfachen, die operative Effizienz steigern und langfristiges Wachstum unterstützen.\n\nWir verbinden Plattform-Expertise mit praktischem Geschäftsverständnis, um Lösungen zu gestalten, die zur tatsächlichen Arbeitsweise von Unternehmen passen — von IT-Service-Management und internen Workflows bis zu Automatisierung, Integrationen und der Optimierung von Unternehmensprozessen.\n\nOb wir bestehende Umgebungen erweitern oder neue Fähigkeiten von Grund auf aufbauen — wir konzentrieren uns auf skalierbare ServiceNow-Lösungen für Zuverlässigkeit, Usability und messbaren Mehrwert.",
       "usps": [
         {
-          "title": "Zertifizierte Spezialisten",
-          "description": "Unsere Berater halten aktive ServiceNow-Zertifizierungen (CSA, CAD, ITSM) und haben in ITSM, HRSD, CSM und benutzerdefinierten Anwendungen geliefert."
+          "title": "Zertifizierte ServiceNow-Expertise",
+          "description": "Unsere Spezialisten bringen praktische Erfahrung in ServiceNow-Implementierungen, Plattformanpassung und Optimierung von Unternehmens-Workflows mit."
         },
         {
-          "title": "Prozesse zuerst",
-          "description": "Wir kartieren Ihre Workflows, bevor wir die Plattform anfassen. Das Ergebnis ist eine Konfiguration, die widerspiegelt, wie Ihr Unternehmen tatsächlich arbeitet."
+          "title": "Prozessgetriebene Delivery",
+          "description": "Wir verstehen zuerst die operativen Workflows — und bauen ServiceNow-Lösungen passend zu echten Geschäftsprozessen, nicht zu generischen Vorlagen."
         },
         {
-          "title": "Reibungslose Unternehmensintegrationen",
-          "description": "ServiceNow lebt selten allein. Wir integrieren es mit Ihrem ERP, Identitätsprovider, Monitoring-Tools und benutzerdefinierten Systemen ohne Flickwerk."
+          "title": "Enterprise-Integrationen",
+          "description": "Wir verbinden ServiceNow mit bestehenden Systemen, Tools und Plattformen zu nahtlosen operativen Umgebungen in der gesamten Organisation."
         }
-      ]
+      ],
+      "highlights": {
+        "label": "Womit wir helfen",
+        "items": [
+          {
+            "title": "Workflow-Automatisierung",
+            "body": "Manuelle Prozesse reduzieren und die operative Effizienz teamübergreifend steigern."
+          },
+          {
+            "title": "IT-Service-Management",
+            "body": "IT-Betrieb durch skalierbare und strukturierte Service-Workflows modernisieren."
+          },
+          {
+            "title": "Plattformanpassung",
+            "body": "ServiceNow-Fähigkeiten an spezifische organisatorische und geschäftliche Bedürfnisse anpassen."
+          },
+          {
+            "title": "Optimierung von Unternehmensprozessen",
+            "body": "Systeme, Workflows und Kommunikation zu einem effizienten digitalen Ökosystem vereinen."
+          }
+        ]
+      },
+      "title": "ServiceNow-Lösungen"
     },
     "team-extension": {
-      "title": "Teamerweiterung",
-      "tagline": "Skalieren Sie schnell mit Fachleuten, die sofort produktiv sind.",
-      "description": "Wenn Sie Kapazität ohne den Overhead von Einstellungen benötigen, setzt Clariva erfahrene IT-Fachkräfte ein, die sich direkt in Ihr bestehendes Team integrieren. Sie arbeiten mit Ihren Tools, Ihren Prozessen und in Ihrem Rhythmus — unterstützt durch Clariva-Qualitätsgarantien, Verfügbarkeitszusagen und laufende Aufsicht, damit Sie niemals allein eine Auftragnehmerbeziehung verwalten müssen.",
+      "tagline": "Flexible Engineering-Kapazität — Delivery-Teams skalieren, ohne Ihr Geschäft auszubremsen.",
+      "description": "Wenn Projekte an Tempo gewinnen oder die interne Kapazität knapp wird, stellt Clariva erfahrene Technologie-Profis bereit, die sich direkt in Ihre Teams und Delivery-Umgebungen integrieren.\n\nUnsere Berater arbeiten in Ihren Tools, Workflows und Ihrer operativen Struktur, während Sie die volle Kontrolle über Prioritäten, Delivery und das tägliche Management behalten.\n\nWir setzen auf Flexibilität, Transparenz und langfristige Zuverlässigkeit — so können Organisationen Teams je nach wechselnden Geschäftsbedürfnissen, Projektanforderungen und Zeitplänen hoch- oder herunterskalieren.\n\nJedes Engagement wird durch kontinuierliche Aufsicht, geprüftes Reporting und aktive Kommunikation begleitet, um konsistente Qualität und Verantwortlichkeit über die gesamte Zusammenarbeit sicherzustellen.",
       "usps": [
         {
-          "title": "Vorgeprüftes Senior-Talent",
-          "description": "Jede Fachkraft wird vor der Platzierung bewertet. Wir matchen sowohl nach technischer Tiefe als auch nach Teamkompatibilität, damit die Integration schnell und reibungslos ist."
+          "title": "Senior-Engineering-Expertise",
+          "description": "Wir stellen erfahrene Berater bereit, die sich schnell in bestehende Teams, Projekte und Delivery-Prozesse integrieren."
         },
         {
-          "title": "Vollständige Verfügbarkeitsgarantien",
-          "description": "Wir garantieren die zu Beginn vereinbarten Stunden und Verpflichtungen. Wenn sich etwas ändert, lösen wir es — Sie verwalten es nicht."
+          "title": "Flexibles Skalierungsmodell",
+          "description": "Teams je nach Projektprioritäten, Delivery-Druck und sich entwickelnden Geschäftsbedürfnissen hoch- oder herunterskalieren — ohne langfristigen Overhead."
         },
         {
-          "title": "Laufende Clariva-Aufsicht",
-          "description": "Unser Care-Programm bedeutet, dass jeder platzierte Experte mit uns verbunden bleibt. Bindung, Motivation und Leistung sind unsere Verantwortung."
+          "title": "Gemanagte Qualität & Aufsicht",
+          "description": "Jedes Engagement umfasst operative Aufsicht, transparentes Reporting und kontinuierliche Qualitätskontrolle für zuverlässige Delivery."
         }
-      ]
+      ],
+      "highlights": {
+        "label": "Wie wir arbeiten",
+        "items": [
+          {
+            "title": "Transparente Delivery-Aufsicht",
+            "body": "Jede gemeldete Stunde und jedes Delivery-Ergebnis wird durch aktive Projektaufsicht und Kommunikation geprüft."
+          },
+          {
+            "title": "Volle operative Kontrolle",
+            "body": "Ihre Organisation behält die vollständige Kontrolle über Prioritäten, Workflows und das Beratermanagement."
+          },
+          {
+            "title": "Dynamische Kapazitätsskalierung",
+            "body": "Delivery-Kapazität je nach aktuellen Geschäfts- und Projektanforderungen erweitern oder reduzieren."
+          }
+        ]
+      },
+      "title": "Teamerweiterung"
     },
     "full-delivery-teams": {
-      "title": "Vollständige Lieferteams",
-      "tagline": "Ein vollständiges Team, bereit vom ersten Tag an zu liefern.",
-      "description": "Manche Herausforderungen brauchen mehr als ein paar zusätzliche Hände — sie brauchen eine vollständig zusammengestellte, selbstverwaltete Liefereinheit. Clariva baut und setzt vollständige Teams ein: Entwickler, Tester und produktnahe Rollen, die gemeinsam unter einem einheitlichen Liefermodell arbeiten. Sie setzen die Richtung; wir besitzen die Umsetzung.",
+      "tagline": "Koordinierte Engineering-Teams, bereit zur Delivery ab Tag eins.",
+      "description": "Manche Projekte brauchen mehr als einzelne Spezialisten — sie erfordern erfahrene, gut koordinierte Teams, die sofort liefern können.\n\nClariva stellt komplette Delivery-Einheiten zusammen und setzt sie ein, zugeschnitten auf die aktuelle Phase Ihres Produkts, Projekts oder Ihrer Transformationsinitiative. Von Architektur und Entwicklung über Qualitätssicherung, SAP-Delivery, Testbetrieb bis zum Plattform-Support integrieren sich unsere Teams schnell und arbeiten über ein einheitliches Delivery-Modell.\n\nOb Sie eine dedizierte QA-Funktion, ein komplettes SAP-Team oder eine End-to-End-Engineering-Einheit mit Architekten, Entwicklern, Testern und Delivery-Koordination brauchen — wir bieten skalierbare Teams für zuverlässige Umsetzung und langfristige Zusammenarbeit.",
       "usps": [
         {
-          "title": "Zusammengestellt in Tagen, nicht Monaten",
-          "description": "Wir pflegen ein Netzwerk erfahrener Fachkräfte, die schnell mobilisiert werden können. Typische Teamzusammenstellung dauert ein bis zwei Wochen, nicht Quartale."
+          "title": "Teams rund um Ihre Delivery-Bedürfnisse",
+          "description": "Wir stellen Delivery-Teams nach der spezifischen Phase, Komplexität und den operativen Anforderungen Ihres Projekts zusammen."
         },
         {
-          "title": "Selbstverwaltete Lieferung",
-          "description": "Unsere Teams kommen mit eingebauter interner Koordination. Sie erhalten Fortschritt, keine Status-Meetings — Ergebnisse, keinen Prozess-Overhead."
+          "title": "Koordiniert & lieferbereit",
+          "description": "Unsere Teams arbeiten über abgestimmte Workflows, geteilte Verantwortung und delivery-orientierte Zusammenarbeit ab Tag eins."
         },
         {
-          "title": "Qualitäts- und Liefergarantien",
-          "description": "Ausgabequalität, Geschwindigkeit und Verfügbarkeit werden durch Clariva-Verpflichtungen unterstützt, nicht nur durch den guten Willen einzelner Auftragnehmer."
+          "title": "Flexible Skalierung & Teamzusammensetzung",
+          "description": "Von spezialisierten QA-Squads bis zu kompletten cross-funktionalen Engineering-Teams skalieren wir die Delivery-Kapazität nach sich entwickelnden Anforderungen."
         }
-      ]
+      ],
+      "highlights": {
+        "label": "Typische Team-Setups",
+        "items": [
+          {
+            "title": "QA- & Testing-Teams",
+            "body": "Testmanager, manuelle Tester und Automatisierungsingenieure mit Fokus auf Qualität und Release-Stabilität."
+          },
+          {
+            "title": "SAP-Delivery-Teams",
+            "body": "Erfahrene SAP-Berater, ABAP-Entwickler und Fachspezialisten für Unternehmensumgebungen."
+          },
+          {
+            "title": "Cross-funktionale Engineering-Teams",
+            "body": "Architekten, Entwickler, QA-Spezialisten und Delivery-Leads als einheitliches Produktteam."
+          },
+          {
+            "title": "Plattform- & Betriebs-Support",
+            "body": "Dedizierte Spezialisten für laufenden Betrieb, Wartung und langfristiges Plattformwachstum."
+          }
+        ]
+      },
+      "title": "Vollständige Lieferteams"
     },
     "consulting": {
-      "title": "Beratung",
-      "tagline": "Praktische IT-Strategie — keine unnötige Theorie.",
-      "description": "Wir helfen Organisationen, komplexe IT-Herausforderungen mit klaren, umsetzbaren Lösungen zu meistern. Clariva-Berater kombinieren strategisches Denken mit praktischer technischer Tiefe — sodass Empfehlungen mit eingebauter Machbarkeit kommen. Ob Sie eine Architektur modernisieren, Betriebskosten senken oder eine kritische Technologieentscheidung navigieren müssen, wir geben Ihnen einen Weg nach vorne, keine Präsentation.",
+      "tagline": "Praktische Technologieberatung mit Fokus auf echte Umsetzung.",
+      "description": "Clariva hilft Organisationen, komplexe Technologieentscheidungen mit praktischer Beratung, technischer Expertise und delivery-orientiertem Denken zu meistern.\n\nVon Architektur-Reviews und Delivery-Audits bis zu operativen Herausforderungen, Skalierungsentscheidungen und Projektrettung unterstützen wir Unternehmen mit Lösungen, die in realen Umgebungen funktionieren — nicht nur in Präsentationen.\n\nUnser Beratungsansatz verbindet strategische Perspektive mit praktischem Engineering-Verständnis und hilft Organisationen, Risiken zu senken, die Delivery-Effizienz zu steigern und fundierte Technologieentscheidungen mit Zuversicht zu treffen.",
       "usps": [
         {
-          "title": "Strategie, die umsetzbar ist",
-          "description": "Unsere Empfehlungen sind darauf ausgelegt, gebaut zu werden, nicht abgelegt zu werden. Jeder Output enthält konkrete nächste Schritte, die Ihr Team sofort umsetzen kann."
+          "title": "Umsetzungsorientierte Strategie",
+          "description": "Wir liefern Empfehlungen für die Implementierung — mit klaren Prioritäten, technischer Machbarkeit und messbaren Ergebnissen."
         },
         {
-          "title": "Technologie und Prozesse zusammen",
-          "description": "Wir betrachten sowohl die Systeme als auch die Workflows um sie herum. Echte Effizienzgewinne kommen aus der Ausrichtung beider, nicht aus der Optimierung in Isolation."
+          "title": "Abstimmung von Technologie & Betrieb",
+          "description": "Wir bewerten Systeme und operative Workflows, damit Technologieentscheidungen echte Geschäftsprozesse unterstützen."
         },
         {
-          "title": "Ehrlich über Kompromisse",
-          "description": "Wir sagen Ihnen, was jeder Weg kostet — in Zeit, Geld und Risiko. Sie treffen informierte Entscheidungen, keine, die davon geprägt sind, was ein Anbieter verkaufen möchte."
+          "title": "Unabhängige & praktische Beratung",
+          "description": "Unser Ansatz fokussiert langfristigen Geschäftswert, transparente Kompromisse und Lösungen, die zu Ihrer operativen Realität passen."
         }
-      ]
+      ],
+      "highlights": {
+        "label": "Typische Engagements",
+        "items": [
+          {
+            "title": "Architektur- & Delivery-Audits",
+            "body": "Unabhängige Prüfung von Architektur, Delivery-Setup und technischem Risiko."
+          },
+          {
+            "title": "Projektrettungs-Support",
+            "body": "Stabilisierung und Zurückführen schwieriger Projekte auf Kurs."
+          },
+          {
+            "title": "Technologie-Modernisierung",
+            "body": "Modernisierung von Legacy-Systemen, Stacks und Delivery-Praktiken."
+          },
+          {
+            "title": "Cloud- & Infrastruktur-Reviews",
+            "body": "Bewertung von Cloud-Setup, Kosten, Skalierbarkeit und Zuverlässigkeit."
+          },
+          {
+            "title": "KI-Readiness-Bewertungen",
+            "body": "Bewertung von Daten und Prozessen für die praktische KI-Einführung."
+          },
+          {
+            "title": "Optimierung der Delivery-Prozesse",
+            "body": "Verbesserung von Delivery-Fluss, Qualität und Teameffizienz."
+          },
+          {
+            "title": "Anbieter- & Plattform-Evaluierungen",
+            "body": "Unabhängige Bewertung von Anbietern, Tools und Plattformen."
+          }
+        ]
+      },
+      "title": "Technologieberatung"
     },
     "tenders": {
       "title": "Ausschreibungen",
@@ -578,5 +718,51 @@
     "body": "Die gesuchte Seite existiert nicht, wurde verschoben oder gab es nie.",
     "home": "Zurück zur Startseite",
     "positions": "Offene Stellen ansehen"
+  },
+  "RealImpact": {
+    "label": "Echter geschäftlicher Mehrwert",
+    "heading": "Echter geschäftlicher Mehrwert",
+    "intro": "Wir helfen Unternehmen, schneller voranzukommen, klüger zu skalieren und Technologie zu bauen, die Bestand hat — das sind die Ergebnisse, die unsere Kunden sehen.",
+    "outcomes": [
+      {
+        "title": "Schnellere Delivery-Zyklen",
+        "body": "Wir helfen Unternehmen, die Produkt- und Plattform-Delivery zu beschleunigen."
+      },
+      {
+        "title": "Skalierbare Engineering-Kapazität",
+        "body": "Flexible Teams, bereit für wechselnde Geschäftsprioritäten."
+      },
+      {
+        "title": "Geringere operative Komplexität",
+        "body": "Wir vereinfachen Workflows, Systeme und Delivery-Koordination."
+      },
+      {
+        "title": "Langfristige Delivery-Stabilität",
+        "body": "Zuverlässige Teams und wartbare Lösungen, gebaut für Kontinuität."
+      },
+      {
+        "title": "KI- & Automatisierungsbefähigung",
+        "body": "Wir verwandeln operative Prozesse in skalierbare intelligente Workflows."
+      }
+    ],
+    "caseLabel": "Ausgewählte Projekte",
+    "cases": [
+      {
+        "title": "KI-gestützte Datenextraktionsplattform",
+        "body": "Wir helfen Finanzorganisationen, große Mengen strukturierter und unstrukturierter Daten durch KI-gestützte Automatisierung zu verarbeiten."
+      },
+      {
+        "title": "Enterprise-ServiceNow-Transformation",
+        "body": "Unterstützung umfangreicher operativer Digitalisierung durch skalierbare ServiceNow-Plattformarchitektur und Governance."
+      },
+      {
+        "title": "Komplettes QA-Delivery-Team für Enterprise-Plattform",
+        "body": "Bereitstellung koordinierter Testteams inkl. Testmanagern, Automatisierungsingenieuren und Release-Support."
+      },
+      {
+        "title": "Langfristiger Engineering-Support für Kernsysteme",
+        "body": "Wartung und Skalierung geschäftskritischer Delivery-Umgebungen durch eingebettete Engineering-Teams."
+      }
+    ]
   }
 }

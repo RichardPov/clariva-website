@@ -12,14 +12,14 @@
       "servicenow": "ServiceNow Solutions",
       "team-extension": "Team Extension",
       "full-delivery-teams": "Full Delivery Teams",
-      "consulting": "Consulting",
+      "consulting": "Technology Advisory",
       "tenders": "Tenders"
     },
     "openPositions": "Open Positions"
   },
   "Hero": {
     "heading": "We build IT solutions that actually <gold>move your business</gold> forward.",
-    "subtext": "From complex systems to data platforms — we design, implement, and scale technology that works in the real world.",
+    "subtext": "Custom software, AI solutions and engineering teams tailored for ambitious companies.",
     "cta": "Let's talk",
     "ctaSecondary": "See our services ↓",
     "cards": {
@@ -45,7 +45,7 @@
     "label": "About",
     "headlinePre": "Clariva is a technology and consulting company focused on delivering",
     "headlineGold": "real, working solutions.",
-    "body": "We combine senior IT expertise, fast execution, and AI-powered internal systems to help companies move faster and build better. No fluff — just technology that works and teams that deliver.",
+    "body": "We design, build and scale digital solutions through senior engineering, AI capabilities and fast execution.",
     "pillars": [
       {
         "title": "Senior expertise",
@@ -102,7 +102,7 @@
         "bullets": []
       },
       "consulting": {
-        "title": "Consulting",
+        "title": "Technology Advisory",
         "description": "Consulting that makes sense. We help you solve complex IT challenges with practical, actionable solutions. No unnecessary theory — just results.",
         "bullets": [
           "Process optimization",
@@ -204,37 +204,33 @@
     ]
   },
   "WhyClariva": {
-    "label": "Our difference",
-    "heading": "Why Clariva",
-    "intro": "Because execution is what matters.",
-    "painPoints": [
-      "You need solutions, not just advice",
-      "You can't afford delays",
-      "You need experienced professionals who deliver",
-      "You want a partner who adapts, not slows you down"
-    ],
-    "quoteLine1": "We don't just support your projects.",
-    "quoteLine2": "We help you move them forward.",
+    "label": "Why Clariva",
+    "heading": "Why companies choose Clariva",
+    "body": "We believe technology partnerships should be built on trust, expertise and long-term reliability — not transactional staffing.\n\nClariva works with senior consultants and delivery professionals who bring years of real project experience across engineering, enterprise systems and digital transformation initiatives. Our teams focus on understanding the problem first, asking the right questions and delivering solutions with precision instead of trial-and-error execution.\n\nFor our clients, we operate as a long-term technology partner capable of supporting delivery, scaling engineering capacity and maintaining business-critical solutions over time. Many organisations rely on Clariva consultants as part of their core teams, trusting us with ongoing delivery and operational continuity.\n\nWe build collaboration models designed to remain sustainable long-term — combining flexibility, transparency and partnership-driven cooperation instead of short-term commercial thinking.\n\nBecause successful delivery depends on people as much as technology, we actively monitor collaboration quality through our internal Care Program. Clariva also regularly operates in enterprise environments protected by strict NDA agreements, where clients always retain full ownership and control over their systems, products and intellectual property.",
     "pillars": [
       {
-        "title": "Transparent",
-        "body": "Everything we do is visible to you. All the time."
+        "title": "Senior-Driven Delivery",
+        "body": "Experienced consultants focused on solving problems efficiently, professionally and with long-term thinking."
       },
       {
-        "title": "Full Accountability",
-        "body": "We own the outcome end-to-end — delivery, quality, and follow-through."
+        "title": "Long-Term Partnerships",
+        "body": "We build stable collaborations designed around continuity, scalability and sustainable delivery models."
       },
       {
-        "title": "Remote-ready",
-        "body": "Built for distributed, async collaboration."
+        "title": "Trusted by Core Teams",
+        "body": "Our consultants often become part of critical engineering and operational environments clients depend on daily."
       },
       {
-        "title": "Agile by default",
-        "body": "Scrum, Kanban, or whatever actually works for you."
+        "title": "Flexible & Scalable",
+        "body": "Scale delivery capacity up or down based on changing project priorities and business requirements."
       },
       {
-        "title": "Long-term partners",
-        "body": "We don't ship and ditch. We keep your product stable and scalable."
+        "title": "Care Program & Oversight",
+        "body": "We actively support communication, delivery quality and consultant satisfaction throughout every engagement."
+      },
+      {
+        "title": "Enterprise-Level Trust",
+        "body": "Experience working within NDA-driven enterprise environments with full client ownership protection."
       }
     ]
   },
@@ -351,117 +347,261 @@
   "ServicePages": {
     "application-development": {
       "title": "Application Development",
-      "tagline": "Complex software, delivered without the overhead.",
-      "description": "We specialise in complex software, delivered without the overhead. Clariva accelerates end-to-end development as a self-managed, senior software team. From initial analysis and design to development, testing, deployment, and support — we partner with clients across industries to solve real business challenges. Our engineers own the problem, not just the ticket.",
+      "tagline": "Scalable technology solutions, delivered with precision.",
+      "description": "Senior engineering expertise. Fast execution. Long-term partnerships.\n\nClariva helps companies design, build and scale modern digital solutions through software engineering, AI capabilities and nearshore delivery.\n\nWe combine technical expertise, business understanding and efficient execution to deliver technology that creates real impact — from custom software and cloud infrastructure to AI-driven systems and dedicated engineering teams.\n\nFrom architecture and development to deployment and long-term support, we focus on scalable solutions built for growth.",
+      "cardsLabel": "What we deliver",
       "usps": [
         {
-          "title": "Senior-only engineers",
-          "description": "Every project is staffed with experienced engineers who have delivered in production environments. No juniors learning on your time."
+          "title": "Software Engineering",
+          "description": "We develop scalable digital products, internal platforms and enterprise applications tailored to real business needs."
         },
         {
-          "title": "End-to-end ownership",
-          "description": "We take full accountability from requirements through release. You get working software, not a handoff checklist."
+          "title": "AI & Intelligent Automation",
+          "description": "We help companies improve operations and accelerate growth through AI-powered systems and automation."
         },
         {
-          "title": "Transparent delivery",
-          "description": "Weekly demos, clear milestones, and direct communication. You always know what is being built and why."
+          "title": "UX & Product Thinking",
+          "description": "We design intuitive digital experiences focused on usability, performance and long-term user value."
+        },
+        {
+          "title": "Quality Assurance & Testing",
+          "description": "We ensure reliability, performance and stability through continuous testing and quality-focused delivery."
         }
-      ]
+      ],
+      "technologies": {
+        "label": "Technologies we work with",
+        "groups": [
+          {
+            "title": "Backend & Cloud",
+            "items": ".NET, Java, Python, Node.js, Azure, AWS, Kubernetes, Docker"
+          },
+          {
+            "title": "Frontend & Web Platforms",
+            "items": "React, Angular, TypeScript, Next.js, Full-stack Development"
+          },
+          {
+            "title": "AI & Data",
+            "items": "LLM Integrations, AI Automation, Machine Learning, Data Engineering"
+          },
+          {
+            "title": "Mobile & Digital Platforms",
+            "items": "iOS, Android, Cross-platform applications, Enterprise systems"
+          }
+        ]
+      },
+      "closing": {
+        "heading": "Built for companies that need more than just extra capacity.",
+        "body": "We partner with businesses looking for reliable engineering expertise, scalable delivery and long-term technology collaboration."
+      }
     },
     "data-and-ai": {
       "title": "Data & AI (Databricks)",
-      "tagline": "Unlock the full value of your data.",
-      "description": "We help organisations build the data infrastructure that turns raw information into business advantage. From designing modern data platforms on Databricks to deploying production-ready AI models, our data engineers and scientists bridge the gap between what your data contains and what your business needs to know.",
+      "tagline": "Modern data platforms and AI built for real business impact.",
+      "description": "Clariva helps companies build modern data platforms and AI-driven solutions that improve decision-making, simplify operations and accelerate innovation.\n\nFrom cloud-based data infrastructure and analytics pipelines to intelligent automation and machine learning, we deliver scalable systems designed for real business impact — not isolated proof-of-concepts.\n\nUsing modern technologies such as Databricks, we help organisations unify fragmented data environments, create AI-ready architectures and turn raw information into actionable insight.",
+      "cardsLabel": "What we deliver",
       "usps": [
         {
-          "title": "Databricks-certified expertise",
-          "description": "Our team holds Databricks certifications and has delivered large-scale lakehouse architectures across regulated industries."
+          "title": "Modern Data Platforms",
+          "description": "We design scalable cloud-native data environments that centralize, process and prepare data for analytics, AI and operational reporting."
         },
         {
-          "title": "From pipeline to insight",
-          "description": "We build the full stack — ingestion, transformation, analytics, and BI — so your organisation can act on data, not just store it."
+          "title": "End-to-End Delivery",
+          "description": "From data ingestion and transformation to analytics and automation, we build reliable solutions focused on measurable business outcomes."
         },
         {
-          "title": "AI that ships",
-          "description": "We focus on AI solutions that reach production, not proof-of-concepts that live in Jupyter notebooks. Models are tested, monitored, and maintained."
+          "title": "AI Ready for Production",
+          "description": "We deliver AI solutions designed for real-world operations — scalable, maintainable and integrated into existing business processes."
         }
-      ]
+      ],
+      "highlights": {
+        "label": "What we help with",
+        "items": [
+          {
+            "title": "Unified data ecosystems",
+            "body": "Connect fragmented systems into a single scalable platform."
+          },
+          {
+            "title": "AI & automation",
+            "body": "Improve efficiency through intelligent workflows and data-driven automation."
+          },
+          {
+            "title": "Business intelligence & analytics",
+            "body": "Transform raw data into clear operational and strategic insights."
+          },
+          {
+            "title": "Scalable cloud architecture",
+            "body": "Build modern infrastructure designed for long-term growth and performance."
+          }
+        ]
+      }
     },
     "servicenow": {
       "title": "ServiceNow Solutions",
-      "tagline": "Turn ServiceNow into a powerful business tool.",
-      "description": "ServiceNow is one of the most powerful platforms in the enterprise — but only when configured with precision. Clariva brings certified ServiceNow specialists who understand both the platform and the business processes it needs to support. We implement, customise, and integrate ServiceNow so it works for your workflows, not against them.",
+      "tagline": "Transforming ServiceNow into a platform that drives real business operations.",
+      "description": "Clariva helps organisations implement, optimise and scale ServiceNow solutions that simplify workflows, improve operational efficiency and support long-term business growth.\n\nWe combine platform expertise with practical business understanding to design solutions that fit the way companies actually operate — from IT service management and internal workflows to automation, integrations and enterprise process optimisation.\n\nWhether extending existing environments or building new capabilities from the ground up, we focus on scalable ServiceNow solutions designed for reliability, usability and measurable impact.",
       "usps": [
         {
-          "title": "Certified specialists",
-          "description": "Our consultants hold active ServiceNow certifications (CSA, CAD, ITSM) and have delivered across ITSM, HRSD, CSM, and custom applications."
+          "title": "Certified ServiceNow Expertise",
+          "description": "Our specialists bring hands-on experience across ServiceNow implementations, platform customisation and enterprise workflow optimisation."
         },
         {
-          "title": "Process-first thinking",
-          "description": "We map your workflows before touching the platform. The result is configuration that reflects how your business actually operates."
+          "title": "Process-Driven Delivery",
+          "description": "We focus on understanding operational workflows first — building ServiceNow solutions that align with real business processes, not generic templates."
         },
         {
-          "title": "Smooth enterprise integrations",
-          "description": "ServiceNow rarely lives alone. We integrate it with your ERP, identity providers, monitoring tools, and custom systems without duct tape."
+          "title": "Enterprise Integrations",
+          "description": "We connect ServiceNow with existing systems, tools and platforms to create seamless operational environments across the organisation."
         }
-      ]
+      ],
+      "highlights": {
+        "label": "What we help with",
+        "items": [
+          {
+            "title": "Workflow automation",
+            "body": "Reduce manual processes and improve operational efficiency across teams."
+          },
+          {
+            "title": "IT service management",
+            "body": "Modernise IT operations through scalable and structured service workflows."
+          },
+          {
+            "title": "Platform customisation",
+            "body": "Tailor ServiceNow capabilities to specific organisational and business needs."
+          },
+          {
+            "title": "Enterprise process optimisation",
+            "body": "Unify systems, workflows and communication into a streamlined digital ecosystem."
+          }
+        ]
+      }
     },
     "team-extension": {
       "title": "Team Extension",
-      "tagline": "Scale fast with professionals who hit the ground running.",
-      "description": "When you need capacity without the overhead of hiring, Clariva deploys experienced IT professionals who integrate directly into your existing team. They operate on your tools, your processes, and your cadence — backed by Clariva quality guarantees, availability commitments, and ongoing oversight so you never manage a contractor relationship alone.",
+      "tagline": "Flexible engineering capacity — scale delivery teams without slowing down your business.",
+      "description": "When projects accelerate or internal capacity becomes limited, Clariva provides experienced technology professionals who integrate directly into your teams and delivery environments.\n\nOur consultants work within your tools, workflows and operational structure while you retain full control over priorities, delivery and day-to-day management.\n\nWe focus on flexibility, transparency and long-term reliability — allowing organisations to scale teams up or down based on changing business needs, project demands and delivery timelines.\n\nEvery engagement is supported through continuous oversight, validated reporting and active communication to ensure consistent quality and accountability throughout the collaboration.",
       "usps": [
         {
-          "title": "Pre-vetted, senior talent",
-          "description": "Every professional is assessed before placement. We match on both technical depth and team compatibility so integration is fast and frictionless."
+          "title": "Senior Engineering Expertise",
+          "description": "We provide experienced consultants who integrate quickly into existing teams, projects and delivery processes."
         },
         {
-          "title": "Full availability guarantees",
-          "description": "We guarantee the hours and commitments agreed at the start. If something changes, we resolve it — you do not manage it."
+          "title": "Flexible Scaling Model",
+          "description": "Scale teams up or down based on project priorities, delivery pressure and evolving business needs — without long-term overhead."
         },
         {
-          "title": "Ongoing Clariva oversight",
-          "description": "Our Care Program means every placed expert stays connected to us. Retention, motivation, and performance are our responsibility."
+          "title": "Managed Quality & Oversight",
+          "description": "Every engagement includes operational oversight, transparent reporting and continuous quality control to ensure reliable delivery."
         }
-      ]
+      ],
+      "highlights": {
+        "label": "How we work",
+        "items": [
+          {
+            "title": "Transparent delivery oversight",
+            "body": "Every reported hour and delivery output is validated through active project oversight and communication."
+          },
+          {
+            "title": "Full operational control",
+            "body": "Your organisation keeps complete control over priorities, workflows and consultant management."
+          },
+          {
+            "title": "Dynamic capacity scaling",
+            "body": "Expand or reduce delivery capacity based on current business and project requirements."
+          }
+        ]
+      }
     },
     "full-delivery-teams": {
       "title": "Full Delivery Teams",
-      "tagline": "A complete team, ready to deliver from day one.",
-      "description": "Some challenges need more than a few extra hands — they need a fully assembled, self-managed delivery unit. Clariva builds and deploys complete teams: developers, testers, and product-adjacent roles working together under a unified delivery model. You set the direction; we own the execution.",
+      "tagline": "Coordinated engineering teams, ready to deliver from day one.",
+      "description": "Some projects need more than individual specialists — they require experienced, well-coordinated teams capable of delivering immediately.\n\nClariva assembles and deploys complete delivery units tailored to the current stage of your product, project or transformation initiative. From architecture and development to quality assurance, SAP delivery, testing operations and platform support, our teams integrate quickly and operate through a unified delivery model.\n\nWhether you need a dedicated QA function, a full SAP team, or an end-to-end engineering unit covering architects, developers, testers and delivery coordination, we provide scalable teams designed for reliable execution and long-term collaboration.",
       "usps": [
         {
-          "title": "Assembled in days, not months",
-          "description": "We maintain a network of experienced professionals who can be mobilised quickly. Typical team assembly takes one to two weeks, not quarters."
+          "title": "Teams Built Around Your Delivery Needs",
+          "description": "We assemble delivery teams based on the specific phase, complexity and operational requirements of your project."
         },
         {
-          "title": "Self-managed delivery",
-          "description": "Our teams come with internal coordination built in. You get progress, not status meetings — results, not process overhead."
+          "title": "Coordinated & Delivery-Ready",
+          "description": "Our teams operate through aligned workflows, shared responsibility and delivery-focused collaboration from day one."
         },
         {
-          "title": "Quality and delivery guarantees",
-          "description": "Output quality, velocity, and availability are backed by Clariva commitments, not just goodwill from individual contractors."
+          "title": "Flexible Scaling & Team Composition",
+          "description": "From specialised QA squads to full cross-functional engineering teams, we scale delivery capacity based on evolving business and project demands."
         }
-      ]
+      ],
+      "highlights": {
+        "label": "Typical team setups",
+        "items": [
+          {
+            "title": "QA & Testing Teams",
+            "body": "Test managers, manual testers and automation engineers focused on quality and release stability."
+          },
+          {
+            "title": "SAP Delivery Teams",
+            "body": "Experienced SAP consultants, ABAP developers and functional specialists for enterprise environments."
+          },
+          {
+            "title": "Cross-Functional Engineering Teams",
+            "body": "Architects, developers, QA specialists and delivery leads working as a unified product team."
+          },
+          {
+            "title": "Platform & Operations Support",
+            "body": "Dedicated specialists supporting ongoing operations, maintenance and long-term platform growth."
+          }
+        ]
+      }
     },
     "consulting": {
-      "title": "Consulting",
-      "tagline": "Practical IT strategy — no unnecessary theory.",
-      "description": "We help organisations solve complex IT challenges with clear, implementable solutions. Clariva consultants combine strategic thinking with hands-on technical depth — so recommendations come with feasibility baked in. Whether you need to modernise an architecture, reduce operational costs, or navigate a critical technology decision, we give you a path forward, not a slide deck.",
+      "title": "Technology Advisory",
+      "tagline": "Practical technology guidance focused on real execution.",
+      "description": "Clariva helps organisations navigate complex technology decisions with practical guidance, technical expertise and delivery-focused thinking.\n\nFrom architecture reviews and delivery audits to operational challenges, scaling decisions and project recovery, we support companies with solutions designed to work in real environments — not just in presentations.\n\nOur advisory approach combines strategic perspective with hands-on engineering understanding, helping organisations reduce risk, improve delivery efficiency and make informed technology decisions with confidence.",
       "usps": [
         {
-          "title": "Strategy that is executable",
-          "description": "Our recommendations are designed to be built, not filed away. Every output includes concrete next steps that your team can act on immediately."
+          "title": "Execution-Focused Strategy",
+          "description": "We deliver recommendations designed for implementation — with clear priorities, technical feasibility and measurable outcomes."
         },
         {
-          "title": "Technology and process together",
-          "description": "We look at both the systems and the workflows around them. Real efficiency gains come from aligning the two, not optimising in isolation."
+          "title": "Technology & Operations Alignment",
+          "description": "We evaluate both systems and operational workflows to ensure technology decisions support real business processes."
         },
         {
-          "title": "Honest about trade-offs",
-          "description": "We tell you what each path costs — in time, money, and risk. You make informed decisions, not ones shaped by what a vendor wants to sell."
+          "title": "Independent & Practical Guidance",
+          "description": "Our advisory approach is focused on long-term business value, transparent trade-offs and solutions that fit your operational reality."
         }
-      ]
+      ],
+      "highlights": {
+        "label": "Typical engagements",
+        "items": [
+          {
+            "title": "Architecture & delivery audits",
+            "body": "Independent reviews of architecture, delivery setup and technical risk."
+          },
+          {
+            "title": "Project recovery support",
+            "body": "Stabilising and getting struggling projects back on track."
+          },
+          {
+            "title": "Technology modernisation",
+            "body": "Modernising legacy systems, stacks and delivery practices."
+          },
+          {
+            "title": "Cloud & infrastructure reviews",
+            "body": "Assessing cloud setup, cost, scalability and reliability."
+          },
+          {
+            "title": "AI readiness assessments",
+            "body": "Evaluating data and processes for practical AI adoption."
+          },
+          {
+            "title": "Delivery process optimisation",
+            "body": "Improving delivery flow, quality and team efficiency."
+          },
+          {
+            "title": "Vendor & platform evaluations",
+            "body": "Independent assessment of vendors, tools and platforms."
+          }
+        ]
+      }
     },
     "tenders": {
       "title": "Tenders",
@@ -578,5 +718,51 @@
     "body": "The page you're looking for doesn't exist, was moved, or never existed.",
     "home": "Back to homepage",
     "positions": "See open positions"
+  },
+  "RealImpact": {
+    "label": "Real Business Impact",
+    "heading": "Real business impact",
+    "intro": "We help companies move faster, scale smarter and build technology that lasts — here are the outcomes our clients see.",
+    "outcomes": [
+      {
+        "title": "Faster delivery cycles",
+        "body": "Helping companies accelerate product and platform delivery."
+      },
+      {
+        "title": "Scalable engineering capacity",
+        "body": "Flexible teams ready to support changing business priorities."
+      },
+      {
+        "title": "Reduced operational complexity",
+        "body": "Simplifying workflows, systems and delivery coordination."
+      },
+      {
+        "title": "Long-term delivery stability",
+        "body": "Reliable teams and maintainable solutions built for continuity."
+      },
+      {
+        "title": "AI & automation enablement",
+        "body": "Turning operational processes into scalable intelligent workflows."
+      }
+    ],
+    "caseLabel": "Selected work",
+    "cases": [
+      {
+        "title": "AI-Powered Data Extraction Platform",
+        "body": "Helping financial organisations process large volumes of structured and unstructured data through AI-driven automation."
+      },
+      {
+        "title": "Enterprise ServiceNow Transformation",
+        "body": "Supporting large-scale operational digitalisation through scalable ServiceNow platform architecture and governance."
+      },
+      {
+        "title": "Full QA Delivery Team for Enterprise Platform",
+        "body": "Providing coordinated testing teams including test managers, automation engineers and release support."
+      },
+      {
+        "title": "Long-Term Engineering Support for Core Systems",
+        "body": "Maintaining and scaling business-critical delivery environments through embedded engineering teams."
+      }
+    ]
   }
 }

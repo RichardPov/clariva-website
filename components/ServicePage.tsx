@@ -19,17 +19,24 @@ const SERVICE_ICONS: Record<string, React.ElementType> = {
   tenders: FileText,
 }
 
+type ServiceContent = {
+  title: string
+  tagline: string
+  description: string
+  cardsLabel?: string
+  usps: Array<{ title: string; description: string }>
+  highlights?: { label: string; items: Array<{ title: string; body: string }> }
+  technologies?: { label: string; groups: Array<{ title: string; items: string }> }
+  closing?: { heading: string; body: string }
+}
+
 export default function ServicePage({ service }: { service: Service }) {
   const tPage = useTranslations('ServicePage')
   const tServices = useTranslations('ServicePages')
-  const serviceData = tServices.raw(service.slug) as {
-    title: string
-    tagline: string
-    description: string
-    usps: Array<{ title: string; description: string }>
-  }
+  const serviceData = tServices.raw(service.slug) as ServiceContent
 
   const SlugIcon = SERVICE_ICONS[service.slug] ?? Monitor
+  const paragraphs = serviceData.description.split('\n\n').filter(Boolean)
 
   return (
     <div className="min-h-screen bg-ink text-white">
@@ -38,94 +45,86 @@ export default function ServicePage({ service }: { service: Service }) {
       {/* Hero */}
       <div className="relative overflow-hidden">
         <BinaryDecoration className="top-[90px] right-0 hidden lg:block" side="right" />
-      <section className="pt-[120px] pb-20 px-5 lg:px-10 max-w-5xl mx-auto relative z-10">
-        <div className="flex flex-col lg:flex-row lg:items-start gap-10 lg:gap-16">
+        <section className="pt-[120px] pb-20 px-5 lg:px-10 max-w-5xl mx-auto relative z-10">
+          <div className="flex flex-col lg:flex-row lg:items-start gap-10 lg:gap-16">
+            {/* Text */}
+            <div className="flex-1">
+              <motion.div
+                className="flex items-center gap-3 mb-6"
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+              >
+                <div className="w-6 h-[1.5px] bg-gold" />
+                <span className="font-dm text-[12px] font-semibold tracking-[0.18em] uppercase text-gold/70">
+                  {tPage('serviceLabel')}
+                </span>
+              </motion.div>
 
-          {/* Text */}
-          <div className="flex-1">
+              <motion.h1
+                className="font-syne font-bold text-4xl md:text-5xl lg:text-6xl text-white leading-[1.15] mb-5"
+                initial={{ opacity: 0, y: 24 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.65, delay: 0.08 }}
+              >
+                {serviceData.title}
+              </motion.h1>
+
+              <motion.p
+                className="font-syne text-gold/80 text-[17px] font-medium mb-8"
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.16 }}
+              >
+                {serviceData.tagline}
+              </motion.p>
+
+              <motion.div
+                className="space-y-4"
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.24 }}
+              >
+                {paragraphs.map((p, i) => (
+                  <p key={i} className="font-dm text-white/55 text-[16px] leading-relaxed">
+                    {p}
+                  </p>
+                ))}
+              </motion.div>
+            </div>
+
+            {/* Icon box — desktop only */}
             <motion.div
-              className="flex items-center gap-3 mb-6"
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              <div className="w-6 h-[1.5px] bg-gold" />
-              <span className="font-dm text-[12px] font-semibold tracking-[0.18em] uppercase text-gold/70">
-                {tPage('serviceLabel')}
-              </span>
-            </motion.div>
-
-            <motion.h1
-              className="font-syne font-bold text-4xl md:text-5xl lg:text-6xl text-white leading-[1.15] mb-5"
-              initial={{ opacity: 0, y: 24 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.65, delay: 0.08 }}
-            >
-              {serviceData.title}
-            </motion.h1>
-
-            <motion.p
-              className="font-syne text-gold/80 text-[17px] font-medium mb-8"
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.16 }}
-            >
-              {serviceData.tagline}
-            </motion.p>
-
-            <motion.p
-              className="font-dm text-white/55 text-[16px] leading-relaxed"
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.24 }}
-            >
-              {serviceData.description}
-            </motion.p>
-          </div>
-
-          {/* Icon box — desktop only */}
-          <motion.div
-            className="hidden lg:flex flex-shrink-0 items-center justify-center w-[210px] h-[210px] rounded-[28px] relative overflow-hidden mt-6"
-            style={{
-              background: 'linear-gradient(135deg, rgba(255,202,102,0.09) 0%, rgba(171,111,0,0.04) 100%)',
-              border: '1px solid rgba(255,202,102,0.18)',
-            }}
-            initial={{ opacity: 0, x: 28, scale: 0.88 }}
-            animate={{ opacity: 1, x: 0, scale: 1 }}
-            transition={{ duration: 0.85, delay: 0.35, ease: [0.175, 0.885, 0.32, 1.1] }}
-          >
-            <div
-              className="absolute inset-0"
+              className="hidden lg:flex flex-shrink-0 items-center justify-center w-[210px] h-[210px] rounded-[28px] relative overflow-hidden mt-6"
               style={{
-                background: 'radial-gradient(circle at 35% 35%, rgba(255,202,102,0.14) 0%, transparent 65%)',
+                background: 'linear-gradient(135deg, rgba(255,202,102,0.09) 0%, rgba(171,111,0,0.04) 100%)',
+                border: '1px solid rgba(255,202,102,0.18)',
               }}
-            />
-            <SlugIcon
-              size={82}
-              className="relative z-10"
-              style={{ color: 'rgba(255,202,102,0.72)', strokeWidth: 1.25 }}
-            />
-          </motion.div>
-        </div>
-      </section>
+              initial={{ opacity: 0, x: 28, scale: 0.88 }}
+              animate={{ opacity: 1, x: 0, scale: 1 }}
+              transition={{ duration: 0.85, delay: 0.35, ease: [0.175, 0.885, 0.32, 1.1] }}
+            >
+              <div
+                className="absolute inset-0"
+                style={{
+                  background: 'radial-gradient(circle at 35% 35%, rgba(255,202,102,0.14) 0%, transparent 65%)',
+                }}
+              />
+              <SlugIcon
+                size={82}
+                className="relative z-10"
+                style={{ color: 'rgba(255,202,102,0.72)', strokeWidth: 1.25 }}
+              />
+            </motion.div>
+          </div>
+        </section>
       </div>
 
-      {/* USP cards */}
+      {/* Cards */}
       <section className="pb-24 px-5 lg:px-10 max-w-5xl mx-auto">
-        <motion.div
-          className="flex items-center gap-3 mb-10"
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
-          <div className="w-6 h-[1.5px] bg-white/20" />
-          <span className="font-dm text-[12px] font-semibold tracking-[0.18em] uppercase text-white/30">
-            {tPage('whyClarivaLabel')}
-          </span>
-        </motion.div>
+        <SectionLabel>{serviceData.cardsLabel ?? tPage('whyClarivaLabel')}</SectionLabel>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {serviceData.usps.map((usp, i) => (
             <motion.div
               key={usp.title}
@@ -137,7 +136,7 @@ export default function ServicePage({ service }: { service: Service }) {
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-30px' }}
-              transition={{ duration: 0.55, delay: i * 0.1, ease: [0.25, 0.46, 0.45, 0.94] }}
+              transition={{ duration: 0.55, delay: (i % 2) * 0.1, ease: [0.25, 0.46, 0.45, 0.94] }}
               whileHover={{
                 borderColor: 'rgba(255,202,102,0.22)',
                 background: 'rgba(255,202,102,0.03)',
@@ -157,6 +156,96 @@ export default function ServicePage({ service }: { service: Service }) {
           ))}
         </div>
       </section>
+
+      {/* What we help with / typical setups */}
+      {serviceData.highlights && (
+        <section className="pb-24 px-5 lg:px-10 max-w-5xl mx-auto">
+          <SectionLabel>{serviceData.highlights.label}</SectionLabel>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8">
+            {serviceData.highlights.items.map((item) => (
+              <motion.div
+                key={item.title}
+                className="flex gap-4"
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: '-30px' }}
+                transition={{ duration: 0.5 }}
+              >
+                <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0" />
+                <div>
+                  <h3 className="font-syne font-semibold text-white text-[16px] mb-1.5">
+                    {item.title}
+                  </h3>
+                  <p className="font-dm text-white/45 text-[14px] leading-relaxed">
+                    {item.body}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Technologies */}
+      {serviceData.technologies && (
+        <section className="pb-24 px-5 lg:px-10 max-w-5xl mx-auto">
+          <SectionLabel>{serviceData.technologies.label}</SectionLabel>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            {serviceData.technologies.groups.map((group) => (
+              <motion.div
+                key={group.title}
+                className="rounded-2xl p-6"
+                style={{
+                  background: 'rgba(255,255,255,0.02)',
+                  border: '1px solid rgba(255,255,255,0.06)',
+                }}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: '-30px' }}
+                transition={{ duration: 0.5 }}
+              >
+                <h3 className="font-syne font-semibold text-gold/80 text-[14px] mb-3">
+                  {group.title}
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {group.items.split(',').map((tech) => (
+                    <span
+                      key={tech}
+                      className="font-dm text-white/55 text-[12px] rounded-full px-3 py-1.5"
+                      style={{
+                        background: 'rgba(255,255,255,0.04)',
+                        border: '1px solid rgba(255,255,255,0.08)',
+                      }}
+                    >
+                      {tech.trim()}
+                    </span>
+                  ))}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Closing */}
+      {serviceData.closing && (
+        <section className="pb-24 px-5 lg:px-10 max-w-5xl mx-auto">
+          <div
+            className="rounded-2xl p-8 lg:p-10 text-center"
+            style={{
+              background: 'linear-gradient(135deg, rgba(255,202,102,0.06) 0%, rgba(171,111,0,0.03) 100%)',
+              border: '1px solid rgba(255,202,102,0.14)',
+            }}
+          >
+            <h2 className="font-syne font-bold text-white text-2xl md:text-3xl mb-3 leading-snug">
+              {serviceData.closing.heading}
+            </h2>
+            <p className="font-dm text-white/55 text-[15px] leading-relaxed max-w-2xl mx-auto">
+              {serviceData.closing.body}
+            </p>
+          </div>
+        </section>
+      )}
 
       {/* Contact person */}
       <section className="pb-28 px-5 lg:px-10 max-w-5xl mx-auto">
@@ -206,5 +295,22 @@ export default function ServicePage({ service }: { service: Service }) {
 
       <Footer />
     </div>
+  )
+}
+
+function SectionLabel({ children }: { children: React.ReactNode }) {
+  return (
+    <motion.div
+      className="flex items-center gap-3 mb-10"
+      initial={{ opacity: 0, y: 16 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+    >
+      <div className="w-6 h-[1.5px] bg-white/20" />
+      <span className="font-dm text-[12px] font-semibold tracking-[0.18em] uppercase text-white/30">
+        {children}
+      </span>
+    </motion.div>
   )
 }
