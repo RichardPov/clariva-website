@@ -3,11 +3,13 @@
 import { motion } from 'framer-motion'
 import { Mail, CheckCircle2, Monitor, BarChart3, Settings2, Users, Rocket, Brain, FileText } from 'lucide-react'
 import { useTranslations } from 'next-intl'
-import { Link } from '@/i18n/navigation'
 import type { Service } from '@/lib/services-data'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import HowWeWork from '@/components/HowWeWork'
 import BinaryDecoration from '@/components/BinaryDecoration'
+
+const HOW_WE_WORK_SLUGS = ['team-extension', 'full-delivery-teams']
 
 const SERVICE_ICONS: Record<string, React.ElementType> = {
   'application-development': Monitor,
@@ -247,49 +249,31 @@ export default function ServicePage({ service }: { service: Service }) {
         </section>
       )}
 
-      {/* Contact person */}
+      {/* How we work — only for team-based services */}
+      {HOW_WE_WORK_SLUGS.includes(service.slug) && <HowWeWork />}
+
+      {/* Interested CTA */}
       <section className="pb-28 px-5 lg:px-10 max-w-5xl mx-auto">
         <div
-          className="rounded-2xl p-8 lg:p-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-8"
+          className="rounded-2xl p-8 lg:p-12 text-center"
           style={{
             background: 'linear-gradient(135deg, rgba(255,202,102,0.08) 0%, rgba(171,111,0,0.05) 100%)',
             border: '1px solid rgba(255,202,102,0.15)',
           }}
         >
-          <div>
-            <p className="font-dm text-[12px] font-semibold tracking-[0.16em] uppercase text-gold/60 mb-3">
-              {tPage('contactPersonLabel')}
-            </p>
-            <p className="font-syne font-bold text-white text-[22px] mb-1">{service.contact.name}</p>
-            <p className="font-dm text-white/45 text-[14px]">{service.contact.role}</p>
-          </div>
+          <h2 className="font-syne font-bold text-white text-2xl md:text-3xl mb-3 leading-snug">
+            {tPage('interestedHeading')}
+          </h2>
+          <p className="font-dm text-white/55 text-[15px] leading-relaxed max-w-xl mx-auto mb-7">
+            {tPage('interestedBody')}
+          </p>
           <a
-            href={`mailto:${service.contact.email}`}
-            className="inline-flex items-center gap-2.5 px-6 py-3.5 bg-gold text-ink text-[13px] font-dm font-semibold rounded-full hover:brightness-110 transition-all duration-200 hover:scale-[1.02] flex-shrink-0"
+            href="mailto:info@clariva.sk"
+            className="inline-flex items-center gap-2.5 px-7 py-3.5 bg-gold text-ink text-[14px] font-dm font-semibold rounded-full hover:brightness-110 transition-all duration-200 hover:scale-[1.02]"
           >
-            <Mail size={14} />
-            {service.contact.email}
+            <Mail size={15} />
+            info@clariva.sk
           </a>
-        </div>
-      </section>
-
-      {/* Bottom CTA */}
-      <section className="pb-24 px-5 lg:px-10 max-w-5xl mx-auto border-t border-white/5 pt-16">
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
-          <div>
-            <p className="font-syne font-semibold text-white text-[18px] mb-1">
-              {tPage('readyHeading')}
-            </p>
-            <p className="font-dm text-white/40 text-[14px]">
-              {tPage('readyBody')}
-            </p>
-          </div>
-          <Link
-            href="/#contact"
-            className="inline-flex items-center gap-2 px-7 py-3.5 border border-gold/35 text-gold text-[13px] font-dm font-medium rounded-full hover:bg-gold/5 hover:border-gold/60 transition-all duration-200 flex-shrink-0"
-          >
-            {tPage('readyCta')}
-          </Link>
         </div>
       </section>
 

@@ -342,7 +342,9 @@
     "contactPersonLabel": "Váš kontaktní pracovník",
     "readyHeading": "Připraveni začít?",
     "readyBody": "Povězte nám o své výzvě — odpovíme do jednoho pracovního dne.",
-    "readyCta": "Pojďme mluvit →"
+    "readyCta": "Pojďme mluvit →",
+    "interestedHeading": "Máte zájem o spolupráci?",
+    "interestedBody": "Napište nám o své výzvě — ozveme se do jednoho pracovního dne."
   },
   "ServicePages": {
     "application-development": {

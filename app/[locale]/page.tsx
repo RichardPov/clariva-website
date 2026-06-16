@@ -3,7 +3,6 @@ import Hero from '@/components/Hero'
 import About from '@/components/About'
 import Services from '@/components/Services'
 import Positions from '@/components/Positions'
-import HowWeWork from '@/components/HowWeWork'
 import CareProgram from '@/components/CareProgram'
 import Industries from '@/components/Industries'
 import WhyClariva from '@/components/WhyClariva'
@@ -21,7 +20,6 @@ export default function Home() {
         <About />
         <Services />
         <Positions />
-        <HowWeWork />
         <CareProgram />
         <Industries />
         <WhyClariva />

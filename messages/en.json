@@ -342,7 +342,9 @@
     "contactPersonLabel": "Your contact person",
     "readyHeading": "Ready to get started?",
     "readyBody": "Tell us about your challenge — we'll respond within one business day.",
-    "readyCta": "Let's talk →"
+    "readyCta": "Let's talk →",
+    "interestedHeading": "Interested in working together?",
+    "interestedBody": "Tell us about your challenge — we'll get back to you within one business day."
   },
   "ServicePages": {
     "application-development": {

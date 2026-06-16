@@ -342,7 +342,9 @@
     "contactPersonLabel": "Ihr Ansprechpartner",
     "readyHeading": "Bereit loszulegen?",
     "readyBody": "Sagen Sie uns von Ihrer Herausforderung — wir antworten innerhalb eines Werktages.",
-    "readyCta": "Gespräch anfragen →"
+    "readyCta": "Gespräch anfragen →",
+    "interestedHeading": "Interesse an einer Zusammenarbeit?",
+    "interestedBody": "Erzählen Sie uns von Ihrer Herausforderung — wir melden uns innerhalb eines Werktags."
   },
   "ServicePages": {
     "application-development": {
