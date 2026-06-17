@@ -20,7 +20,12 @@ let _db: NeonHttpDatabase<typeof schema> | null = null
 
 function getDb(): NeonHttpDatabase<typeof schema> {
   if (!_db) {
-    _db = drizzle(neon(connectionString()), { schema })
+    // The Neon HTTP driver runs over fetch, which Next.js caches by default in
+    // server components/route handlers. Force no-store so reads are always fresh
+    // (e.g. an admin toggling "filled" reflects immediately on the site).
+    _db = drizzle(neon(connectionString(), { fetchOptions: { cache: 'no-store' } }), {
+      schema,
+    })
   }
   return _db
 }

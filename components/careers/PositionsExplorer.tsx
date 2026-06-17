@@ -55,7 +55,7 @@ export default function PositionsExplorer({
   })
 
   useEffect(() => {
-    fetch('/api/positions')
+    fetch('/api/positions', { cache: 'no-store' })
       .then((r) => (r.ok ? r.json() : []))
       .then(setPositions)
       .catch(() => setPositions([]))

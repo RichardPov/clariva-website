@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ArrowRight, MapPin, Building2, Home } from 'lucide-react'
+import { ArrowRight, MapPin, Building2, Home, Lock } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
 import type { Position } from '@/lib/db/schema'
@@ -31,16 +31,9 @@ export default function PositionCard({
 
   const inner = (
     <>
-      <div className="flex items-start justify-between gap-3 mb-3">
-        <h3 className="font-syne font-bold text-white text-[19px] leading-snug">
-          {position.title}
-        </h3>
-        {filled && (
-          <span className="flex-shrink-0 rounded-full bg-white/10 text-white/50 text-[10px] font-dm font-semibold uppercase tracking-wider px-2.5 py-1">
-            {t('filledBadge')}
-          </span>
-        )}
-      </div>
+      <h3 className="font-syne font-bold text-white text-[19px] leading-snug mb-3 pr-24">
+        {position.title}
+      </h3>
       <p className="font-dm text-[12px] text-gold/55 mb-4">{date}</p>
 
       {position.summary && (
@@ -49,25 +42,24 @@ export default function PositionCard({
         </p>
       )}
 
-      <div className="mt-auto flex items-center justify-between gap-3 pt-3">
-        <div className="flex items-center gap-4 text-[12px] text-white/45">
-          {position.placeOfWork && (
-            <span className="inline-flex items-center gap-1.5">
-              <PlaceIcon place={position.placeOfWork} />
-              {position.placeOfWork}
-            </span>
-          )}
-          {position.city && (
-            <span className="inline-flex items-center gap-1.5">
-              <MapPin size={13} className="text-gold/70" />
-              {position.city}
-            </span>
-          )}
-        </div>
+      <div className="mt-auto flex items-center gap-4 text-[12px] text-white/45 pt-3">
+        {position.placeOfWork && (
+          <span className="inline-flex items-center gap-1.5">
+            <PlaceIcon place={position.placeOfWork} />
+            {position.placeOfWork}
+          </span>
+        )}
+        {position.city && (
+          <span className="inline-flex items-center gap-1.5">
+            <MapPin size={13} className="text-gold/70" />
+            {position.city}
+          </span>
+        )}
       </div>
 
       {filled ? (
-        <div className="mt-5 inline-flex items-center gap-2 text-[13px] font-dm font-semibold text-white/35">
+        <div className="mt-5 inline-flex items-center gap-1.5 text-[13px] font-dm font-semibold text-white/40">
+          <Lock size={13} />
           {t('positionFilled')}
         </div>
       ) : (
@@ -98,11 +90,17 @@ export default function PositionCard({
     >
       {filled ? (
         <div
-          className="flex h-full flex-col rounded-2xl p-6 opacity-50 grayscale cursor-not-allowed select-none"
-          style={baseStyle}
+          className="relative flex h-full flex-col rounded-2xl p-6 cursor-not-allowed select-none"
+          style={{ ...baseStyle, background: 'rgba(255,255,255,0.02)' }}
           aria-disabled
         >
-          {inner}
+          {/* Prominent filled badge */}
+          <span className="absolute top-5 right-5 z-10 inline-flex items-center gap-1.5 rounded-full bg-white/[0.12] border border-white/20 text-white/85 text-[10px] font-dm font-bold uppercase tracking-[0.12em] px-2.5 py-1">
+            <Lock size={11} />
+            {t('filledBadge')}
+          </span>
+          {/* Dimmed content */}
+          <div className="flex flex-1 flex-col opacity-55">{inner}</div>
         </div>
       ) : (
         <Link

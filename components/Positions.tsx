@@ -14,7 +14,7 @@ export default function Positions() {
   const [rows, setRows] = useState<Position[] | null>(null)
 
   useEffect(() => {
-    fetch('/api/positions?limit=3')
+    fetch('/api/positions?limit=3', { cache: 'no-store' })
       .then((r) => (r.ok ? r.json() : []))
       .then(setRows)
       .catch(() => setRows([]))
