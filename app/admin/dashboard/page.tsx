@@ -29,6 +29,7 @@ export default function PositionsDashboard() {
   const [toDelete, setToDelete] = useState<Position | null>(null)
   const [deleting, setDeleting] = useState(false)
   const [seeding, setSeeding] = useState(false)
+  const [seedConfirm, setSeedConfirm] = useState(false)
 
   async function load() {
     const res = await fetch('/api/admin/positions')
@@ -44,8 +45,9 @@ export default function PositionsDashboard() {
     setSeeding(true)
     const res = await fetch('/api/admin/seed', { method: 'POST' })
     setSeeding(false)
+    setSeedConfirm(false)
     if (res.ok) {
-      toast.success('Sample positions added')
+      toast.success('Sample positions loaded')
       load()
     } else {
       const data = await res.json().catch(() => ({}))
@@ -78,12 +80,18 @@ export default function PositionsDashboard() {
             Create, edit and publish job postings.
           </p>
         </div>
-        <Button asChild>
-          <Link href="/admin/dashboard/positions/new">
-            <Plus className="mr-2 h-4 w-4" />
-            New position
-          </Link>
-        </Button>
+        <div className="flex items-center gap-2">
+          <Button variant="outline" onClick={() => setSeedConfirm(true)} disabled={seeding}>
+            {seeding && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+            Load sample positions
+          </Button>
+          <Button asChild>
+            <Link href="/admin/dashboard/positions/new">
+              <Plus className="mr-2 h-4 w-4" />
+              New position
+            </Link>
+          </Button>
+        </div>
       </div>
 
       <div className="rounded-lg border border-border">
@@ -180,6 +188,27 @@ export default function PositionsDashboard() {
           </TableBody>
         </Table>
       </div>
+
+      <Dialog open={seedConfirm} onOpenChange={(o) => !o && setSeedConfirm(false)}>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>Load sample positions</DialogTitle>
+            <DialogDescription>
+              This replaces all current positions with 3 sample roles (marked as
+              filled). Use it to preview the layout, then edit or toggle them.
+            </DialogDescription>
+          </DialogHeader>
+          <DialogFooter>
+            <Button variant="outline" onClick={() => setSeedConfirm(false)}>
+              Cancel
+            </Button>
+            <Button onClick={seedSamples} disabled={seeding}>
+              {seeding && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+              Replace with samples
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
 
       <Dialog open={!!toDelete} onOpenChange={(o) => !o && setToDelete(null)}>
         <DialogContent>

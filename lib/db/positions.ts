@@ -88,6 +88,11 @@ export async function deletePosition(id: string) {
   await db.delete(positions).where(eq(positions.id, id))
 }
 
+export async function deleteAllPositions() {
+  await ensureSchema()
+  await db.delete(positions)
+}
+
 async function uniqueSlug(title: string, ignoreId?: string): Promise<string> {
   const base = slugify(title) || 'position'
   let candidate = base
