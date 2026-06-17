@@ -224,17 +224,33 @@ export default function CvDialog({
                   </div>
 
                   {/* Consent */}
-                  <label className="flex items-start gap-3 cursor-pointer">
+                  <div className="flex items-start gap-3">
                     <input
+                      id="cv-consent"
                       type="checkbox"
                       checked={consent}
                       onChange={(e) => setConsent(e.target.checked)}
-                      className="mt-1 accent-[#FFCA66] w-4 h-4"
+                      className="mt-1 accent-[#FFCA66] w-4 h-4 cursor-pointer"
                     />
-                    <span className="font-dm text-white/50 text-[13px] leading-relaxed">
-                      {t('consent')}
-                    </span>
-                  </label>
+                    <label
+                      htmlFor="cv-consent"
+                      className="font-dm text-white/50 text-[13px] leading-relaxed cursor-pointer"
+                    >
+                      {t.rich('consent', {
+                        policy: (chunks) => (
+                          <a
+                            href="/data-processing"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={(e) => e.stopPropagation()}
+                            className="text-gold/80 underline hover:text-gold transition-colors"
+                          >
+                            {chunks}
+                          </a>
+                        ),
+                      })}
+                    </label>
+                  </div>
 
                   {error && (
                     <p className="font-dm text-red-400 text-[13px]">{error}</p>

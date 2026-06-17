@@ -701,7 +701,7 @@
       "messagePlaceholder": "Vaše zpráva",
       "uploadPrompt": "Sem nahrajte soubor nebo klikněte pro výběr",
       "uploadHint": "Maximální velikost 4 MB. PDF, DOC nebo DOCX.",
-      "consent": "Souhlasím se zpracováním a uchováním mých osobních údajů.",
+      "consent": "Souhlasím se <policy>zpracováním a uchováním mých osobních údajů</policy>.",
       "submit": "Odeslat CV",
       "successTitle": "Děkujeme!",
       "successBody": "Přijali jsme vaši žádost a brzy se ozveme.",
@@ -767,5 +767,20 @@
         "body": "Údržba a škálování byznysově kritických prostředí přes zabudované inženýrské týmy."
       }
     ]
+  },
+  "DataProcessing": {
+    "label": "Právní informace",
+    "title": "Ochrana osobních údajů",
+    "subtitle": "Jak nakládáme s vašimi údaji",
+    "intro": "Clariva striktně dodržuje všechny platné právní předpisy. Před uložením a zpracováním vašich osobních údajů si vyžádáme váš výslovný souhlas.",
+    "withdraw": "Pro odvolání souhlasu nás kontaktujte na:",
+    "storeIntro": "Vaše údaje — jako telefonní čísla, e-mailové adresy a životopisy — uchováváme výhradně na těchto zabezpečených místech:",
+    "storeItems": [
+      "Google Drive – Clariva Team Drive",
+      "Clariva CRM"
+    ],
+    "temporary": "Na krátkou dobu mohou být tyto údaje dočasně uloženy také v počítačích pověřených zaměstnanců Clariva.",
+    "sharing": "Pokud je nutné kontaktovat klienta nebo sdílet váš životopis za účelem domluvení pohovoru, buď vás o tom předem informujeme a vyžádáme si váš souhlas se zpracováním údajů klientem, nebo budeme postupovat na základě vašeho dříve uděleného souhlasu, který umožňuje klientům a partnerům Clariva zpracovávat vaše údaje. Bez vašeho předchozího souhlasu sdílíme pouze anonymizované profily kandidátů, které neobsahují jména, kontaktní údaje ani žádné jiné osobní informace.",
+    "clientResponsibility": "Poté, co klient přijme a zpracuje vaše údaje, přebírá odpovědnost za to, že vám umožní odvolat souhlas s dalším zpracováním vašich osobních údajů."
   }
 }

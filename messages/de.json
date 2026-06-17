@@ -701,7 +701,7 @@
       "messagePlaceholder": "Ihre Nachricht",
       "uploadPrompt": "Datei hier ablegen oder zum Auswählen klicken",
       "uploadHint": "Maximale Dateigröße 4 MB. PDF, DOC oder DOCX.",
-      "consent": "Ich stimme der Verarbeitung und Speicherung meiner personenbezogenen Daten zu.",
+      "consent": "Ich stimme der <policy>Verarbeitung und Speicherung meiner personenbezogenen Daten</policy> zu.",
       "submit": "Lebenslauf senden",
       "successTitle": "Vielen Dank!",
       "successBody": "Wir haben Ihre Bewerbung erhalten und melden uns.",
@@ -767,5 +767,20 @@
         "body": "Wartung und Skalierung geschäftskritischer Delivery-Umgebungen durch eingebettete Engineering-Teams."
       }
     ]
+  },
+  "DataProcessing": {
+    "label": "Rechtliches",
+    "title": "Datenschutzerklärung",
+    "subtitle": "Wie wir mit Ihren Daten umgehen",
+    "intro": "Clariva hält sich strikt an alle geltenden gesetzlichen Vorschriften. Vor der Speicherung und Verarbeitung Ihrer personenbezogenen Daten holen wir Ihre ausdrückliche Einwilligung ein.",
+    "withdraw": "Um Ihre Einwilligung zu widerrufen, kontaktieren Sie uns bitte unter:",
+    "storeIntro": "Ihre Daten — wie Telefonnummern, E-Mail-Adressen und Lebensläufe — speichern wir ausschließlich an folgenden sicheren Orten:",
+    "storeItems": [
+      "Google Drive – Clariva Team Drive",
+      "Clariva CRM"
+    ],
+    "temporary": "Für kurze Zeit können diese Daten auch vorübergehend auf den Computern autorisierter Clariva-Mitarbeiter gespeichert werden.",
+    "sharing": "Wenn es notwendig ist, einen Kunden zu kontaktieren oder Ihren Lebenslauf zur Vereinbarung eines Vorstellungsgesprächs weiterzugeben, informieren wir Sie entweder vorab und holen Ihre Einwilligung zur Datenverarbeitung durch den Kunden ein, oder wir handeln auf Grundlage Ihrer zuvor erteilten Einwilligung, die es Kunden und Partnern von Clariva erlaubt, Ihre Daten zu verarbeiten. Ohne Ihre vorherige Einwilligung teilen wir nur anonymisierte Kandidatenprofile, die keine Namen, Kontaktdaten oder sonstige personenbezogene Informationen enthalten.",
+    "clientResponsibility": "Sobald ein Kunde Ihre Daten erhält und verarbeitet, übernimmt er die Verantwortung dafür, Ihnen die Möglichkeit zu geben, Ihre Einwilligung zur weiteren Verarbeitung Ihrer personenbezogenen Daten zu widerrufen."
   }
 }

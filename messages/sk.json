@@ -701,7 +701,7 @@
       "messagePlaceholder": "Vaša správa",
       "uploadPrompt": "Sem nahrajte súbor alebo kliknite na výber",
       "uploadHint": "Maximálna veľkosť 4 MB. PDF, DOC alebo DOCX.",
-      "consent": "Súhlasím so spracovaním a uchovaním mojich osobných údajov.",
+      "consent": "Súhlasím so <policy>spracovaním a uchovaním mojich osobných údajov</policy>.",
       "submit": "Odoslať CV",
       "successTitle": "Ďakujeme!",
       "successBody": "Prijali sme vašu žiadosť a čoskoro sa ozveme.",
@@ -767,5 +767,20 @@
         "body": "Údržba a škálovanie biznisovo kritických prostredí cez zabudované inžinierske tímy."
       }
     ]
+  },
+  "DataProcessing": {
+    "label": "Právne informácie",
+    "title": "Ochrana osobných údajov",
+    "subtitle": "Ako narábame s vašimi údajmi",
+    "intro": "Clariva striktne dodržiava všetky platné právne predpisy. Pred uložením a spracovaním vašich osobných údajov si vyžiadame váš výslovný súhlas.",
+    "withdraw": "Pre odvolanie súhlasu nás kontaktujte na:",
+    "storeIntro": "Vaše údaje — ako telefónne čísla, e-mailové adresy a životopisy — uchovávame výhradne na týchto zabezpečených miestach:",
+    "storeItems": [
+      "Google Drive – Clariva Team Drive",
+      "Clariva CRM"
+    ],
+    "temporary": "Na krátky čas môžu byť tieto údaje dočasne uložené aj v počítačoch poverených zamestnancov Clariva.",
+    "sharing": "Ak je potrebné kontaktovať klienta alebo zdieľať váš životopis za účelom dohodnutia pohovoru, buď vás o tom vopred informujeme a vyžiadame si váš súhlas so spracovaním údajov klientom, alebo budeme postupovať na základe vášho skôr udeleného súhlasu, ktorý umožňuje klientom a partnerom Clariva spracúvať vaše údaje. Bez vášho predchádzajúceho súhlasu zdieľame iba anonymizované profily kandidátov, ktoré neobsahujú mená, kontaktné údaje ani žiadne iné osobné informácie.",
+    "clientResponsibility": "Po tom, čo klient prijme a spracuje vaše údaje, preberá zodpovednosť za to, že vám umožní odvolať súhlas s ďalším spracovaním vašich osobných údajov."
   }
 }

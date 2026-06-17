@@ -701,7 +701,7 @@
       "messagePlaceholder": "Your message",
       "uploadPrompt": "Drop your file here, or click to choose",
       "uploadHint": "Max file size 4 MB. PDF, DOC or DOCX.",
-      "consent": "I agree to the processing and storage of my personal data.",
+      "consent": "I agree to the <policy>processing and storage of my personal data</policy>.",
       "submit": "Send your CV",
       "successTitle": "Thank you!",
       "successBody": "We've received your application and will be in touch.",
@@ -767,5 +767,20 @@
         "body": "Maintaining and scaling business-critical delivery environments through embedded engineering teams."
       }
     ]
+  },
+  "DataProcessing": {
+    "label": "Legal",
+    "title": "Privacy Policy",
+    "subtitle": "How We Handle Your Data",
+    "intro": "Clariva strictly adheres to all applicable legal regulations. Before storing and processing your personal data, we request your explicit consent.",
+    "withdraw": "To withdraw your consent, please contact us at:",
+    "storeIntro": "We store your data—such as phone numbers, email addresses, and CVs—exclusively in the following secure locations:",
+    "storeItems": [
+      "Google Drive – Clariva Team Drive",
+      "Clariva CRM"
+    ],
+    "temporary": "For short periods of time, these data may also be temporarily stored on the computers of authorized Clariva personnel.",
+    "sharing": "If it is necessary to contact a client or share your CV for the purpose of arranging an interview, we will either inform you beforehand and request your consent for the client to process your data, or we will proceed based on your previously granted consent that allows Clariva’s clients and partners to process your data. Without your prior consent, we only share anonymized candidate profiles that do not contain names, contact details, or any other personal information.",
+    "clientResponsibility": "Once a client receives and processes your data, they assume the responsibility of providing you with the ability to withdraw your consent for their further processing of your personal information."
   }
 }
