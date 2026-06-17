@@ -18,10 +18,26 @@ export default function Contact() {
     message: '',
   })
   const [submitted, setSubmitted] = useState(false)
+  const [sending, setSending] = useState(false)
+  const [error, setError] = useState('')
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setSubmitted(true)
+    setError('')
+    setSending(true)
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      })
+      if (!res.ok) throw new Error('failed')
+      setSubmitted(true)
+    } catch {
+      setError(t('errorGeneric'))
+    } finally {
+      setSending(false)
+    }
   }
 
   const inputBase =
@@ -222,9 +238,14 @@ export default function Contact() {
                   />
                 </div>
 
+                {error && (
+                  <p className="font-dm text-red-400 text-[13px]">{error}</p>
+                )}
+
                 <button
                   type="submit"
-                  className="w-full flex items-center justify-center gap-2.5 py-3.5 bg-gold text-ink text-[14px] font-dm font-semibold rounded-xl hover:brightness-110 transition-all duration-200 hover:scale-[1.01]"
+                  disabled={sending}
+                  className="w-full flex items-center justify-center gap-2.5 py-3.5 bg-gold text-ink text-[14px] font-dm font-semibold rounded-xl hover:brightness-110 transition-all duration-200 hover:scale-[1.01] disabled:opacity-60"
                 >
                   {t('form.submitButton')}
                   <Send size={15} />

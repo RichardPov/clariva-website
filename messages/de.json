@@ -302,7 +302,8 @@
       ]
     },
     "successTitle": "Nachricht gesendet!",
-    "successBody": "Wir melden uns innerhalb eines Werktages bei Ihnen."
+    "successBody": "Wir melden uns innerhalb eines Werktages bei Ihnen.",
+    "errorGeneric": "Etwas ist schiefgelaufen. Bitte erneut versuchen oder an info@clariva.sk schreiben."
   },
   "Footer": {
     "tagline1": "Technologie, die funktioniert.",

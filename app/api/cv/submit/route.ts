@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server'
 import { put } from '@vercel/blob'
 import { createSubmission } from '@/lib/db/positions'
+import { sendNotification, rows } from '@/lib/email'
 
 export const runtime = 'nodejs'
 
@@ -57,16 +58,44 @@ export async function POST(req: Request) {
     )
   }
 
+  const phone = str(form.get('phone'))
+  const message = str(form.get('message'))
+  const positionTitle = str(form.get('positionTitle'))
+
   try {
     const created = await createSubmission({
       email,
-      phone: str(form.get('phone')),
-      message: str(form.get('message')),
+      phone,
+      message,
       cvUrl,
       cvFilename: file.name,
       positionId: str(form.get('positionId')) || null,
-      positionTitle: str(form.get('positionTitle')),
+      positionTitle,
     })
+
+    // Best-effort notification — never fail the submission if email errors.
+    const html = `
+      <div style="font-family:Arial,Helvetica,sans-serif">
+        <h2 style="font-size:18px;color:#111;margin:0 0 12px">New CV submission</h2>
+        <table style="border-collapse:collapse">
+          ${rows([
+            ['Position', positionTitle || 'General application'],
+            ['Email', email],
+            ['Phone', phone],
+            ['Message', message],
+            ['File', file.name],
+          ])}
+        </table>
+        <p style="color:#666;font-size:13px;margin-top:16px">
+          The CV is stored privately — download it from the admin dashboard → Applications.
+        </p>
+      </div>`
+    await sendNotification({
+      subject: `New CV — ${positionTitle || 'General application'}`,
+      html,
+      replyTo: email,
+    })
+
     return NextResponse.json({ ok: true, id: created.id }, { status: 201 })
   } catch (err) {
     return NextResponse.json(

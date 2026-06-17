@@ -302,7 +302,8 @@
       ]
     },
     "successTitle": "Správa odoslaná!",
-    "successBody": "Ozveme sa vám do jedného pracovného dňa."
+    "successBody": "Ozveme sa vám do jedného pracovného dňa.",
+    "errorGeneric": "Niečo sa pokazilo. Skúste to znova alebo napíšte na info@clariva.sk."
   },
   "Footer": {
     "tagline1": "Technológia, ktorá funguje.",

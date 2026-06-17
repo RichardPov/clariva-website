@@ -302,7 +302,8 @@
       ]
     },
     "successTitle": "Message sent!",
-    "successBody": "We'll get back to you within one business day."
+    "successBody": "We'll get back to you within one business day.",
+    "errorGeneric": "Something went wrong. Please try again or email info@clariva.sk."
   },
   "Footer": {
     "tagline1": "Technology that works.",
