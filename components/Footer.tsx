@@ -94,9 +94,21 @@ export default function Footer() {
         </motion.div>
 
         {/* Bottom bar */}
-        <div className="border-t border-white/[0.04] pt-6 text-center">
+        <div className="border-t border-white/[0.04] pt-6 flex flex-col sm:flex-row items-center justify-center gap-x-3 gap-y-1 text-center">
           <p className="font-dm text-white/25 text-[12px]">
             {t('copyright')}
+          </p>
+          <span className="hidden sm:inline text-white/15 text-[12px]">·</span>
+          <p className="font-dm text-white/25 text-[12px]">
+            Made by{' '}
+            <a
+              href="https://richardpovysil.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/40 hover:text-gold transition-colors"
+            >
+              Richard Povysil
+            </a>
           </p>
         </div>
       </div>
